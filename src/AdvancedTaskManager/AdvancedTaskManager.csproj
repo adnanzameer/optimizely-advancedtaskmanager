@@ -9,12 +9,12 @@
 	<Authors>Adnan Zameer</Authors>
 	<Company>Adnan Zameer</Company>
 	<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-	<PackageProjectUrl>https://github.com/adnanzameer/AdvancedTaskManager</PackageProjectUrl>
+	<PackageProjectUrl>https://github.com/adnanzameer/optimizely-advancedtaskmanager</PackageProjectUrl>
 	<PackageIcon>icon.png</PackageIcon>
-	<iconUrl>https://github.com/adnanzameer/AdvancedTaskManager/master/atm.png</iconUrl>
+	<iconUrl>https://github.com/adnanzameer/optimizely-advancedtaskmanager/master/atm.png</iconUrl>
 	<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
 	<Description>Administration of Awaiting Review Tasks of Content Approval and Change Approval</Description>
-	<PackageReleaseNotes>https://github.com/adnanzameer/AdvancedTaskManager/blob/master/CHANGELOG.md</PackageReleaseNotes>
+	<PackageReleaseNotes>https://github.com/adnanzameer/optimizely-advancedtaskmanager/blob/master/CHANGELOG.md</PackageReleaseNotes>
 	<PackageTags></PackageTags>
 	<StaticWebAssetBasePath>/_content/</StaticWebAssetBasePath>
   </PropertyGroup>
