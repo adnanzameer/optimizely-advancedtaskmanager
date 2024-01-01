@@ -1,0 +1,1034 @@
+2024-01-01 15:18:03.397 +00:00 [WRN] The modules finder couldn't find a directory at '~/EPiServer/AdvancedTaskManager'
+2024-01-01 15:18:03.453 +00:00 [WRN] The modules finder couldn't find a directory at '/EPiServer/AdvancedTaskManager'
+2024-01-01 15:18:05.069 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.069 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.072 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.072 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.075 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.075 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.077 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.078 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.080 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.080 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.081 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.081 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.083 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.083 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.085 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.085 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.086 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.086 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.089 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.089 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.090 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.091 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.092 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.092 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.094 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.094 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.096 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.096 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.097 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.097 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.099 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.099 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.101 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.101 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.103 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.103 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.105 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.105 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.107 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.107 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.109 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.109 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.111 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.111 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.112 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.113 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.114 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.114 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.116 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.116 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.118 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.118 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.120 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.120 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.122 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.122 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.124 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.124 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.126 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.126 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.129 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.129 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.131 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.131 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.132 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.132 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.134 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.134 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.136 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.136 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.138 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.138 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.140 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.140 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.141 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.141 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.143 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.143 +00:00 [WRN] Cache cleared
+2024-01-01 15:18:05.495 +00:00 [WRN] The modules finder couldn't find a directory at '~/EPiServer/AdvancedTaskManager'
+2024-01-01 15:18:05.495 +00:00 [WRN] The modules finder couldn't find a directory at '/EPiServer/AdvancedTaskManager'
+2024-01-01 15:18:18.975 +00:00 [WRN] Unable to create a PropertyData instance of Type: 'Geta.Optimizely.Sitemaps.SpecializedProperties.PropertySEOSitemaps' Assembly: 'Geta.Optimizely.Sitemaps'. Will fallback using the data type instead.
+2024-01-01 15:18:38.023 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: Unable to find a module by assembly 'AdvancedTaskManager, Version=3.1.7.0, Culture=neutral, PublicKeyToken=null' (Parameter 'moduleAssembly')
+   at EPiServer.Shell.Paths.ToResource(Assembly moduleAssembly, String moduleRelativeResourcePath)
+   at AdvancedTaskManager.Infrastructure.Cms.MenuProvider.GetMenuItems() in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\src\AdvancedTaskManager\Infrastructure\Cms\MenuProvider.cs:line 12
+   at EPiServer.Shell.Navigation.MenuAssembler.<>c.<GetMenuItems>b__8_1(IMenuProvider m)
+   at System.Linq.Enumerable.SelectManySingleSelectorIterator`2.MoveNext()
+   at EPiServer.Shell.Navigation.MenuAssembler.GetMenuItems(String parentPath, Int32 relativeDepth)
+   at EPiServer.Shell.Navigation.MenuAssembler.GetMenuHierarchy(String rootPath, Int32 relativeDepth, String selectionPath)
+   at EPiServer.Shell.Web.Internal.NavigationService.GetCurrentProduct()
+   at EPiServer.Shell.Web.Internal.NavigationService.GetCurrentProductId()
+   at EPiServer.Shell.Navigation.MenuHelper.CreateMenuRootElement()
+   at EPiServer.Shell.Navigation.MenuHelper.CreatePlatformNavigationMenu()
+   at AspNetCoreGeneratedDocument.Find_Views_Views_Shared_FindBootstrapper.<ExecuteAsync>b__0_3()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPage.RenderSectionAsyncCore(String sectionName, Boolean required)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPage.RenderSection(String name, Boolean required)
+   at AspNetCoreGeneratedDocument.Find_Views_Views_Shared_Find.<ExecuteAsync>b__9_1()
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCoreGeneratedDocument.Find_Views_Views_Shared_Find.ExecuteAsync()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-01-01 15:25:36.035 +00:00 [WRN] The modules finder couldn't find a directory at '~/EPiServer/AdvancedTaskManager'
+2024-01-01 15:25:36.080 +00:00 [WRN] The modules finder couldn't find a directory at '/EPiServer/AdvancedTaskManager'
+2024-01-01 15:25:37.721 +00:00 [WRN] The modules finder couldn't find a directory at '~/EPiServer/AdvancedTaskManager'
+2024-01-01 15:25:37.721 +00:00 [WRN] The modules finder couldn't find a directory at '/EPiServer/AdvancedTaskManager'
+2024-01-01 15:25:51.628 +00:00 [WRN] Unable to create a PropertyData instance of Type: 'Geta.Optimizely.Sitemaps.SpecializedProperties.PropertySEOSitemaps' Assembly: 'Geta.Optimizely.Sitemaps'. Will fallback using the data type instead.
+2024-01-01 15:26:30.551 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: Unable to find a module by assembly 'AdvancedTaskManager, Version=3.1.7.0, Culture=neutral, PublicKeyToken=null' (Parameter 'moduleAssembly')
+   at EPiServer.Shell.Paths.ToResource(Assembly moduleAssembly, String moduleRelativeResourcePath)
+   at AdvancedTaskManager.Infrastructure.Cms.MenuProvider.GetMenuItems() in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\src\AdvancedTaskManager\Infrastructure\Cms\MenuProvider.cs:line 12
+   at EPiServer.Shell.Navigation.MenuAssembler.<>c.<GetMenuItems>b__8_1(IMenuProvider m)
+   at System.Linq.Enumerable.SelectManySingleSelectorIterator`2.MoveNext()
+   at EPiServer.Shell.Navigation.MenuAssembler.GetMenuItems(String parentPath, Int32 relativeDepth)
+   at EPiServer.Shell.Navigation.MenuAssembler.GetMenuHierarchy(String rootPath, Int32 relativeDepth, String selectionPath)
+   at EPiServer.Shell.Web.Internal.NavigationService.GetCurrentProduct()
+   at EPiServer.Shell.Web.Internal.NavigationService.GetCurrentProductId()
+   at EPiServer.Shell.Navigation.MenuHelper.CreateMenuRootElement()
+   at EPiServer.Shell.Navigation.MenuHelper.CreatePlatformNavigationMenu()
+   at AspNetCoreGeneratedDocument.CmsUIViews_Views_Shared_Bootstrapper.<ExecuteAsync>b__8_2()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPage.RenderSectionAsyncCore(String sectionName, Boolean required)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPage.RenderSection(String name, Boolean required)
+   at AspNetCoreGeneratedDocument.CmsUIViews_Views_Shared_Sleek.<ExecuteAsync>b__12_1()
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCoreGeneratedDocument.CmsUIViews_Views_Shared_Sleek.ExecuteAsync()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-01-01 15:29:41.797 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: Unable to find a module by assembly 'AdvancedTaskManager, Version=3.1.7.0, Culture=neutral, PublicKeyToken=null' (Parameter 'moduleAssembly')
+   at EPiServer.Shell.Paths.ToResource(Assembly moduleAssembly, String moduleRelativeResourcePath)
+   at AdvancedTaskManager.Infrastructure.Cms.MenuProvider.GetMenuItems() in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\src\AdvancedTaskManager\Infrastructure\Cms\MenuProvider.cs:line 12
+   at EPiServer.Shell.Navigation.MenuAssembler.<>c.<GetMenuItems>b__8_1(IMenuProvider m)
+   at System.Linq.Enumerable.SelectManySingleSelectorIterator`2.MoveNext()
+   at EPiServer.Shell.Navigation.MenuAssembler.GetMenuItems(String parentPath, Int32 relativeDepth)
+   at EPiServer.Shell.Navigation.MenuAssembler.GetMenuHierarchy(String rootPath, Int32 relativeDepth, String selectionPath)
+   at EPiServer.Shell.Web.Internal.NavigationService.GetCurrentProduct()
+   at EPiServer.Shell.Web.Internal.NavigationService.GetCurrentProductId()
+   at EPiServer.Shell.Navigation.MenuHelper.CreateMenuRootElement()
+   at EPiServer.Shell.Navigation.MenuHelper.CreatePlatformNavigationMenu()
+   at AspNetCoreGeneratedDocument.CmsUIViews_Views_Shared_Bootstrapper.<ExecuteAsync>b__8_2()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPage.RenderSectionAsyncCore(String sectionName, Boolean required)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPage.RenderSection(String name, Boolean required)
+   at AspNetCoreGeneratedDocument.CmsUIViews_Views_Shared_Sleek.<ExecuteAsync>b__12_1()
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCoreGeneratedDocument.CmsUIViews_Views_Shared_Sleek.ExecuteAsync()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-01-01 15:36:52.585 +00:00 [WRN] The modules finder couldn't find a directory at '~/EPiServer/AdvancedTaskManager'
+2024-01-01 15:36:52.634 +00:00 [WRN] The modules finder couldn't find a directory at '/EPiServer/AdvancedTaskManager'
+2024-01-01 15:36:54.257 +00:00 [WRN] The modules finder couldn't find a directory at '~/EPiServer/AdvancedTaskManager'
+2024-01-01 15:36:54.258 +00:00 [WRN] The modules finder couldn't find a directory at '/EPiServer/AdvancedTaskManager'
+2024-01-01 15:37:03.554 +00:00 [WRN] Unable to create a PropertyData instance of Type: 'Geta.Optimizely.Sitemaps.SpecializedProperties.PropertySEOSitemaps' Assembly: 'Geta.Optimizely.Sitemaps'. Will fallback using the data type instead.
+2024-01-01 15:37:26.727 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: Unable to find a module by assembly 'AdvancedTaskManager, Version=3.1.7.0, Culture=neutral, PublicKeyToken=null' (Parameter 'moduleAssembly')
+   at EPiServer.Shell.Paths.ToResource(Assembly moduleAssembly, String moduleRelativeResourcePath)
+   at AdvancedTaskManager.Infrastructure.Helpers.Extensions.PathsToResource(String moduleRelativeResourcePath) in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\src\AdvancedTaskManager\Infrastructure\Helpers\Extensions.cs:line 80
+   at AdvancedTaskManager.Infrastructure.Cms.MenuProvider.GetMenuItems() in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\src\AdvancedTaskManager\Infrastructure\Cms\MenuProvider.cs:line 12
+   at EPiServer.Shell.Navigation.MenuAssembler.<>c.<GetMenuItems>b__8_1(IMenuProvider m)
+   at System.Linq.Enumerable.SelectManySingleSelectorIterator`2.MoveNext()
+   at EPiServer.Shell.Navigation.MenuAssembler.GetMenuItems(String parentPath, Int32 relativeDepth)
+   at EPiServer.Shell.Navigation.MenuAssembler.GetMenuHierarchy(String rootPath, Int32 relativeDepth, String selectionPath)
+   at EPiServer.Shell.Web.Internal.NavigationService.GetCurrentProduct()
+   at EPiServer.Shell.Web.Internal.NavigationService.GetCurrentProductId()
+   at EPiServer.Shell.Navigation.MenuHelper.CreateMenuRootElement()
+   at EPiServer.Shell.Navigation.MenuHelper.CreatePlatformNavigationMenu()
+   at AspNetCoreGeneratedDocument.CmsUIViews_Views_Shared_Bootstrapper.<ExecuteAsync>b__8_2()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPage.RenderSectionAsyncCore(String sectionName, Boolean required)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPage.RenderSection(String name, Boolean required)
+   at AspNetCoreGeneratedDocument.CmsUIViews_Views_Shared_Sleek.<ExecuteAsync>b__12_1()
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCoreGeneratedDocument.CmsUIViews_Views_Shared_Sleek.ExecuteAsync()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-01-01 15:39:15.375 +00:00 [WRN] The modules finder couldn't find a directory at '~/EPiServer/AdvancedTaskManager'
+2024-01-01 15:39:15.413 +00:00 [WRN] The modules finder couldn't find a directory at '/EPiServer/AdvancedTaskManager'
+2024-01-01 15:39:17.032 +00:00 [WRN] The modules finder couldn't find a directory at '~/EPiServer/AdvancedTaskManager'
+2024-01-01 15:39:17.033 +00:00 [WRN] The modules finder couldn't find a directory at '/EPiServer/AdvancedTaskManager'
+2024-01-01 15:39:19.548 +00:00 [WRN] Unable to create a PropertyData instance of Type: 'Geta.Optimizely.Sitemaps.SpecializedProperties.PropertySEOSitemaps' Assembly: 'Geta.Optimizely.Sitemaps'. Will fallback using the data type instead.
+2024-01-01 15:39:22.976 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: Unable to find a module by assembly 'AdvancedTaskManager, Version=3.1.7.0, Culture=neutral, PublicKeyToken=null' (Parameter 'moduleAssembly')
+   at EPiServer.Shell.Paths.ToResource(Assembly moduleAssembly, String moduleRelativeResourcePath)
+   at AdvancedTaskManager.Infrastructure.Helpers.Extensions.PathsToResource(String moduleRelativeResourcePath) in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\src\AdvancedTaskManager\Infrastructure\Helpers\Extensions.cs:line 80
+   at AdvancedTaskManager.Infrastructure.Cms.MenuProvider.GetMenuItems() in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\src\AdvancedTaskManager\Infrastructure\Cms\MenuProvider.cs:line 12
+   at EPiServer.Shell.Navigation.MenuAssembler.<>c.<GetMenuItems>b__8_1(IMenuProvider m)
+   at System.Linq.Enumerable.SelectManySingleSelectorIterator`2.MoveNext()
+   at EPiServer.Shell.Navigation.MenuAssembler.GetMenuItems(String parentPath, Int32 relativeDepth)
+   at EPiServer.Shell.Navigation.MenuAssembler.GetMenuHierarchy(String rootPath, Int32 relativeDepth, String selectionPath)
+   at EPiServer.Shell.Web.Internal.NavigationService.GetCurrentProduct()
+   at EPiServer.Shell.Web.Internal.NavigationService.GetCurrentProductId()
+   at EPiServer.Shell.Navigation.MenuHelper.CreateMenuRootElement()
+   at EPiServer.Shell.Navigation.MenuHelper.CreatePlatformNavigationMenu()
+   at AspNetCoreGeneratedDocument.CmsUIViews_Views_Shared_Bootstrapper.<ExecuteAsync>b__8_2()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPage.RenderSectionAsyncCore(String sectionName, Boolean required)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPage.RenderSection(String name, Boolean required)
+   at AspNetCoreGeneratedDocument.CmsUIViews_Views_Shared_Sleek.<ExecuteAsync>b__12_1()
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCoreGeneratedDocument.CmsUIViews_Views_Shared_Sleek.ExecuteAsync()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-01-01 15:43:31.224 +00:00 [WRN] Unable to create a PropertyData instance of Type: 'Geta.Optimizely.Sitemaps.SpecializedProperties.PropertySEOSitemaps' Assembly: 'Geta.Optimizely.Sitemaps'. Will fallback using the data type instead.
+2024-01-01 15:43:35.004 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: Unable to find a module by assembly 'AdvancedTaskManager, Version=3.1.7.0, Culture=neutral, PublicKeyToken=null' (Parameter 'moduleAssembly')
+   at EPiServer.Shell.Paths.ToResource(Assembly moduleAssembly, String moduleRelativeResourcePath)
+   at AdvancedTaskManager.Infrastructure.Helpers.Extensions.PathsToResource(String moduleRelativeResourcePath) in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\src\AdvancedTaskManager\Infrastructure\Helpers\Extensions.cs:line 80
+   at AdvancedTaskManager.Infrastructure.Cms.MenuProvider.GetMenuItems() in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\src\AdvancedTaskManager\Infrastructure\Cms\MenuProvider.cs:line 12
+   at EPiServer.Shell.Navigation.MenuAssembler.<>c.<GetMenuItems>b__8_1(IMenuProvider m)
+   at System.Linq.Enumerable.SelectManySingleSelectorIterator`2.MoveNext()
+   at EPiServer.Shell.Navigation.MenuAssembler.GetMenuItems(String parentPath, Int32 relativeDepth)
+   at EPiServer.Shell.Navigation.MenuAssembler.GetMenuHierarchy(String rootPath, Int32 relativeDepth, String selectionPath)
+   at EPiServer.Shell.Web.Internal.NavigationService.GetCurrentProduct()
+   at EPiServer.Shell.Web.Internal.NavigationService.GetCurrentProductId()
+   at EPiServer.Shell.Navigation.MenuHelper.CreateMenuRootElement()
+   at EPiServer.Shell.Navigation.MenuHelper.CreatePlatformNavigationMenu()
+   at AspNetCoreGeneratedDocument.CmsUIViews_Views_Shared_Bootstrapper.<ExecuteAsync>b__8_2()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPage.RenderSectionAsyncCore(String sectionName, Boolean required)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPage.RenderSection(String name, Boolean required)
+   at AspNetCoreGeneratedDocument.CmsUIViews_Views_Shared_Sleek.<ExecuteAsync>b__12_1()
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCoreGeneratedDocument.CmsUIViews_Views_Shared_Sleek.ExecuteAsync()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-01-01 15:52:33.425 +00:00 [WRN] The modules finder couldn't find a directory at '~/EPiServer/AdvancedTaskManager'
+2024-01-01 15:52:33.478 +00:00 [WRN] The modules finder couldn't find a directory at '/EPiServer/AdvancedTaskManager'
+2024-01-01 15:52:35.082 +00:00 [WRN] The modules finder couldn't find a directory at '~/EPiServer/AdvancedTaskManager'
+2024-01-01 15:52:35.082 +00:00 [WRN] The modules finder couldn't find a directory at '/EPiServer/AdvancedTaskManager'
+2024-01-01 15:52:46.814 +00:00 [WRN] Unable to create a PropertyData instance of Type: 'Geta.Optimizely.Sitemaps.SpecializedProperties.PropertySEOSitemaps' Assembly: 'Geta.Optimizely.Sitemaps'. Will fallback using the data type instead.
+2024-01-01 15:57:06.560 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: Unable to find a module by assembly 'AdvancedTaskManager, Version=3.1.7.0, Culture=neutral, PublicKeyToken=null' (Parameter 'moduleAssembly')
+   at EPiServer.Shell.Paths.ToResource(Assembly moduleAssembly, String moduleRelativeResourcePath)
+   at AdvancedTaskManager.Infrastructure.Helpers.Extensions.PathsToResource(String moduleRelativeResourcePath) in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\src\AdvancedTaskManager\Infrastructure\Helpers\Extensions.cs:line 80
+   at AdvancedTaskManager.Infrastructure.Cms.MenuProvider.GetMenuItems() in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\src\AdvancedTaskManager\Infrastructure\Cms\MenuProvider.cs:line 12
+   at EPiServer.Shell.Navigation.MenuAssembler.<>c.<GetMenuItems>b__8_1(IMenuProvider m)
+   at System.Linq.Enumerable.SelectManySingleSelectorIterator`2.MoveNext()
+   at EPiServer.Shell.Navigation.MenuAssembler.GetMenuItems(String parentPath, Int32 relativeDepth)
+   at EPiServer.Shell.Navigation.MenuAssembler.GetMenuHierarchy(String rootPath, Int32 relativeDepth, String selectionPath)
+   at EPiServer.Shell.Web.Internal.NavigationService.GetCurrentProduct()
+   at EPiServer.Shell.Web.Internal.NavigationService.GetCurrentProductId()
+   at EPiServer.Shell.Navigation.MenuHelper.CreateMenuRootElement()
+   at EPiServer.Shell.Navigation.MenuHelper.CreatePlatformNavigationMenu()
+   at AspNetCoreGeneratedDocument.CmsUIViews_Views_Shared_Bootstrapper.<ExecuteAsync>b__8_2()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPage.RenderSectionAsyncCore(String sectionName, Boolean required)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPage.RenderSection(String name, Boolean required)
+   at AspNetCoreGeneratedDocument.CmsUIViews_Views_Shared_Sleek.<ExecuteAsync>b__12_1()
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCoreGeneratedDocument.CmsUIViews_Views_Shared_Sleek.ExecuteAsync()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-01-01 16:05:25.855 +00:00 [WRN] The modules finder couldn't find a directory at '~/EPiServer/AdvancedTaskManager'
+2024-01-01 16:05:25.909 +00:00 [WRN] The modules finder couldn't find a directory at '/EPiServer/AdvancedTaskManager'
+2024-01-01 16:05:27.461 +00:00 [WRN] The modules finder couldn't find a directory at '~/EPiServer/AdvancedTaskManager'
+2024-01-01 16:05:27.462 +00:00 [WRN] The modules finder couldn't find a directory at '/EPiServer/AdvancedTaskManager'
+2024-01-01 16:05:40.359 +00:00 [WRN] Unable to create a PropertyData instance of Type: 'Geta.Optimizely.Sitemaps.SpecializedProperties.PropertySEOSitemaps' Assembly: 'Geta.Optimizely.Sitemaps'. Will fallback using the data type instead.
+2024-01-01 16:06:13.709 +00:00 [WRN] The modules finder couldn't find a directory at '~/EPiServer/AdvancedTaskManager'
+2024-01-01 16:06:13.710 +00:00 [WRN] The modules finder couldn't find a directory at '/EPiServer/AdvancedTaskManager'
+2024-01-01 16:06:48.764 +00:00 [WRN] The modules finder couldn't find a directory at '~/EPiServer/AdvancedTaskManager'
+2024-01-01 16:06:48.834 +00:00 [WRN] The modules finder couldn't find a directory at '/EPiServer/AdvancedTaskManager'
+2024-01-01 16:06:50.380 +00:00 [WRN] The modules finder couldn't find a directory at '~/EPiServer/AdvancedTaskManager'
+2024-01-01 16:06:50.380 +00:00 [WRN] The modules finder couldn't find a directory at '/EPiServer/AdvancedTaskManager'
+2024-01-01 16:07:02.933 +00:00 [WRN] Unable to create a PropertyData instance of Type: 'Geta.Optimizely.Sitemaps.SpecializedProperties.PropertySEOSitemaps' Assembly: 'Geta.Optimizely.Sitemaps'. Will fallback using the data type instead.
+2024-01-01 16:07:11.880 +00:00 [WRN] The modules finder couldn't find a directory at '~/EPiServer/AdvancedTaskManager'
+2024-01-01 16:07:11.881 +00:00 [WRN] The modules finder couldn't find a directory at '/EPiServer/AdvancedTaskManager'
+2024-01-01 16:10:34.597 +00:00 [WRN] The modules finder couldn't find a directory at '~/EPiServer/AdvancedTaskManager'
+2024-01-01 16:10:34.638 +00:00 [WRN] The modules finder couldn't find a directory at '/EPiServer/AdvancedTaskManager'
+2024-01-01 16:10:36.174 +00:00 [WRN] The modules finder couldn't find a directory at '~/EPiServer/AdvancedTaskManager'
+2024-01-01 16:10:36.174 +00:00 [WRN] The modules finder couldn't find a directory at '/EPiServer/AdvancedTaskManager'
+2024-01-01 16:10:48.100 +00:00 [WRN] Unable to create a PropertyData instance of Type: 'Geta.Optimizely.Sitemaps.SpecializedProperties.PropertySEOSitemaps' Assembly: 'Geta.Optimizely.Sitemaps'. Will fallback using the data type instead.
+2024-01-01 16:11:17.194 +00:00 [WRN] The modules finder couldn't find a directory at '~/EPiServer/AdvancedTaskManager'
+2024-01-01 16:11:17.194 +00:00 [WRN] The modules finder couldn't find a directory at '/EPiServer/AdvancedTaskManager'
+2024-01-01 16:27:37.481 +00:00 [WRN] Unable to create a PropertyData instance of Type: 'Geta.Optimizely.Sitemaps.SpecializedProperties.PropertySEOSitemaps' Assembly: 'Geta.Optimizely.Sitemaps'. Will fallback using the data type instead.
+2024-01-01 16:29:47.148 +00:00 [WRN] Unable to create a PropertyData instance of Type: 'Geta.Optimizely.Sitemaps.SpecializedProperties.PropertySEOSitemaps' Assembly: 'Geta.Optimizely.Sitemaps'. Will fallback using the data type instead.
+2024-01-01 16:30:48.931 +00:00 [ERR] Failed to Read cacheKey = 'EPContentVersion:113_116'
+EPiServer.Core.EPiServerException: Could not create instance of content type 'CategoryRoot' since it has an invalid .NET class associated: ModelTypeString: 'Geta.Optimizely.Categories.CategoryRoot, Geta.Optimizely.Categories, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null', Base:''.
+   at EPiServer.Construction.Internal.ContentFactory.CreateInstance(ContentType contentType)
+   at EPiServer.Construction.Internal.ContentFactory.CreateContent(ContentType contentType, BuildingContext buildingContext)
+   at EPiServer.DataAccess.Internal.ContentDB.CreateContent(ContentType contentType)
+   at EPiServer.DataAccess.Internal.ContentLoadDB.LoadContentInternal(ContentReference contentLink, Int32 languageBranchId, DbDataReader reader)
+   at EPiServer.DataAccess.Internal.ContentLoadDB.<>c__DisplayClass4_0.<LoadVersion>b__0()
+   at EPiServer.Data.Providers.Internal.SqlDatabaseExecutor.<>c__DisplayClass26_0`1.<Execute>b__0()
+   at EPiServer.Data.Providers.SqlTransientErrorsRetryPolicy.Execute[TResult](Func`1 method)
+   at EPiServer.DataAccess.Internal.ContentLoadDB.LoadVersion(ContentReference contentLink, Int32 languageBranchID)
+   at EPiServer.Core.ContentProvider.<>c__DisplayClass123_0.<LoadContentFromCacheOrRepository>b__0()
+   at EPiServer.Framework.Cache.ObjectInstanceCacheExtensions.ReadThroughWithWait[T](IObjectInstanceCache cache, String cacheKey, Func`1 readValue, Func`2 evictionPolicy)
+2024-01-01 16:30:49.387 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+EPiServer.Core.EPiServerException: Could not create instance of content type 'CategoryRoot' since it has an invalid .NET class associated: ModelTypeString: 'Geta.Optimizely.Categories.CategoryRoot, Geta.Optimizely.Categories, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null', Base:''.
+   at EPiServer.Construction.Internal.ContentFactory.CreateInstance(ContentType contentType)
+   at EPiServer.Construction.Internal.ContentFactory.CreateContent(ContentType contentType, BuildingContext buildingContext)
+   at EPiServer.DataAccess.Internal.ContentDB.CreateContent(ContentType contentType)
+   at EPiServer.DataAccess.Internal.ContentLoadDB.LoadContentInternal(ContentReference contentLink, Int32 languageBranchId, DbDataReader reader)
+   at EPiServer.DataAccess.Internal.ContentLoadDB.<>c__DisplayClass4_0.<LoadVersion>b__0()
+   at EPiServer.Data.Providers.Internal.SqlDatabaseExecutor.<>c__DisplayClass26_0`1.<Execute>b__0()
+   at EPiServer.Data.Providers.SqlTransientErrorsRetryPolicy.Execute[TResult](Func`1 method)
+   at EPiServer.DataAccess.Internal.ContentLoadDB.LoadVersion(ContentReference contentLink, Int32 languageBranchID)
+   at EPiServer.Core.ContentProvider.<>c__DisplayClass123_0.<LoadContentFromCacheOrRepository>b__0()
+   at EPiServer.Framework.Cache.ObjectInstanceCacheExtensions.ReadThroughWithWait[T](IObjectInstanceCache cache, String cacheKey, Func`1 readValue, Func`2 evictionPolicy)
+   at EPiServer.Framework.Cache.ObjectInstanceCacheExtensions.ReadThrough[T](IObjectInstanceCache cache, String key, Func`1 readValue, Func`2 evictionPolicy, ReadStrategy readStrategy)
+   at EPiServer.Core.Internal.ContentInstanceCache.ReadThrough(ContentReference contentLink, String selectedLanguage, Func`1 readValue)
+   at EPiServer.Core.ContentProvider.LoadContentFromCacheOrRepository(ContentReference contentreference, ILanguageSelector selector)
+   at EPiServer.Core.Internal.ProviderPipelineImplementation.GetItem(ContentProvider provider, ContentReference contentLink, LoaderOptions loaderOptions)
+   at EPiServer.Core.Internal.DefaultContentLoader.TryGet[T](ContentReference contentLink, LoaderOptions loaderOptions, T& content)
+   at EPiServer.Core.Internal.DefaultContentLoader.Get[T](ContentReference contentLink, LoaderOptions loaderOptions)
+   at EPiServer.Cms.Shell.UI.Rest.Internal.CmsContentContextResolver.GetCommonDraft(ContentReference contentReference, String language, ContentLanguageInformation& languageInformation)
+   at EPiServer.Cms.Shell.UI.Rest.Internal.CmsContentContextResolver.TryResolveUri(Uri uri, ClientContextBase& instance)
+   at EPiServer.Shell.UI.Rest.ContextStore.ResolveUri(Uri uri)
+   at lambda_method308(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-01-01 16:30:51.195 +00:00 [ERR] Failed to Read cacheKey = 'EPContentVersion:113_116'
+EPiServer.Core.EPiServerException: Could not create instance of content type 'CategoryRoot' since it has an invalid .NET class associated: ModelTypeString: 'Geta.Optimizely.Categories.CategoryRoot, Geta.Optimizely.Categories, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null', Base:''.
+   at EPiServer.Construction.Internal.ContentFactory.CreateInstance(ContentType contentType)
+   at EPiServer.Construction.Internal.ContentFactory.CreateContent(ContentType contentType, BuildingContext buildingContext)
+   at EPiServer.DataAccess.Internal.ContentDB.CreateContent(ContentType contentType)
+   at EPiServer.DataAccess.Internal.ContentLoadDB.LoadContentInternal(ContentReference contentLink, Int32 languageBranchId, DbDataReader reader)
+   at EPiServer.DataAccess.Internal.ContentLoadDB.<>c__DisplayClass4_0.<LoadVersion>b__0()
+   at EPiServer.Data.Providers.Internal.SqlDatabaseExecutor.<>c__DisplayClass26_0`1.<Execute>b__0()
+   at EPiServer.Data.Providers.SqlTransientErrorsRetryPolicy.Execute[TResult](Func`1 method)
+   at EPiServer.DataAccess.Internal.ContentLoadDB.LoadVersion(ContentReference contentLink, Int32 languageBranchID)
+   at EPiServer.Core.ContentProvider.<>c__DisplayClass123_0.<LoadContentFromCacheOrRepository>b__0()
+   at EPiServer.Framework.Cache.ObjectInstanceCacheExtensions.ReadThroughWithWait[T](IObjectInstanceCache cache, String cacheKey, Func`1 readValue, Func`2 evictionPolicy)
+2024-01-01 16:30:51.743 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+EPiServer.Core.EPiServerException: Could not create instance of content type 'CategoryRoot' since it has an invalid .NET class associated: ModelTypeString: 'Geta.Optimizely.Categories.CategoryRoot, Geta.Optimizely.Categories, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null', Base:''.
+   at EPiServer.Construction.Internal.ContentFactory.CreateInstance(ContentType contentType)
+   at EPiServer.Construction.Internal.ContentFactory.CreateContent(ContentType contentType, BuildingContext buildingContext)
+   at EPiServer.DataAccess.Internal.ContentDB.CreateContent(ContentType contentType)
+   at EPiServer.DataAccess.Internal.ContentLoadDB.LoadContentInternal(ContentReference contentLink, Int32 languageBranchId, DbDataReader reader)
+   at EPiServer.DataAccess.Internal.ContentLoadDB.<>c__DisplayClass4_0.<LoadVersion>b__0()
+   at EPiServer.Data.Providers.Internal.SqlDatabaseExecutor.<>c__DisplayClass26_0`1.<Execute>b__0()
+   at EPiServer.Data.Providers.SqlTransientErrorsRetryPolicy.Execute[TResult](Func`1 method)
+   at EPiServer.DataAccess.Internal.ContentLoadDB.LoadVersion(ContentReference contentLink, Int32 languageBranchID)
+   at EPiServer.Core.ContentProvider.<>c__DisplayClass123_0.<LoadContentFromCacheOrRepository>b__0()
+   at EPiServer.Framework.Cache.ObjectInstanceCacheExtensions.ReadThroughWithWait[T](IObjectInstanceCache cache, String cacheKey, Func`1 readValue, Func`2 evictionPolicy)
+   at EPiServer.Framework.Cache.ObjectInstanceCacheExtensions.ReadThrough[T](IObjectInstanceCache cache, String key, Func`1 readValue, Func`2 evictionPolicy, ReadStrategy readStrategy)
+   at EPiServer.Core.Internal.ContentInstanceCache.ReadThrough(ContentReference contentLink, String selectedLanguage, Func`1 readValue)
+   at EPiServer.Core.ContentProvider.LoadContentFromCacheOrRepository(ContentReference contentreference, ILanguageSelector selector)
+   at EPiServer.Core.Internal.ProviderPipelineImplementation.GetItem(ContentProvider provider, ContentReference contentLink, LoaderOptions loaderOptions)
+   at EPiServer.Core.Internal.DefaultContentLoader.TryGet[T](ContentReference contentLink, LoaderOptions loaderOptions, T& content)
+   at EPiServer.Core.Internal.DefaultContentLoader.Get[T](ContentReference contentLink, LoaderOptions loaderOptions)
+   at EPiServer.Cms.Shell.UI.Rest.Internal.CmsContentContextResolver.GetCommonDraft(ContentReference contentReference, String language, ContentLanguageInformation& languageInformation)
+   at EPiServer.Cms.Shell.UI.Rest.Internal.CmsContentContextResolver.TryResolveUri(Uri uri, ClientContextBase& instance)
+   at EPiServer.Shell.UI.Rest.ContextStore.ResolveUri(Uri uri)
+   at lambda_method308(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-01-01 16:31:18.639 +00:00 [WRN] Cache cleared
+2024-01-01 16:31:18.640 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.735 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.763 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.764 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.764 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.766 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.766 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.767 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.767 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.768 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.768 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.769 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.769 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.770 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.770 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.771 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.771 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.771 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.771 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.772 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.772 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.773 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.773 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.774 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.774 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.775 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.775 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.776 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.776 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.776 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.776 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.777 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.777 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.778 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.778 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.778 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.779 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.779 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.779 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.780 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.781 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.781 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.781 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.782 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.782 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.783 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.783 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.784 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.784 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.786 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.786 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.787 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.787 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.788 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.788 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.790 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.790 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.793 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.793 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.795 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.795 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.797 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.797 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.798 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.798 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.799 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.799 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.800 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.800 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.801 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.801 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.801 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.801 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.802 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.802 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.803 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:37.803 +00:00 [WRN] Cache cleared
+2024-01-01 16:32:50.414 +00:00 [WRN] Unable to create a PropertyData instance of Type: 'Geta.Optimizely.Sitemaps.SpecializedProperties.PropertySEOSitemaps' Assembly: 'Geta.Optimizely.Sitemaps'. Will fallback using the data type instead.
+2024-01-01 16:34:53.365 +00:00 [ERR] Error when trying to clear thumbnail properties of content 43
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\App_Data\blobs\121a2045e3f2405cbba8d791018e2a65\7e578d9c072b4d4a866adde8895c8fc6.jpg'.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at EPiServer.Framework.Blobs.FileBlob.OpenRead()
+   at FoundationCore.Web.Business.Initialization.FileBasedEventsInitialization.GetFileSizeDisplay(IContentMedia media) in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\Business\Initialization\FileBasedEventsInitialization.cs:line 42
+   at FoundationCore.Web.Business.Initialization.FileBasedEventsInitialization.SavingMedia(Object sender, ContentEventArgs e) in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\Business\Initialization\FileBasedEventsInitialization.cs:line 30
+   at EPiServer.Core.Internal.DefaultContentEvents.RaiseCancellableContentEvent(String key, String defaultReason, ContentEventArgs eventArgs)
+   at EPiServer.Core.Internal.DefaultContentRepository.RaisePreSaveEvents(SaveContentEventArgs eventArgs, StatusTransition transition, Boolean isNew, Boolean isNewLanguageBranch)
+   at EPiServer.Core.Internal.DefaultContentRepository.Save(IContent content, SaveAction action, AccessLevel access)
+   at EPiServer.Core.Internal.ThumbnailManager.CleanThumbnail(IContentMedia content, Boolean saveContent)
+   at EPiServer.Util.ThumbnailPropertiesClearJob.Execute()
+2024-01-01 16:34:53.426 +00:00 [ERR] Error when trying to clear thumbnail properties of content 50
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\App_Data\blobs\f5615258819f4b7ea909f4f29955b35e\5222c9d6b05d42089d4497122e1ca83c.jpg'.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at EPiServer.Framework.Blobs.FileBlob.OpenRead()
+   at FoundationCore.Web.Business.Initialization.FileBasedEventsInitialization.GetFileSizeDisplay(IContentMedia media) in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\Business\Initialization\FileBasedEventsInitialization.cs:line 42
+   at FoundationCore.Web.Business.Initialization.FileBasedEventsInitialization.SavingMedia(Object sender, ContentEventArgs e) in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\Business\Initialization\FileBasedEventsInitialization.cs:line 30
+   at EPiServer.Core.Internal.DefaultContentEvents.RaiseCancellableContentEvent(String key, String defaultReason, ContentEventArgs eventArgs)
+   at EPiServer.Core.Internal.DefaultContentRepository.RaisePreSaveEvents(SaveContentEventArgs eventArgs, StatusTransition transition, Boolean isNew, Boolean isNewLanguageBranch)
+   at EPiServer.Core.Internal.DefaultContentRepository.Save(IContent content, SaveAction action, AccessLevel access)
+   at EPiServer.Core.Internal.ThumbnailManager.CleanThumbnail(IContentMedia content, Boolean saveContent)
+   at EPiServer.Util.ThumbnailPropertiesClearJob.Execute()
+2024-01-01 16:34:53.456 +00:00 [ERR] Error when trying to clear thumbnail properties of content 55
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\App_Data\blobs\a0e7c3a587ef4aab9c8f1ea020bad3cc\6b90f46b6ae349aabd6119e577bd6d95.jpg'.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at EPiServer.Framework.Blobs.FileBlob.OpenRead()
+   at FoundationCore.Web.Business.Initialization.FileBasedEventsInitialization.GetFileSizeDisplay(IContentMedia media) in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\Business\Initialization\FileBasedEventsInitialization.cs:line 42
+   at FoundationCore.Web.Business.Initialization.FileBasedEventsInitialization.SavingMedia(Object sender, ContentEventArgs e) in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\Business\Initialization\FileBasedEventsInitialization.cs:line 30
+   at EPiServer.Core.Internal.DefaultContentEvents.RaiseCancellableContentEvent(String key, String defaultReason, ContentEventArgs eventArgs)
+   at EPiServer.Core.Internal.DefaultContentRepository.RaisePreSaveEvents(SaveContentEventArgs eventArgs, StatusTransition transition, Boolean isNew, Boolean isNewLanguageBranch)
+   at EPiServer.Core.Internal.DefaultContentRepository.Save(IContent content, SaveAction action, AccessLevel access)
+   at EPiServer.Core.Internal.ThumbnailManager.CleanThumbnail(IContentMedia content, Boolean saveContent)
+   at EPiServer.Util.ThumbnailPropertiesClearJob.Execute()
+2024-01-01 16:34:53.484 +00:00 [ERR] Error when trying to clear thumbnail properties of content 59
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\App_Data\blobs\45dc9a7f6ab64a1481a2841e922d3936\8a0f92945cab49c1b0ba49ec4c4cbcc8.jpg'.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at EPiServer.Framework.Blobs.FileBlob.OpenRead()
+   at FoundationCore.Web.Business.Initialization.FileBasedEventsInitialization.GetFileSizeDisplay(IContentMedia media) in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\Business\Initialization\FileBasedEventsInitialization.cs:line 42
+   at FoundationCore.Web.Business.Initialization.FileBasedEventsInitialization.SavingMedia(Object sender, ContentEventArgs e) in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\Business\Initialization\FileBasedEventsInitialization.cs:line 30
+   at EPiServer.Core.Internal.DefaultContentEvents.RaiseCancellableContentEvent(String key, String defaultReason, ContentEventArgs eventArgs)
+   at EPiServer.Core.Internal.DefaultContentRepository.RaisePreSaveEvents(SaveContentEventArgs eventArgs, StatusTransition transition, Boolean isNew, Boolean isNewLanguageBranch)
+   at EPiServer.Core.Internal.DefaultContentRepository.Save(IContent content, SaveAction action, AccessLevel access)
+   at EPiServer.Core.Internal.ThumbnailManager.CleanThumbnail(IContentMedia content, Boolean saveContent)
+   at EPiServer.Util.ThumbnailPropertiesClearJob.Execute()
+2024-01-01 16:34:53.511 +00:00 [ERR] Error when trying to clear thumbnail properties of content 74
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\App_Data\blobs\dd2ec8bf05d94f17bc1251e17a7e6432\ead2201bb04b49418d9630e8b37cc5c8.jpg'.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at EPiServer.Framework.Blobs.FileBlob.OpenRead()
+   at FoundationCore.Web.Business.Initialization.FileBasedEventsInitialization.GetFileSizeDisplay(IContentMedia media) in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\Business\Initialization\FileBasedEventsInitialization.cs:line 42
+   at FoundationCore.Web.Business.Initialization.FileBasedEventsInitialization.SavingMedia(Object sender, ContentEventArgs e) in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\Business\Initialization\FileBasedEventsInitialization.cs:line 30
+   at EPiServer.Core.Internal.DefaultContentEvents.RaiseCancellableContentEvent(String key, String defaultReason, ContentEventArgs eventArgs)
+   at EPiServer.Core.Internal.DefaultContentRepository.RaisePreSaveEvents(SaveContentEventArgs eventArgs, StatusTransition transition, Boolean isNew, Boolean isNewLanguageBranch)
+   at EPiServer.Core.Internal.DefaultContentRepository.Save(IContent content, SaveAction action, AccessLevel access)
+   at EPiServer.Core.Internal.ThumbnailManager.CleanThumbnail(IContentMedia content, Boolean saveContent)
+   at EPiServer.Util.ThumbnailPropertiesClearJob.Execute()
+2024-01-01 16:34:53.539 +00:00 [ERR] Error when trying to clear thumbnail properties of content 76
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\App_Data\blobs\a5a2909714024d14970842778dadcd4b\0c2e6cd198eb4d2e800d7decee4d505a.jpg'.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at EPiServer.Framework.Blobs.FileBlob.OpenRead()
+   at FoundationCore.Web.Business.Initialization.FileBasedEventsInitialization.GetFileSizeDisplay(IContentMedia media) in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\Business\Initialization\FileBasedEventsInitialization.cs:line 42
+   at FoundationCore.Web.Business.Initialization.FileBasedEventsInitialization.SavingMedia(Object sender, ContentEventArgs e) in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\Business\Initialization\FileBasedEventsInitialization.cs:line 30
+   at EPiServer.Core.Internal.DefaultContentEvents.RaiseCancellableContentEvent(String key, String defaultReason, ContentEventArgs eventArgs)
+   at EPiServer.Core.Internal.DefaultContentRepository.RaisePreSaveEvents(SaveContentEventArgs eventArgs, StatusTransition transition, Boolean isNew, Boolean isNewLanguageBranch)
+   at EPiServer.Core.Internal.DefaultContentRepository.Save(IContent content, SaveAction action, AccessLevel access)
+   at EPiServer.Core.Internal.ThumbnailManager.CleanThumbnail(IContentMedia content, Boolean saveContent)
+   at EPiServer.Util.ThumbnailPropertiesClearJob.Execute()
+2024-01-01 16:34:53.565 +00:00 [ERR] Error when trying to clear thumbnail properties of content 78
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\App_Data\blobs\7e611119a18b4eedb71892cc3b184fad\dd2fface664147bd820959341ece5959.jpg'.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at EPiServer.Framework.Blobs.FileBlob.OpenRead()
+   at FoundationCore.Web.Business.Initialization.FileBasedEventsInitialization.GetFileSizeDisplay(IContentMedia media) in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\Business\Initialization\FileBasedEventsInitialization.cs:line 42
+   at FoundationCore.Web.Business.Initialization.FileBasedEventsInitialization.SavingMedia(Object sender, ContentEventArgs e) in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\Business\Initialization\FileBasedEventsInitialization.cs:line 30
+   at EPiServer.Core.Internal.DefaultContentEvents.RaiseCancellableContentEvent(String key, String defaultReason, ContentEventArgs eventArgs)
+   at EPiServer.Core.Internal.DefaultContentRepository.RaisePreSaveEvents(SaveContentEventArgs eventArgs, StatusTransition transition, Boolean isNew, Boolean isNewLanguageBranch)
+   at EPiServer.Core.Internal.DefaultContentRepository.Save(IContent content, SaveAction action, AccessLevel access)
+   at EPiServer.Core.Internal.ThumbnailManager.CleanThumbnail(IContentMedia content, Boolean saveContent)
+   at EPiServer.Util.ThumbnailPropertiesClearJob.Execute()
+2024-01-01 16:34:53.591 +00:00 [ERR] Error when trying to clear thumbnail properties of content 80
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\App_Data\blobs\ad83ac62479e41b69a2e7d7819d3b883\f08694f507e24ea39909abbb69950e5f.jpg'.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at EPiServer.Framework.Blobs.FileBlob.OpenRead()
+   at FoundationCore.Web.Business.Initialization.FileBasedEventsInitialization.GetFileSizeDisplay(IContentMedia media) in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\Business\Initialization\FileBasedEventsInitialization.cs:line 42
+   at FoundationCore.Web.Business.Initialization.FileBasedEventsInitialization.SavingMedia(Object sender, ContentEventArgs e) in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\Business\Initialization\FileBasedEventsInitialization.cs:line 30
+   at EPiServer.Core.Internal.DefaultContentEvents.RaiseCancellableContentEvent(String key, String defaultReason, ContentEventArgs eventArgs)
+   at EPiServer.Core.Internal.DefaultContentRepository.RaisePreSaveEvents(SaveContentEventArgs eventArgs, StatusTransition transition, Boolean isNew, Boolean isNewLanguageBranch)
+   at EPiServer.Core.Internal.DefaultContentRepository.Save(IContent content, SaveAction action, AccessLevel access)
+   at EPiServer.Core.Internal.ThumbnailManager.CleanThumbnail(IContentMedia content, Boolean saveContent)
+   at EPiServer.Util.ThumbnailPropertiesClearJob.Execute()
+2024-01-01 16:34:53.616 +00:00 [ERR] Error when trying to clear thumbnail properties of content 82
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\App_Data\blobs\ef0a93a0b4534afbb88aee2a302f9914\4015ee14e5074d60bcc6390300489f69.jpg'.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at EPiServer.Framework.Blobs.FileBlob.OpenRead()
+   at FoundationCore.Web.Business.Initialization.FileBasedEventsInitialization.GetFileSizeDisplay(IContentMedia media) in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\Business\Initialization\FileBasedEventsInitialization.cs:line 42
+   at FoundationCore.Web.Business.Initialization.FileBasedEventsInitialization.SavingMedia(Object sender, ContentEventArgs e) in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\Business\Initialization\FileBasedEventsInitialization.cs:line 30
+   at EPiServer.Core.Internal.DefaultContentEvents.RaiseCancellableContentEvent(String key, String defaultReason, ContentEventArgs eventArgs)
+   at EPiServer.Core.Internal.DefaultContentRepository.RaisePreSaveEvents(SaveContentEventArgs eventArgs, StatusTransition transition, Boolean isNew, Boolean isNewLanguageBranch)
+   at EPiServer.Core.Internal.DefaultContentRepository.Save(IContent content, SaveAction action, AccessLevel access)
+   at EPiServer.Core.Internal.ThumbnailManager.CleanThumbnail(IContentMedia content, Boolean saveContent)
+   at EPiServer.Util.ThumbnailPropertiesClearJob.Execute()
+2024-01-01 16:34:53.642 +00:00 [ERR] Error when trying to clear thumbnail properties of content 84
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\App_Data\blobs\4d76d2be4c4a46c09960a3b473f5af60\9c34eb629f7e41a2a5a7d932f0c29859.jpg'.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at EPiServer.Framework.Blobs.FileBlob.OpenRead()
+   at FoundationCore.Web.Business.Initialization.FileBasedEventsInitialization.GetFileSizeDisplay(IContentMedia media) in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\Business\Initialization\FileBasedEventsInitialization.cs:line 42
+   at FoundationCore.Web.Business.Initialization.FileBasedEventsInitialization.SavingMedia(Object sender, ContentEventArgs e) in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\Business\Initialization\FileBasedEventsInitialization.cs:line 30
+   at EPiServer.Core.Internal.DefaultContentEvents.RaiseCancellableContentEvent(String key, String defaultReason, ContentEventArgs eventArgs)
+   at EPiServer.Core.Internal.DefaultContentRepository.RaisePreSaveEvents(SaveContentEventArgs eventArgs, StatusTransition transition, Boolean isNew, Boolean isNewLanguageBranch)
+   at EPiServer.Core.Internal.DefaultContentRepository.Save(IContent content, SaveAction action, AccessLevel access)
+   at EPiServer.Core.Internal.ThumbnailManager.CleanThumbnail(IContentMedia content, Boolean saveContent)
+   at EPiServer.Util.ThumbnailPropertiesClearJob.Execute()
+2024-01-01 16:34:53.668 +00:00 [ERR] Error when trying to clear thumbnail properties of content 86
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\App_Data\blobs\b0ec4a498a5c4a4e982561a56e02ee56\10b0063854ce478ebbd5146b042dbaea.jpg'.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at EPiServer.Framework.Blobs.FileBlob.OpenRead()
+   at FoundationCore.Web.Business.Initialization.FileBasedEventsInitialization.GetFileSizeDisplay(IContentMedia media) in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\Business\Initialization\FileBasedEventsInitialization.cs:line 42
+   at FoundationCore.Web.Business.Initialization.FileBasedEventsInitialization.SavingMedia(Object sender, ContentEventArgs e) in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\Business\Initialization\FileBasedEventsInitialization.cs:line 30
+   at EPiServer.Core.Internal.DefaultContentEvents.RaiseCancellableContentEvent(String key, String defaultReason, ContentEventArgs eventArgs)
+   at EPiServer.Core.Internal.DefaultContentRepository.RaisePreSaveEvents(SaveContentEventArgs eventArgs, StatusTransition transition, Boolean isNew, Boolean isNewLanguageBranch)
+   at EPiServer.Core.Internal.DefaultContentRepository.Save(IContent content, SaveAction action, AccessLevel access)
+   at EPiServer.Core.Internal.ThumbnailManager.CleanThumbnail(IContentMedia content, Boolean saveContent)
+   at EPiServer.Util.ThumbnailPropertiesClearJob.Execute()
+2024-01-01 16:34:53.694 +00:00 [ERR] Error when trying to clear thumbnail properties of content 88
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\App_Data\blobs\7a50877f8cac4d56bda78f8887892985\ffdb42565ad94fb4b0455d367e8c72cb.jpg'.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at EPiServer.Framework.Blobs.FileBlob.OpenRead()
+   at FoundationCore.Web.Business.Initialization.FileBasedEventsInitialization.GetFileSizeDisplay(IContentMedia media) in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\Business\Initialization\FileBasedEventsInitialization.cs:line 42
+   at FoundationCore.Web.Business.Initialization.FileBasedEventsInitialization.SavingMedia(Object sender, ContentEventArgs e) in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\Business\Initialization\FileBasedEventsInitialization.cs:line 30
+   at EPiServer.Core.Internal.DefaultContentEvents.RaiseCancellableContentEvent(String key, String defaultReason, ContentEventArgs eventArgs)
+   at EPiServer.Core.Internal.DefaultContentRepository.RaisePreSaveEvents(SaveContentEventArgs eventArgs, StatusTransition transition, Boolean isNew, Boolean isNewLanguageBranch)
+   at EPiServer.Core.Internal.DefaultContentRepository.Save(IContent content, SaveAction action, AccessLevel access)
+   at EPiServer.Core.Internal.ThumbnailManager.CleanThumbnail(IContentMedia content, Boolean saveContent)
+   at EPiServer.Util.ThumbnailPropertiesClearJob.Execute()
+2024-01-01 16:34:53.720 +00:00 [ERR] Error when trying to clear thumbnail properties of content 89
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\App_Data\blobs\d480e429f4904eb2bf1423ce849617d9\1c47c55cac3a48269722629cf5a3423a.jpg'.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at EPiServer.Framework.Blobs.FileBlob.OpenRead()
+   at FoundationCore.Web.Business.Initialization.FileBasedEventsInitialization.GetFileSizeDisplay(IContentMedia media) in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\Business\Initialization\FileBasedEventsInitialization.cs:line 42
+   at FoundationCore.Web.Business.Initialization.FileBasedEventsInitialization.SavingMedia(Object sender, ContentEventArgs e) in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\Business\Initialization\FileBasedEventsInitialization.cs:line 30
+   at EPiServer.Core.Internal.DefaultContentEvents.RaiseCancellableContentEvent(String key, String defaultReason, ContentEventArgs eventArgs)
+   at EPiServer.Core.Internal.DefaultContentRepository.RaisePreSaveEvents(SaveContentEventArgs eventArgs, StatusTransition transition, Boolean isNew, Boolean isNewLanguageBranch)
+   at EPiServer.Core.Internal.DefaultContentRepository.Save(IContent content, SaveAction action, AccessLevel access)
+   at EPiServer.Core.Internal.ThumbnailManager.CleanThumbnail(IContentMedia content, Boolean saveContent)
+   at EPiServer.Util.ThumbnailPropertiesClearJob.Execute()
+2024-01-01 16:34:53.745 +00:00 [ERR] Error when trying to clear thumbnail properties of content 91
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\App_Data\blobs\7e156dc089e044ac9fad3989d2542804\bd0fef0c93b2473383ce5e133d8d0327.jpg'.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at EPiServer.Framework.Blobs.FileBlob.OpenRead()
+   at FoundationCore.Web.Business.Initialization.FileBasedEventsInitialization.GetFileSizeDisplay(IContentMedia media) in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\Business\Initialization\FileBasedEventsInitialization.cs:line 42
+   at FoundationCore.Web.Business.Initialization.FileBasedEventsInitialization.SavingMedia(Object sender, ContentEventArgs e) in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\Business\Initialization\FileBasedEventsInitialization.cs:line 30
+   at EPiServer.Core.Internal.DefaultContentEvents.RaiseCancellableContentEvent(String key, String defaultReason, ContentEventArgs eventArgs)
+   at EPiServer.Core.Internal.DefaultContentRepository.RaisePreSaveEvents(SaveContentEventArgs eventArgs, StatusTransition transition, Boolean isNew, Boolean isNewLanguageBranch)
+   at EPiServer.Core.Internal.DefaultContentRepository.Save(IContent content, SaveAction action, AccessLevel access)
+   at EPiServer.Core.Internal.ThumbnailManager.CleanThumbnail(IContentMedia content, Boolean saveContent)
+   at EPiServer.Util.ThumbnailPropertiesClearJob.Execute()
+2024-01-01 16:34:53.771 +00:00 [ERR] Error when trying to clear thumbnail properties of content 93
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\App_Data\blobs\6f97d70164be4681975690d8f8c05379\6d025d5efdb648ca93304415d58feb54.jpg'.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at EPiServer.Framework.Blobs.FileBlob.OpenRead()
+   at FoundationCore.Web.Business.Initialization.FileBasedEventsInitialization.GetFileSizeDisplay(IContentMedia media) in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\Business\Initialization\FileBasedEventsInitialization.cs:line 42
+   at FoundationCore.Web.Business.Initialization.FileBasedEventsInitialization.SavingMedia(Object sender, ContentEventArgs e) in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\Business\Initialization\FileBasedEventsInitialization.cs:line 30
+   at EPiServer.Core.Internal.DefaultContentEvents.RaiseCancellableContentEvent(String key, String defaultReason, ContentEventArgs eventArgs)
+   at EPiServer.Core.Internal.DefaultContentRepository.RaisePreSaveEvents(SaveContentEventArgs eventArgs, StatusTransition transition, Boolean isNew, Boolean isNewLanguageBranch)
+   at EPiServer.Core.Internal.DefaultContentRepository.Save(IContent content, SaveAction action, AccessLevel access)
+   at EPiServer.Core.Internal.ThumbnailManager.CleanThumbnail(IContentMedia content, Boolean saveContent)
+   at EPiServer.Util.ThumbnailPropertiesClearJob.Execute()
+2024-01-01 16:34:53.797 +00:00 [ERR] Error when trying to clear thumbnail properties of content 97
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\App_Data\blobs\df6af7194f454b2ebc268f924e762bf5\20fb994a1fca423b9eafb1f5972b3a75.jpg'.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at EPiServer.Framework.Blobs.FileBlob.OpenRead()
+   at FoundationCore.Web.Business.Initialization.FileBasedEventsInitialization.GetFileSizeDisplay(IContentMedia media) in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\Business\Initialization\FileBasedEventsInitialization.cs:line 42
+   at FoundationCore.Web.Business.Initialization.FileBasedEventsInitialization.SavingMedia(Object sender, ContentEventArgs e) in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\Business\Initialization\FileBasedEventsInitialization.cs:line 30
+   at EPiServer.Core.Internal.DefaultContentEvents.RaiseCancellableContentEvent(String key, String defaultReason, ContentEventArgs eventArgs)
+   at EPiServer.Core.Internal.DefaultContentRepository.RaisePreSaveEvents(SaveContentEventArgs eventArgs, StatusTransition transition, Boolean isNew, Boolean isNewLanguageBranch)
+   at EPiServer.Core.Internal.DefaultContentRepository.Save(IContent content, SaveAction action, AccessLevel access)
+   at EPiServer.Core.Internal.ThumbnailManager.CleanThumbnail(IContentMedia content, Boolean saveContent)
+   at EPiServer.Util.ThumbnailPropertiesClearJob.Execute()
+2024-01-01 16:34:53.820 +00:00 [ERR] Error when trying to clear thumbnail properties of content 102
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\App_Data\blobs\0498158f4f4e4255b3c57e4cc118f3f1\5711adc33ff74277b38dbe7c3aa342ae.jpg'.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at EPiServer.Framework.Blobs.FileBlob.OpenRead()
+   at FoundationCore.Web.Business.Initialization.FileBasedEventsInitialization.GetFileSizeDisplay(IContentMedia media) in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\Business\Initialization\FileBasedEventsInitialization.cs:line 42
+   at FoundationCore.Web.Business.Initialization.FileBasedEventsInitialization.SavingMedia(Object sender, ContentEventArgs e) in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\Business\Initialization\FileBasedEventsInitialization.cs:line 30
+   at EPiServer.Core.Internal.DefaultContentEvents.RaiseCancellableContentEvent(String key, String defaultReason, ContentEventArgs eventArgs)
+   at EPiServer.Core.Internal.DefaultContentRepository.RaisePreSaveEvents(SaveContentEventArgs eventArgs, StatusTransition transition, Boolean isNew, Boolean isNewLanguageBranch)
+   at EPiServer.Core.Internal.DefaultContentRepository.Save(IContent content, SaveAction action, AccessLevel access)
+   at EPiServer.Core.Internal.ThumbnailManager.CleanThumbnail(IContentMedia content, Boolean saveContent)
+   at EPiServer.Util.ThumbnailPropertiesClearJob.Execute()
+2024-01-01 16:34:53.843 +00:00 [ERR] Error when trying to clear thumbnail properties of content 104
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\App_Data\blobs\f78185d57fa34ddda45f75639e4a9a7d\113a67b58a154f87956cbb16f8b6a2fa.jpg'.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at EPiServer.Framework.Blobs.FileBlob.OpenRead()
+   at FoundationCore.Web.Business.Initialization.FileBasedEventsInitialization.GetFileSizeDisplay(IContentMedia media) in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\Business\Initialization\FileBasedEventsInitialization.cs:line 42
+   at FoundationCore.Web.Business.Initialization.FileBasedEventsInitialization.SavingMedia(Object sender, ContentEventArgs e) in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\Business\Initialization\FileBasedEventsInitialization.cs:line 30
+   at EPiServer.Core.Internal.DefaultContentEvents.RaiseCancellableContentEvent(String key, String defaultReason, ContentEventArgs eventArgs)
+   at EPiServer.Core.Internal.DefaultContentRepository.RaisePreSaveEvents(SaveContentEventArgs eventArgs, StatusTransition transition, Boolean isNew, Boolean isNewLanguageBranch)
+   at EPiServer.Core.Internal.DefaultContentRepository.Save(IContent content, SaveAction action, AccessLevel access)
+   at EPiServer.Core.Internal.ThumbnailManager.CleanThumbnail(IContentMedia content, Boolean saveContent)
+   at EPiServer.Util.ThumbnailPropertiesClearJob.Execute()
+2024-01-01 16:34:53.879 +00:00 [ERR] Failed to Read cacheKey = 'EPPageData:113:en'
+EPiServer.Core.EPiServerException: Could not create instance of content type 'CategoryRoot' since it has an invalid .NET class associated: ModelTypeString: 'Geta.Optimizely.Categories.CategoryRoot, Geta.Optimizely.Categories, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null', Base:''.
+   at EPiServer.Construction.Internal.ContentFactory.CreateInstance(ContentType contentType)
+   at EPiServer.Construction.Internal.ContentFactory.CreateContent(ContentType contentType, BuildingContext buildingContext)
+   at EPiServer.DataAccess.Internal.ContentDB.CreateContent(ContentType contentType)
+   at EPiServer.DataAccess.Internal.ContentLoadDB.LoadContentInternal(ContentReference contentLink, Int32 languageBranchId, DbDataReader reader)
+   at EPiServer.DataAccess.Internal.ContentLoadDB.<>c__DisplayClass2_0.<Load>b__0()
+   at EPiServer.Data.Providers.Internal.SqlDatabaseExecutor.<>c__DisplayClass26_0`1.<Execute>b__0()
+   at EPiServer.Data.Providers.SqlTransientErrorsRetryPolicy.Execute[TResult](Func`1 method)
+   at EPiServer.DataAccess.Internal.ContentLoadDB.Load(ContentReference contentLink, Int32 languageBranchID)
+   at EPiServer.Core.ContentProvider.<>c__DisplayClass123_0.<LoadContentFromCacheOrRepository>b__0()
+   at EPiServer.Framework.Cache.ObjectInstanceCacheExtensions.ReadThroughWithWait[T](IObjectInstanceCache cache, String cacheKey, Func`1 readValue, Func`2 evictionPolicy)
+2024-01-01 16:34:53.916 +00:00 [ERR] Error when trying to clear thumbnail properties of content 113
+EPiServer.Core.EPiServerException: Could not create instance of content type 'CategoryRoot' since it has an invalid .NET class associated: ModelTypeString: 'Geta.Optimizely.Categories.CategoryRoot, Geta.Optimizely.Categories, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null', Base:''.
+   at EPiServer.Construction.Internal.ContentFactory.CreateInstance(ContentType contentType)
+   at EPiServer.Construction.Internal.ContentFactory.CreateContent(ContentType contentType, BuildingContext buildingContext)
+   at EPiServer.DataAccess.Internal.ContentDB.CreateContent(ContentType contentType)
+   at EPiServer.DataAccess.Internal.ContentLoadDB.LoadContentInternal(ContentReference contentLink, Int32 languageBranchId, DbDataReader reader)
+   at EPiServer.DataAccess.Internal.ContentLoadDB.<>c__DisplayClass2_0.<Load>b__0()
+   at EPiServer.Data.Providers.Internal.SqlDatabaseExecutor.<>c__DisplayClass26_0`1.<Execute>b__0()
+   at EPiServer.Data.Providers.SqlTransientErrorsRetryPolicy.Execute[TResult](Func`1 method)
+   at EPiServer.DataAccess.Internal.ContentLoadDB.Load(ContentReference contentLink, Int32 languageBranchID)
+   at EPiServer.Core.ContentProvider.<>c__DisplayClass123_0.<LoadContentFromCacheOrRepository>b__0()
+   at EPiServer.Framework.Cache.ObjectInstanceCacheExtensions.ReadThroughWithWait[T](IObjectInstanceCache cache, String cacheKey, Func`1 readValue, Func`2 evictionPolicy)
+   at EPiServer.Framework.Cache.ObjectInstanceCacheExtensions.ReadThrough[T](IObjectInstanceCache cache, String key, Func`1 readValue, Func`2 evictionPolicy, ReadStrategy readStrategy)
+   at EPiServer.Core.Internal.ContentInstanceCache.ReadThrough(ContentReference contentLink, String selectedLanguage, Func`1 readValue)
+   at EPiServer.Core.ContentProvider.LoadContentFromCacheOrRepository(ContentReference contentreference, ILanguageSelector selector)
+   at EPiServer.Core.Internal.ProviderPipelineImplementation.GetItem(ContentProvider provider, ContentReference contentLink, LoaderOptions loaderOptions)
+   at EPiServer.Core.Internal.DefaultContentLoader.TryGet[T](ContentReference contentLink, LoaderOptions loaderOptions, T& content)
+   at EPiServer.Core.Internal.DefaultContentLoader.Get[T](ContentReference contentLink, LoaderOptions loaderOptions)
+   at EPiServer.Core.Internal.ThumbnailManager.CleanThumbnail(ContentReference contentLink, Boolean saveContent)
+   at EPiServer.Util.ThumbnailPropertiesClearJob.Execute()
+2024-01-01 16:34:53.943 +00:00 [ERR] Error when trying to clear thumbnail properties of content 64
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\App_Data\blobs\d657fc6e1c8a400e81177aa063f001a6\c101fa5b5d844132bd6e0662c89fdd91.png'.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at EPiServer.Framework.Blobs.FileBlob.OpenRead()
+   at FoundationCore.Web.Business.Initialization.FileBasedEventsInitialization.GetFileSizeDisplay(IContentMedia media) in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\Business\Initialization\FileBasedEventsInitialization.cs:line 42
+   at FoundationCore.Web.Business.Initialization.FileBasedEventsInitialization.SavingMedia(Object sender, ContentEventArgs e) in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\Business\Initialization\FileBasedEventsInitialization.cs:line 30
+   at EPiServer.Core.Internal.DefaultContentEvents.RaiseCancellableContentEvent(String key, String defaultReason, ContentEventArgs eventArgs)
+   at EPiServer.Core.Internal.DefaultContentRepository.RaisePreSaveEvents(SaveContentEventArgs eventArgs, StatusTransition transition, Boolean isNew, Boolean isNewLanguageBranch)
+   at EPiServer.Core.Internal.DefaultContentRepository.Save(IContent content, SaveAction action, AccessLevel access)
+   at EPiServer.Core.Internal.ThumbnailManager.CleanThumbnail(IContentMedia content, Boolean saveContent)
+   at EPiServer.Util.ThumbnailPropertiesClearJob.Execute()
+2024-01-01 16:34:53.973 +00:00 [ERR] Error when trying to clear thumbnail properties of content 42
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\App_Data\blobs\6a18c2ddc55a40d4aa354586885bbfbb\7dba176dd85e4d898462b6f11111b163.png'.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at EPiServer.Framework.Blobs.FileBlob.OpenRead()
+   at FoundationCore.Web.Business.Initialization.FileBasedEventsInitialization.GetFileSizeDisplay(IContentMedia media) in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\Business\Initialization\FileBasedEventsInitialization.cs:line 42
+   at FoundationCore.Web.Business.Initialization.FileBasedEventsInitialization.SavingMedia(Object sender, ContentEventArgs e) in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\Business\Initialization\FileBasedEventsInitialization.cs:line 30
+   at EPiServer.Core.Internal.DefaultContentEvents.RaiseCancellableContentEvent(String key, String defaultReason, ContentEventArgs eventArgs)
+   at EPiServer.Core.Internal.DefaultContentRepository.RaisePreSaveEvents(SaveContentEventArgs eventArgs, StatusTransition transition, Boolean isNew, Boolean isNewLanguageBranch)
+   at EPiServer.Core.Internal.DefaultContentRepository.Save(IContent content, SaveAction action, AccessLevel access)
+   at EPiServer.Core.Internal.ThumbnailManager.CleanThumbnail(IContentMedia content, Boolean saveContent)
+   at EPiServer.Util.ThumbnailPropertiesClearJob.Execute()
+2024-01-01 16:34:54.000 +00:00 [ERR] Error when trying to clear thumbnail properties of content 49
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\App_Data\blobs\d1a5f98b733e4e20bf2fa0a18a25d931\73bc58da26334206b2fee86b6f7c0a65.png'.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at EPiServer.Framework.Blobs.FileBlob.OpenRead()
+   at FoundationCore.Web.Business.Initialization.FileBasedEventsInitialization.GetFileSizeDisplay(IContentMedia media) in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\Business\Initialization\FileBasedEventsInitialization.cs:line 42
+   at FoundationCore.Web.Business.Initialization.FileBasedEventsInitialization.SavingMedia(Object sender, ContentEventArgs e) in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\Business\Initialization\FileBasedEventsInitialization.cs:line 30
+   at EPiServer.Core.Internal.DefaultContentEvents.RaiseCancellableContentEvent(String key, String defaultReason, ContentEventArgs eventArgs)
+   at EPiServer.Core.Internal.DefaultContentRepository.RaisePreSaveEvents(SaveContentEventArgs eventArgs, StatusTransition transition, Boolean isNew, Boolean isNewLanguageBranch)
+   at EPiServer.Core.Internal.DefaultContentRepository.Save(IContent content, SaveAction action, AccessLevel access)
+   at EPiServer.Core.Internal.ThumbnailManager.CleanThumbnail(IContentMedia content, Boolean saveContent)
+   at EPiServer.Util.ThumbnailPropertiesClearJob.Execute()
+2024-01-01 16:34:54.027 +00:00 [ERR] Error when trying to clear thumbnail properties of content 99
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\App_Data\blobs\bbc85079e7a94025a81296eb4c689512\e6b6a9b869714ea485f3fd17c38b537f.png'.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at EPiServer.Framework.Blobs.FileBlob.OpenRead()
+   at FoundationCore.Web.Business.Initialization.FileBasedEventsInitialization.GetFileSizeDisplay(IContentMedia media) in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\Business\Initialization\FileBasedEventsInitialization.cs:line 42
+   at FoundationCore.Web.Business.Initialization.FileBasedEventsInitialization.SavingMedia(Object sender, ContentEventArgs e) in C:\Projects\adnanzameer\AdvancedTaskManager\net6.0\sandbox\FoundationCore.Web\Business\Initialization\FileBasedEventsInitialization.cs:line 30
+   at EPiServer.Core.Internal.DefaultContentEvents.RaiseCancellableContentEvent(String key, String defaultReason, ContentEventArgs eventArgs)
+   at EPiServer.Core.Internal.DefaultContentRepository.RaisePreSaveEvents(SaveContentEventArgs eventArgs, StatusTransition transition, Boolean isNew, Boolean isNewLanguageBranch)
+   at EPiServer.Core.Internal.DefaultContentRepository.Save(IContent content, SaveAction action, AccessLevel access)
+   at EPiServer.Core.Internal.ThumbnailManager.CleanThumbnail(IContentMedia content, Boolean saveContent)
+   at EPiServer.Util.ThumbnailPropertiesClearJob.Execute()
+2024-01-01 16:36:08.126 +00:00 [WRN] Cache cleared
+2024-01-01 16:36:08.130 +00:00 [WRN] Cache cleared
+2024-01-01 16:37:50.313 +00:00 [WRN] One or more of the following response headers have been removed because they are invalid for HTTP/2 and HTTP/3 responses: 'Connection', 'Transfer-Encoding', 'Keep-Alive', 'Upgrade' and 'Proxy-Connection'.
+2024-01-01 16:37:50.313 +00:00 [WRN] One or more of the following response headers have been removed because they are invalid for HTTP/2 and HTTP/3 responses: 'Connection', 'Transfer-Encoding', 'Keep-Alive', 'Upgrade' and 'Proxy-Connection'.
+2024-01-01 16:37:50.313 +00:00 [WRN] One or more of the following response headers have been removed because they are invalid for HTTP/2 and HTTP/3 responses: 'Connection', 'Transfer-Encoding', 'Keep-Alive', 'Upgrade' and 'Proxy-Connection'.
+2024-01-01 16:39:09.794 +00:00 [WRN] Invalid password for user.
+2024-01-01 16:39:09.823 +00:00 [WRN] User failed to provide the correct password.
+2024-01-01 16:44:39.303 +00:00 [ERR] An exception occurred while indexing (IContent). Could not create instance of content type 'CategoryRoot' since it has an invalid .NET class associated: ModelTypeString: 'Geta.Optimizely.Categories.CategoryRoot, Geta.Optimizely.Categories, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null', Base:''..
+EPiServer.Core.EPiServerException: Could not create instance of content type 'CategoryRoot' since it has an invalid .NET class associated: ModelTypeString: 'Geta.Optimizely.Categories.CategoryRoot, Geta.Optimizely.Categories, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null', Base:''.
+   at EPiServer.Construction.Internal.ContentFactory.CreateInstance(ContentType contentType)
+   at EPiServer.Construction.Internal.ContentFactory.CreateContent(ContentType contentType, BuildingContext buildingContext)
+   at EPiServer.DataAccess.Internal.ContentListDB.ReadAndCreateContentItems(DbDataReader reader, Dictionary`2 metaDataItems, Func`2 versionResolver, Boolean readWorkId, List`1& returnSet)
+   at EPiServer.DataAccess.Internal.ContentListDB.ReadPublishedList(DbCommand cmd)
+   at EPiServer.Data.Providers.Internal.SqlDatabaseExecutor.<>c__DisplayClass26_0`1.<Execute>b__0()
+   at EPiServer.Data.Providers.SqlTransientErrorsRetryPolicy.Execute[TResult](Func`1 method)
+   at EPiServer.DataAccess.Internal.ContentListDB.LoadSpecificContentInstances(IList`1 contentLinks, Int32 languageBranchID)
+   at EPiServer.Core.Internal.DefaultContentProvider.BatchLoad(IList`1 contentLinks, Func`2 dbLoader)
+   at EPiServer.Core.Internal.DefaultContentProvider.LoadContents(IList`1 contentReferences, ILanguageSelector selector)
+   at EPiServer.Core.ContentProvider.GetContentBatch(IList`1 batch, ILanguageSelector selector, List`1& contents, Dictionary`2& contentMap)
+   at EPiServer.Core.ContentProvider.GetScatteredContents(IEnumerable`1 contentLinks, ILanguageSelector selector)
+   at EPiServer.Core.Internal.ProviderPipelineImplementation.GetItems(ContentProvider provider, IList`1 contentLinks, LoaderOptions loaderOptions)
+   at EPiServer.Core.Internal.DefaultContentLoader.GetItems(IEnumerable`1 contentLinks, LoaderOptions loaderOptions)
+   at EPiServer.Core.Internal.DefaultContentLoader.GetItems(IEnumerable`1 contentLinks, CultureInfo language)
+   at EPiServer.Find.Cms.ContentIndexer.IndexFrom(ContentReference contentLink, ILanguageSelector languageSelector, Boolean includeRootPage, IndexOptions indexOptions)
+   at EPiServer.Find.Cms.ContentEventIndexer.<>c__DisplayClass24_1.<IndexPageQueue>b__2()
+   at EPiServer.Find.Cms.ContentEventIndexer.Sync(IEnumerable`1 contentToIndex, HashSet`1 contentToIndexSet, Func`1 index)
+   at EPiServer.Find.Cms.ContentEventIndexer.IndexPageQueue(IEnumerable`1 contentToIndex)
+   at EPiServer.Find.Cms.ContentEventIndexer.IndexPageQueue()
+2024-01-01 16:44:49.305 +00:00 [ERR] An exception occurred while indexing (IContent). Could not create instance of content type 'CategoryRoot' since it has an invalid .NET class associated: ModelTypeString: 'Geta.Optimizely.Categories.CategoryRoot, Geta.Optimizely.Categories, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null', Base:''..
+EPiServer.Core.EPiServerException: Could not create instance of content type 'CategoryRoot' since it has an invalid .NET class associated: ModelTypeString: 'Geta.Optimizely.Categories.CategoryRoot, Geta.Optimizely.Categories, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null', Base:''.
+   at EPiServer.Construction.Internal.ContentFactory.CreateInstance(ContentType contentType)
+   at EPiServer.Construction.Internal.ContentFactory.CreateContent(ContentType contentType, BuildingContext buildingContext)
+   at EPiServer.DataAccess.Internal.ContentListDB.ReadAndCreateContentItems(DbDataReader reader, Dictionary`2 metaDataItems, Func`2 versionResolver, Boolean readWorkId, List`1& returnSet)
+   at EPiServer.DataAccess.Internal.ContentListDB.ReadPublishedList(DbCommand cmd)
+   at EPiServer.Data.Providers.Internal.SqlDatabaseExecutor.<>c__DisplayClass26_0`1.<Execute>b__0()
+   at EPiServer.Data.Providers.SqlTransientErrorsRetryPolicy.Execute[TResult](Func`1 method)
+   at EPiServer.DataAccess.Internal.ContentListDB.LoadSpecificContentInstances(IList`1 contentLinks, Int32 languageBranchID)
+   at EPiServer.Core.Internal.DefaultContentProvider.BatchLoad(IList`1 contentLinks, Func`2 dbLoader)
+   at EPiServer.Core.Internal.DefaultContentProvider.LoadContents(IList`1 contentReferences, ILanguageSelector selector)
+   at EPiServer.Core.ContentProvider.GetContentBatch(IList`1 batch, ILanguageSelector selector, List`1& contents, Dictionary`2& contentMap)
+   at EPiServer.Core.ContentProvider.GetScatteredContents(IEnumerable`1 contentLinks, ILanguageSelector selector)
+   at EPiServer.Core.Internal.ProviderPipelineImplementation.GetItems(ContentProvider provider, IList`1 contentLinks, LoaderOptions loaderOptions)
+   at EPiServer.Core.Internal.DefaultContentLoader.GetItems(IEnumerable`1 contentLinks, LoaderOptions loaderOptions)
+   at EPiServer.Core.Internal.DefaultContentLoader.GetItems(IEnumerable`1 contentLinks, CultureInfo language)
+   at EPiServer.Find.Cms.ContentIndexer.IndexFrom(ContentReference contentLink, ILanguageSelector languageSelector, Boolean includeRootPage, IndexOptions indexOptions)
+   at EPiServer.Find.Cms.ContentEventIndexer.<>c__DisplayClass24_1.<IndexPageQueue>b__2()
+   at EPiServer.Find.Cms.ContentEventIndexer.Sync(IEnumerable`1 contentToIndex, HashSet`1 contentToIndexSet, Func`1 index)
+   at EPiServer.Find.Cms.ContentEventIndexer.IndexPageQueue(IEnumerable`1 contentToIndex)
+   at EPiServer.Find.Cms.ContentEventIndexer.IndexPageQueue()
+2024-01-01 17:01:55.984 +00:00 [WRN] One or more of the following response headers have been removed because they are invalid for HTTP/2 and HTTP/3 responses: 'Connection', 'Transfer-Encoding', 'Keep-Alive', 'Upgrade' and 'Proxy-Connection'.
+2024-01-01 17:01:55.984 +00:00 [WRN] One or more of the following response headers have been removed because they are invalid for HTTP/2 and HTTP/3 responses: 'Connection', 'Transfer-Encoding', 'Keep-Alive', 'Upgrade' and 'Proxy-Connection'.
+2024-01-01 17:01:55.984 +00:00 [WRN] One or more of the following response headers have been removed because they are invalid for HTTP/2 and HTTP/3 responses: 'Connection', 'Transfer-Encoding', 'Keep-Alive', 'Upgrade' and 'Proxy-Connection'.

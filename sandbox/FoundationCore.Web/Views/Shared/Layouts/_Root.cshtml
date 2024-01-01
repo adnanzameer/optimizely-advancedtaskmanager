@@ -1,0 +1,70 @@
+@using EPiServer.Framework.Web.Mvc.Html
+@using EPiServer.Globalization
+@using FoundationCore.Web.Components
+@model IPageViewModel<SitePageData>
+
+<!DOCTYPE html>
+<html lang="@(Model.CurrentPage != null ? Model.CurrentPage.Language : string.Empty)">
+<head>
+    <title>@Model.MetaData.MetaTitle</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <meta charset="utf-8" />
+
+    @if (!string.IsNullOrEmpty(Model.MetaData.MetaKeywords))
+    {
+        <meta name="keywords" content="@Model.MetaData.MetaKeywords" />
+    }
+    @if (!string.IsNullOrWhiteSpace(Model.MetaData.MetaDescription))
+    {
+        <meta name="description" content="@Model.MetaData.MetaDescription" />
+    }
+
+    @if (Model.MetaData.NoIndex)
+    {
+        <meta name="robots" content="noindex" />
+    }
+
+    @if (Model.MetaData.NoFollow)
+    {
+        <meta name="robots" content="nofollow" />
+    }
+
+    @if (Model.CurrentPage != null)
+    {
+        <link rel="alternate" href="@PageHelper.GetCanonicalUrl(Model.CurrentPage.ContentLink, string.Empty)" hreflang="@ContentLanguage.PreferredCulture.Name" />
+        <link rel="canonical" href="@PageHelper.GetCanonicalUrl(Model.CurrentPage.ContentLink, Model.MetaData.CanonicalLink)" />
+    }
+
+    @Html.RequiredClientResources("Header")
+</head>
+
+<body>
+
+    @if (Model.Layout.IsInReadonlyMode)
+    {
+        await Html.RenderPartialAsync("Readonly", Model);
+    }
+
+    @await Html.RenderEPiServerQuickNavigatorAsync()
+
+    @Html.FullRefreshPropertiesMetaData()
+
+    @if (!Model.Layout.HideHeader)
+    {
+        await Html.RenderPartialAsync("Header", Model);
+    }
+
+    <main class="page-main">
+        <div class="@(!string.IsNullOrEmpty(Model.Layout.PageContainerClass)?Model.Layout.PageContainerClass :"grid__container")">
+            @RenderBody()
+        </div>
+    </main>
+
+    @if (!Model.Layout.HideFooter)
+    {
+        await Html.RenderPartialAsync("Footer", Model);
+    }
+
+    @Html.RequiredClientResources("Footer")
+</body>
+</html>

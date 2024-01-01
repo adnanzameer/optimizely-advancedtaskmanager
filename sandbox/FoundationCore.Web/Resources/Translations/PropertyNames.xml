@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<languages>
+  <language name="English" id="en">
+	<contenttypes>
+	  <icontentdata>
+		<properties>
+		  <!-- SitePageData -->
+		  <disableindexing>
+			<caption>Disable indexing</caption>
+			<help>Prevents the page from being indexed by search &amp; navigation</help>
+		  </disableindexing>
+		  <metadescription>
+			<caption>Page description</caption>
+			<help>Used as the meta description and commonly as an ingress</help>
+		  </metadescription>
+		  <metakeyword>
+			<caption>Keywords</caption>
+			<help>Comma separated keywords</help>
+		  </metakeyword>
+		  <metatitle>
+			<caption>Title</caption>
+		  </metatitle>
+		  <hero>
+			<caption>Hero</caption>
+		  </hero>
+		  <pagehero>
+			<caption>Hero</caption>
+		  </pagehero>
+
+		  <teasertitle>
+			<caption>Teaser title</caption>
+			<help></help>
+		  </teasertitle>
+		  <teasertext>
+			<caption>Teaser text</caption>
+			<help>Can be used to display a text other than the description when the page is dropped in a content area</help>
+		  </teasertext>
+		  <pageimage>
+			<caption>Teaser image</caption>
+			<help>An image used in different contexts, for example when the page is dropped in a content area</help>
+		  </pageimage>
+		  <hidesiteheader>
+			<caption>Hide site header</caption>
+			<help>Check this setting to hide the header including the main navigation</help>
+		  </hidesiteheader>
+		  <hidesitefooter>
+			<caption>Hide site footer</caption>
+			<help>Check this setting to hide the footer</help>
+		  </hidesitefooter>
+		  <enableanchorNav>
+			<caption>Enable anchor navigation</caption>
+		  </enableanchorNav>
+		  <searchpage>
+			<caption>Properties search page</caption>
+		  </searchpage>
+		  <spacepage>
+			<caption>Property page</caption>
+		  </spacepage>
+
+		  <mainbody>
+			<caption>Main body</caption>
+			<help>Main editorial content of the page</help>
+		  </mainbody>
+		  <maincontentarea>
+			<caption>Main content area</caption>
+		  </maincontentarea>
+		  <bottomcontentarea>
+			<caption>Bottom content area</caption>
+		  </bottomcontentarea>
+		  <herocontentarea>
+			<caption>Hero content area</caption>
+		  </herocontentarea>
+
+		  <categoryheroimage>
+			<caption>Category Hero image</caption>
+		  </categoryheroimage>
+
+		  <standardheroimage>
+			<caption>Category Hero image</caption>
+		  </standardheroimage>
+
+		  <heroimage>
+			<caption>Hero image</caption>
+		  </heroimage>
+
+		  <theme>
+			<caption>Theme</caption>
+		  </theme>
+
+		  <title>
+			<caption>Title</caption>
+		  </title>
+		  <subtitle>
+			<caption>Sub title</caption>
+		  </subtitle>
+		  <content>
+			<caption>Content</caption>
+		  </content>
+		  <summary>
+			<caption>Summary text</caption>
+		  </summary>
+		  <articlepublisheddatetime>
+			<caption>Article published date</caption>
+		  </articlepublisheddatetime>
+		  <imagereference>
+			<caption>Image</caption>
+		  </imagereference>
+		  <thumbnailreference>
+			<caption>Thumbnail</caption>
+		  </thumbnailreference>
+		  <imgalttext>
+			<caption>Img alt text</caption>
+		  </imgalttext>
+		  <hidebreadcrumb>
+			<caption>Hide breadcrumb</caption>
+		  </hidebreadcrumb>
+		  <authorreference>
+			<caption>Author</caption>
+		  </authorreference>
+		  <relatedpostsarea>
+			<caption>Related posts area</caption>
+		  </relatedpostsarea>
+		  <recommendedreading>
+			<caption>Recommended reading</caption>
+		  </recommendedreading>
+		  <servicelines>
+			<caption>Service lines</caption>
+		  </servicelines>
+		  <relatedposts>
+			<caption>Related posts</caption>
+		  </relatedposts>
+		  <canonicallink>
+			<caption>Canonical link</caption>
+		  </canonicallink>
+		  <donotcachepage>
+			<caption>Do not cache page</caption>
+		  </donotcachepage>
+		  <noindex>
+			<caption>Robots noindex</caption>
+			<help>Prevent search engines from index this page</help>
+		  </noindex>
+		  <nofollow>
+			<caption>Robots nofollow</caption>
+			<help>Prevent search engines from index this page</help>
+		  </nofollow>
+		  <seositemaps>
+			  <caption>EO Sitemap Settings</caption>
+		  </seositemaps>
+		  <primarycategory>
+			<caption>Primary category</caption>
+		  </primarycategory>
+		  <categories>
+			<caption>Categories</caption>
+		  </categories>
+		  <tags>
+			<caption>Tags</caption>
+		  </tags>
+		  <resultcount>
+			<caption>Result count</caption>
+			<help>If the property is empty or set to '0' the default value will be 6</help>
+		  </resultcount>
+		  <usecategoryhero>
+			<caption>Use category Hero</caption>
+		  </usecategoryhero>
+
+		  <linktext>
+			<caption>Link text</caption>
+		  </linktext>
+
+		  <usefullheader>
+			<caption>Use full header</caption>
+		  </usefullheader>
+
+		  <guideslandingpage>
+			<caption>Guides landing page</caption>
+		  </guideslandingpage>
+
+		  <disablefallback>
+			<caption>Disable fallback for suggestions in search</caption>
+		  </disablefallback>
+		  <tcheaderkey>
+			<caption>TagCommander header key</caption>
+		  </tcheaderkey>
+
+		  <tcfooterkey>
+			<caption>TagCommander footer key</caption>
+		  </tcfooterkey>
+
+		  <usefullheader>
+			<caption>Use full header background</caption>
+		  </usefullheader>
+
+		  <teasercontent>
+			<caption>Teaser content</caption>
+		  </teasercontent>
+		  <image>
+			<caption>Image</caption>
+		  </image>
+
+		  <highlighttitle>
+			<caption>Highlight title</caption>
+		  </highlighttitle>
+
+
+		  <highlighttext>
+			<caption>Highlight text</caption>
+		  </highlighttext>
+
+		</properties>
+	  </icontentdata>
+
+	  <!-- Block Types -->
+	  <logotypeblock>
+		<properties>
+		  <title>
+			<caption>Title</caption>
+		  </title>
+		  <url>
+			<caption>Logotype</caption>
+		  </url>
+		</properties>
+	  </logotypeblock>
+
+	  <tinymceblock>
+		<properties>
+		  <content>
+			<caption>Content</caption>
+		  </content>
+		</properties>
+	  </tinymceblock>
+
+	  <!-- Page Types -->
+	  <startpage>
+		<properties>
+		  <maincontentarea>
+			<caption>Large content area</caption>
+		  </maincontentarea>
+		  <disablescalculatorbutton>
+			<caption>Hide/Show the open calculator button</caption>
+			<help>Checking/Unchecking this button will hide/show the open calculator button on this particular page</help>
+		  </disablescalculatorbutton>
+		</properties>
+	  </startpage>
+
+	  <blockpage>
+		<properties>
+		  <maincontentarea>
+			<caption>Large content area</caption>
+		  </maincontentarea>
+		</properties>
+	  </blockpage>
+
+	  <errorpage>
+		<properties>
+		  <maincontentarea>
+			<caption>Large content area</caption>
+		  </maincontentarea>
+		</properties>
+	  </errorpage>
+
+	  <settingspage>
+		<properties>
+		  <sitelogotype>
+			<caption>Site logotype</caption>
+		  </sitelogotype>
+		  <yourprivacy>
+			<caption>Your privacy</caption>
+		  </yourprivacy>
+		  <searchresultpagereference>
+			<caption>Search result page reference</caption>
+		  </searchresultpagereference>
+		  <menuitems>
+			<caption>Menu items</caption>
+		  </menuitems>
+		  <footerlogo>
+			<caption>Footer logo</caption>
+		  </footerlogo>
+		  <footermenuitems>
+			<caption>Menu items</caption>
+		  </footermenuitems>
+		  <footersocialmedialinks>
+			<caption>Social media links</caption>
+		  </footersocialmedialinks>
+		  <footercopyrighttext>
+			<caption>Copyright text</caption>
+		  </footercopyrighttext>
+		  <footerprivacylinks>
+			<caption>Privacy links</caption>
+		  </footerprivacylinks>
+		  <replacementtokens>
+			<caption>Replacement tokens</caption>
+			<help>Example of token: [$TOKEN_NAME$]</help>
+		  </replacementtokens>
+		</properties>
+	  </settingspage>
+
+	  <!-- Media -->
+
+	  <imagefile>
+		<properties>
+		  <copyright>
+			<caption>Copyright</caption>
+		  </copyright>
+		</properties>
+	  </imagefile>
+
+	  <videofile>
+		<properties>
+		  <copyright>
+			<caption>Copyright</caption>
+		  </copyright>
+		  <previewimage>
+			<caption>Preview image</caption>
+		  </previewimage>
+		</properties>
+	  </videofile>
+
+	</contenttypes>
+  </language>
+</languages>

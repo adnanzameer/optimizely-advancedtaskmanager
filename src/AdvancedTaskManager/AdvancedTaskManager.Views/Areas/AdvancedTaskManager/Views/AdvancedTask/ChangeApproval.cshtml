@@ -1,0 +1,100 @@
+﻿@model AdvancedTaskManager.Features.AdvancedTask.AdvancedTaskIndexViewData
+@{
+    ViewBag.Title = "Advanced Task Manager";
+    ViewBag.Info = "Administration of Awaiting Review Tasks of Content Approval and Change Approval.";
+}
+
+<div class="change-approval">
+    <div class="col-sm-12">
+
+        <div class="card">
+            <div class="card-body">
+                @Html.Raw($"Currently, there are <strong>{Model.TotalItemsCount}</strong> change approval tasks awaiting review")
+            </div>
+        </div>
+
+        <div class="table-responsive mt-3">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Content type </th>
+                        <th scope="col">Type</th>
+                        <th scope="col">Submitted (UTC)</th>
+                        <th scope="col">Started by</th>
+                        <th scope="col">&nbsp;</th>
+                    </tr>
+                </thead>
+
+                @if (Model.ContentTaskList.Count > 0)
+                {
+                    foreach (var contentTask in Model.ContentTaskList)
+                    {
+                        <tr style="cursor: pointer;" class="parent @(contentTask.NotificationUnread ? "notification-unread" : "")" title="Click to expand/collapse" id="@contentTask.ApprovalId">
+                            <td>
+                                @if (!string.IsNullOrEmpty(contentTask.ContentIcon))
+                                {
+                                    <span data-feather="@contentTask.ContentIcon"></span>
+                                }
+                                @contentTask.ContentName
+                            </td>
+                            <td>@contentTask.ContentType</td>
+                            <td>@contentTask.Type</td>
+                            <td data-original-title="@contentTask.DateTime?.ToString(Model.DateTimeFormatUserFriendly)" data-container="body" data-toggle="tooltip" data-placement="bottom" title="@contentTask.DateTime?.ToString(Model.DateTimeFormatUserFriendly)">@contentTask.DateTime?.ToString(Model.DateTimeFormat)</td>
+                            <td>@contentTask.StartedBy</td>
+
+                            <td>
+                                @if (!string.IsNullOrEmpty(contentTask.URL))
+                                {
+                                    <a href="#" class="atm-more"><span data-feather="more-horizontal"></span></a>
+                                    <div class="atm-tooltip">
+                                        <button class="atm-editButton" data-url="@contentTask.URL">Edit</button>
+                                    </div>
+                                }
+                            </td>
+                        </tr>
+                        if (contentTask.Details != null && contentTask.Details.Any())
+                        {
+                            <tr class="child-@contentTask.ApprovalId" style="display: none;">
+                                <td class="changetask-detail" colspan="6">
+                                    <table class="table inner-table table-striped">
+                                        <thead class="thead-dark">
+                                            <tr class="header">
+                                                <td class="short header-right"><strong>Name</strong></td>
+                                                <td class="header-right"><strong>Current version</strong></td>
+                                                <td><strong>Suggested version</strong></td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (var ct in contentTask.Details.ToList())
+                                            {
+                                                <tr>
+                                                    <td class="short">@Html.Raw(ct.Name)</td>
+                                                    <td>@Html.Raw(ct.OldValue)</td>
+                                                    <td>@Html.Raw(ct.NewValue)</td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                    <p style="padding-top: 20px"><a class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="@contentTask.URL" target="_blank">Go to the Change Details</a></p>
+                                </td>
+                            </tr>
+                        }
+                    }
+                }
+            </table>
+            @await Html.PartialAsync("Pager", Model)
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('tr.parent')
+            .css("cursor", "pointer")
+            .attr("title", "Click to expand/collapse")
+            .click(function () {
+                $(this).siblings('.child-' + this.id).toggle();
+            });
+    });
+</script>

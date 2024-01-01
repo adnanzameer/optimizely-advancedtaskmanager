@@ -1,0 +1,39 @@
+﻿@using EPiServer.Framework.Web.Resources
+@using EPiServer.Shell.Navigation
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    
+    @ClientResources.RenderResources("ShellCore")
+    @ClientResources.RenderResources("ShellCoreLightTheme")
+    
+    <script>
+        function resizeIframe(obj) {
+            obj.style.height = 0;
+            const innerDoc = obj.contentWindow.document;
+            const newHeight = Math.max(
+                Math.max(innerDoc.body.scrollHeight, innerDoc.documentElement.scrollHeight),
+                Math.max(document.body.clientHeight, document.documentElement.clientHeight)
+            )
+            obj.style.height = newHeight + 'px';
+        }
+        
+        window.addEventListener('DOMContentLoaded', (event) => {
+            const containerIframe = document.getElementById('advanced-task');
+            window.addEventListener("resize", () => resizeIframe(containerIframe));
+        });
+    </script>
+    
+    <title>Advanced Task Manager</title>
+</head> 
+<body>
+@Html.AntiForgeryToken()
+@Html.CreatePlatformNavigationMenu()
+<div @Html.ApplyPlatformNavigation()>
+    @RenderBody()
+</div>
+</body>
+</html>

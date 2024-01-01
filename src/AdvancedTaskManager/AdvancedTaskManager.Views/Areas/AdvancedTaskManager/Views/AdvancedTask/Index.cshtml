@@ -1,0 +1,496 @@
+﻿@using AdvancedTaskManager.Infrastructure.Helpers
+@using EPiServer.Core
+@model AdvancedTaskManager.Features.AdvancedTask.AdvancedTaskIndexViewData
+@{
+    ViewBag.Title = "Advanced Task Manager";
+    ViewBag.Info = "Administration of Awaiting Review Tasks of Content Approval and Change Approval.";
+    var url = Extensions.AdvancedTaskControllerActionPathsToResource;
+}
+<div class="content-approval">
+    <div class="col-sm-12">
+
+        <div class="card">
+            <div class="card-body">
+                <nav class="navbar">
+                    <div class="col-sm-5 col-md-4 me-0 px-3">
+                        @Html.Raw($"Currently, there are <strong>{Model.TotalItemsCount}</strong> content approval tasks awaiting review")
+                    </div>
+
+                    <div class="d-grid gap-2 d-md-flex">
+                        <div class="dropdown">
+                            <button class="btn btn-sm dropdown-toggle" type="button" id="languageDropdownMenuButton" data-toggle="dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                @Html.Raw("<span style=\"font-size: 11px;\">Language</span> <br>" + Model.SelectedLanguageText)
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="languageDropdownMenuButton">
+                                @foreach (var language in Model.LanguageBranchList)
+                                {
+                                    <a class="dropdown-item @(language.Selected ? "active" : "")" href="@Model.LanguageUrl(language.Language.LanguageID)">@language.Language.Name</a>
+                                }
+                            </div>
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+
+        <div class="table-responsive mt-3">
+            <table class="table table-hover" id="sortable-table">
+                <thead>
+                    <tr>
+                        <th scope="col"><input type="checkbox" onchange="checkAll(this)" name="chk[]" id="chk" /></th>
+                        <th scope="col" class="sortable">Name</th>
+                        <th scope="col" class="sortable">Content type </th>
+                        <th scope="col" class="sortable">Type</th>
+                        <th scope="col" class="sortable">Submitted (UTC)</th>
+                        <th scope="col" class="sortable">Started by</th>
+                        @if (Model.AddContentApprovalDeadlineProperty)
+                        {
+                            <th scope="col" class="sortable">Deadline</th>
+                        }
+                        <th scopre="col">&nbsp;</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model.TotalItemsCount > 0)
+                    {
+                        foreach (var contentTask in Model.ContentTaskList)
+                        {
+                            <tr class="@(contentTask.NotificationUnread ? "notification-unread" : "")">
+                                <td>@Html.CheckBox(contentTask.ApprovalId.ToString(), false, new { onchange = "selectionChanged(this)", @class = "checkbox" })</td>
+                                <td>
+
+                                    @if (!ContentReference.IsNullOrEmpty(contentTask.ContentReference))
+                                    {
+                                        if (!contentTask.CanUserPublish)
+                                        {
+                                            if (!string.IsNullOrEmpty(contentTask.ContentIcon))
+                                            {
+                                                <span data-feather="@contentTask.ContentIcon"></span>
+                                            }
+                                            <a href="@contentTask.URL" id="id-@contentTask.ApprovalId" data-value="ID: @contentTask.ContentReference.ID - @contentTask.ContentName" target="_blank">
+                                                @Html.Encode(contentTask.ContentName)
+                                                <span class="error-span" id="span-@contentTask.ApprovalId"></span>
+                                            </a>
+                                        }
+                                        else
+                                        {
+                                            if (!string.IsNullOrEmpty(contentTask.ContentIcon))
+                                            {
+                                                <span data-feather="@contentTask.ContentIcon"></span>
+                                            }
+                                            <a href="@contentTask.URL" target="_blank">@Html.Encode(contentTask.ContentName)</a>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        if (!string.IsNullOrEmpty(contentTask.ContentIcon))
+                                        {
+                                            <span data-feather="@contentTask.ContentIcon"></span>
+                                        }
+                                        @contentTask.ContentName
+                                    }
+                                </td>
+                                <td>
+                                    @contentTask.ContentType
+                                </td>
+                                <td>
+                                    @contentTask.Type
+                                </td>
+                                <td data-original-title="@contentTask.DateTime?.ToString(Model.DateTimeFormatUserFriendly)" data-container="body" data-toggle="tooltip" data-placement="bottom" title="@contentTask.DateTime?.ToString(Model.DateTimeFormatUserFriendly)">@contentTask.DateTime?.ToString(Model.DateTimeFormat)</td>
+                                <td>
+                                    @contentTask.StartedBy
+                                </td>
+
+                                @if (Model.AddContentApprovalDeadlineProperty)
+                                {
+                                    <td class="@contentTask.WarningColor" data-original-title="@contentTask.Deadline?.ToString(Model.DateTimeFormatUserFriendly)" data-container="body" data-toggle="tooltip" data-placement="bottom" title="@contentTask.Deadline?.ToString(Model.DateTimeFormatUserFriendly)">@(contentTask.Deadline != null ? contentTask.Deadline.Value.ToString(Model.DateTimeFormat) : " - ")</td>
+                                }
+                                <td>
+                                    @if (!ContentReference.IsNullOrEmpty(contentTask.ContentReference))
+                                    {
+                                        <a href="#" class="atm-more"><span data-feather="more-horizontal"></span></a>
+                                        <div class="atm-tooltip">
+                                            <button class="atm-editButton" data-url="@contentTask.URL">Edit</button>
+                                        </div>
+                                    }
+                                </td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+            @await Html.PartialAsync("Pager", Model)
+        </div>
+    </div>
+
+    <br>
+
+    <div id="approve" style="display: none;">
+        <div class="col-sm-12 col-lg-10 col-xl-5">
+            <fieldset class="border rounded-3 p-3">
+                <legend class="float-none w-auto px-3">Approve Entire Approval Sequence</legend>
+                <textarea autocomplete="off" rows="3" id="approvalComment" name="approvalComment" class="form-control" placeholder="Please specify why you are forcing approval of the content" spellcheck="false">Approved Through Advanced Task Manager</textarea>
+                <input id="taskValues" type="hidden" name="taskValues" value="@Model.TaskValues" />
+
+                @if (Model.HasPublishAccess)
+                {
+                    <br />
+                    <input id="publishContent" type="checkbox" name="publishContent" value="false" onchange="checkboxChecked(this)">
+                    <text>Publish selected content after approval</text>
+                    <br />
+                    <br />
+
+                    <div id="errorMessage" class="errorMessage" style="display: none">
+                        <button type="button" class="collapsible">* You don't have permission to publish following content.</button>
+                        <div class="content">
+                            <label id="lblMessage"></label>
+                        </div>
+                    </div>
+                }
+
+                <button type="submit" class="btn btn-primary" id="button">Submit</button>
+            </fieldset>
+        </div>
+    </div>
+</div>
+
+<div id="alert-modal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 id="alert-modal-title" class="modal-title"></h4>
+                <button type="button" class="close close-modal btn btn-light" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div id="alert-modal-body" class="modal-body"></div>
+            <div class="modal-footer">
+                <button id="confirm" type="button" class="btn btn-secondary" data-dismiss="modal">Proceed</button>
+                <button id="close" class="close-modal btn btn-light" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var selectedContent = [];
+
+    function selectionChanged(element) {
+        if (element.checked && element.id !== 'chk') {
+            if (!selectedContent.includes(element.name)) {
+                selectedContent.push(element.name);
+            }
+        } else {
+            var index = selectedContent.indexOf(element.name);
+            if (index > -1 && element.id !== 'chk') {
+                removeA(selectedContent, element.name);
+
+                var checkbox = document.getElementById('chk');
+                if (selectedContent.length === 0 && checkbox.checked) {
+                    checkbox.checked = false;
+                }
+            }
+
+            var name = element.name;
+            var element1 = document.getElementById('span-' + name);
+            if (element1) {
+                element1.textContent = "";
+            }
+        }
+        setButtonText();
+        setCheckboxSelectedValues();
+        ShowPublishErrorMessage();
+    }
+
+    function setCheckboxSelectedValues() {
+        var value = '';
+        selectedContent.forEach(function (content) {
+            value = value + ',' + content;
+        });
+
+        document.getElementById('taskValues').value = value;
+    }
+
+    function checkAll(ele) {
+        var checkboxes = document.getElementsByClassName('checkbox');
+        if (ele.checked) {
+            for (var i = 0; i < checkboxes.length; i++) {
+                if (checkboxes[i].type === 'checkbox') {
+                    checkboxes[i].checked = true;
+                    selectionChanged(checkboxes[i]);
+                }
+            }
+        } else {
+            for (var j = 0; j < checkboxes.length; j++)
+                if (checkboxes[j].type === 'checkbox') {
+                    checkboxes[j].checked = false;
+                    selectionChanged(checkboxes[j]);
+                }
+        }
+    }
+
+    function removeA(arr) {
+        var what, a = arguments,
+            L = a.length,
+            ax;
+        while (L > 1 && arr.length) {
+            what = a[--L];
+            while ((ax = arr.indexOf(what)) !== -1) {
+                arr.splice(ax, 1);
+            }
+        }
+        return arr;
+    }
+
+    $('#button').click(function (e) {
+        var approvalComment = false;
+        if ($.trim($('#approvalComment').val()) == '') {
+            if ($('#approvalComment').next(".validation").length == 0) // only add if not added
+            {
+                $('#approvalComment').after("<div class='validation'>*Provide additional details in the comments.</div>");
+                $('#approvalComment').css({
+                    'border': '1px solid red'
+                });
+            }
+            e.preventDefault(); // prevent form from POST to server
+            $('#approvalComment').focus();
+            focusSet = true;
+        } else {
+            $('#approvalComment').next(".validation").remove(); // remove it
+            $('#approvalComment').css({
+                'border': ''
+            });
+
+            var message = "Are you certain you wish to endorse the entire approval sequence? Doing so will confirm all remaining steps, and this action is irreversible";
+            if (document.getElementById("publishContent") && document.getElementById("publishContent").checked) {
+                message = "Are you certain you wish to endorse the entire approval sequence and publish content? This will confirm all remaining steps and publish the selected content. Please note that this action is irreversible";
+            }
+
+            alertModal("Advanced Task Manager", message);
+        }
+    });
+
+    function alertModal(title, body) {
+        // Display error message to the user in a modal
+        $('#alert-modal-title').html(title);
+        $('#alert-modal-body').html(body);
+        $('#alert-modal').modal('show');
+    }
+
+    $('.close-modal').click(function (e) {
+        e.preventDefault();
+        $('#alert-modal').modal('hide');
+    });
+
+    $('#confirm').click(function (e) {
+        e.preventDefault();
+        // Get values
+        var taskValues = document.getElementById("taskValues").value;
+        var publishContent = document.getElementById("publishContent").checked;
+        var comment = document.getElementById("approvalComment").value;
+
+        // Make AJAX call
+        fetch('@url/approvecontenttasks', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                // Add any additional headers if needed
+            },
+            body: JSON.stringify({
+                taskValues: taskValues,
+                approvalComment: comment,
+                publishContent: publishContent
+            })
+        })
+            .then(response => {
+                // Handle the response as needed
+                if (response.ok) {
+                    // Successful response
+                    return response.json();
+                } else {
+                    // Handle error response
+                    throw new Error('Failed to submit');
+                }
+            })
+            .then(data => {
+                // Handle the data from the response
+                console.log(data);
+                // Refresh the page
+                location.reload();
+            })
+            .catch(error => {
+                // Handle errors during the fetch
+                console.error('Error:', error);
+            });
+
+        return true; // Return true to allow form submission
+    });
+
+    function setButtonText() {
+        if (selectedContent && selectedContent.length > 0) {
+            ShowApproveSection();
+            if (document.getElementById("publishContent") && document.getElementById("publishContent").value === "true") {
+                document.getElementById('button').textContent =
+                    'Approve & Publish ' + selectedContent.length + ' Selected Content';
+            } else {
+                document.getElementById('button').textContent =
+                    'Approve ' + selectedContent.length + ' Selected Content';
+            }
+        } else {
+            HideApproveSection();
+            document.getElementById('button').textContent = 'Submit';
+        }
+    }
+
+    function checkboxChecked(checkboxElem) {
+        if (checkboxElem.checked) {
+            checkboxElem.value = "true";
+            ShowPublishErrorMessage();
+        } else {
+            checkboxElem.value = "false";
+            HideErrorMessage();
+            var elements = document.getElementsByClassName('error-span');
+            for (var i = 0; i < elements.length; i++) {
+                elements[i].innerHTML = "";
+            }
+        }
+        setButtonText();
+    }
+
+    function ShowPublishErrorMessage() {
+        var txt = "";
+        if (document.getElementById("publishContent") && document.getElementById("publishContent").value === "true") {
+            var checkboxes = document.getElementsByClassName('checkbox');
+            var show = false;
+            for (var i = 0; i < checkboxes.length; i++) {
+                if (checkboxes[i].type === 'checkbox' && checkboxes[i].checked) {
+                    var name = checkboxes[i].name;
+                    if (name) {
+                        var errorElement = document.getElementById('id-' + name);
+                        if (errorElement) {
+                            var value = errorElement.getAttribute('data-value');
+                            if (value) {
+                                txt = txt + value + "<br/>";
+                                document.getElementById('span-' + name).textContent = "*";
+                                show = true;
+                            }
+                        }
+                    }
+                }
+            }
+
+            if (document.getElementById("lblMessage")) {
+                if (show) {
+                    document.getElementById("lblMessage").innerHTML = txt + "<br/>";
+                    ShowErrorMessage();
+                } else {
+                    document.getElementById("lblMessage").innerHTML = "";
+                    HideErrorMessage();
+                }
+            }
+        }
+    }
+
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    if (coll) {
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click",
+                function () {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                        content.style.display = "none";
+                    } else {
+                        content.style.display = "block";
+                    }
+                });
+        }
+    }
+
+    function ShowApproveSection() {
+        var x = document.getElementById("approve");
+        if (x) {
+            x.style.display = "block";
+        }
+    }
+
+    function HideApproveSection() {
+        var x = document.getElementById("approve");
+        if (x) {
+            x.style.display = "none";
+        }
+        if (document.getElementById("lblMessage")) {
+            document.getElementById("lblMessage").innerHTML = "";
+        }
+    }
+
+    function ShowErrorMessage() {
+        var x = document.getElementById("errorMessage");
+        if (x) {
+            x.style.display = "block";
+        }
+    }
+
+    function HideErrorMessage() {
+        var x = document.getElementById("errorMessage");
+        if (x) {
+            x.style.display = "none";
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const table = document.getElementById("sortable-table");
+        const headers = table.querySelectorAll("thead th");
+
+        const sortState = Array.from(headers).fill(0);
+
+        headers.forEach((header, index) => {
+            if (header.classList.contains("sortable")) {
+                header.addEventListener("click", () => {
+                    sortTable(index);
+                });
+            }
+        });
+
+        function sortTable(columnIndex) {
+            const rows = Array.from(table.querySelectorAll("tbody tr"));
+
+            rows.sort((a, b) => {
+                const valueA = getCellValue(a, columnIndex);
+                const valueB = getCellValue(b, columnIndex);
+
+                if (sortState[columnIndex] % 2 === 0) {
+                    // Ascending order
+                    return valueA.localeCompare(valueB);
+                } else {
+                    // Descending order
+                    return valueB.localeCompare(valueA);
+                }
+            });
+
+            // Toggle sort state for the clicked column
+            sortState[columnIndex]++;
+
+            // Remove existing rows from the table
+            rows.forEach(row => table.querySelector("tbody").removeChild(row));
+
+            // Append sorted rows to the table
+            rows.forEach(row => table.querySelector("tbody").appendChild(row));
+
+            // Remove arrow classes from all headers
+            headers.forEach(header => {
+                header.classList.remove("asc", "desc");
+            });
+
+            // Add arrow class to the clicked header
+            const clickedHeader = headers[columnIndex];
+            clickedHeader.classList.add(sortState[columnIndex] % 2 === 0 ? "asc" : "desc");
+        }
+
+        function getCellValue(row, index) {
+            const cell = row.querySelectorAll("td")[index];
+            return cell.getAttribute("data-sort-value") || cell.textContent.trim();
+        }
+    });
+</script>

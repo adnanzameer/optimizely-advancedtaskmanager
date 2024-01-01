@@ -1,0 +1,36 @@
+﻿@model AdvancedTaskManager.Features.AdvancedTask.AdvancedTaskIndexViewData
+
+@if (Model.TotalItemsCount > Model.PageSize)
+{
+    <nav class="navbar">
+        <div class="col-sm-5 col-md-4 me-0 px-3">
+            @($"Displaying tasks {Model.MinIndexOfItem}-{Model.MaxIndexOfItem} of {Model.TotalItemsCount}")
+        </div>
+        <div class="col-sm-7 col-md-8  mb-1 px-3">
+            <ul class="pagination pagination-sm margin-top-15">
+
+                <li class="page-item @(Model.PageNumber > 1 ? "" : "disabled")">
+                    <a class="page-link" href="@Model.PageUrl(Model.PageNumber - 1)" aria-label="Previous">
+                        <span aria-hidden="true">Previous</span>
+                    </a>
+                </li>
+
+                @foreach (var i in Model.Pages)
+                {
+                    if (i == 0)
+                    {
+                        <li>&nbsp; <span data-feather="more-horizontal"></span> &nbsp;</li>
+                        continue;
+                    }
+                    <li class="page-item  @(i == Model.PageNumber ? "active" : "")"><a class="page-link" href="@Model.PageUrl(i)">@i</a></li>
+                }
+
+                <li class="page-item @(Model.PageNumber < Model.TotalPagesCount ? "" : "disabled")">
+                    <a class="page-link" href="@Model.PageUrl(Model.PageNumber + 1)" aria-label="Next">
+                        <span aria-hidden="true">Next</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+}
