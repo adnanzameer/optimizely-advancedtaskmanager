@@ -37,6 +37,7 @@ public class Startup
         {
             o.DeleteChangeApprovalTasks = true;
             //o.AddContentApprovalDeadlineProperty = true;
+            o.PageSize = 8;
             o.DeleteContentApprovalDeadlineProperty = true;
         });
         // Required by Wangkanai.Detection

@@ -60,20 +60,11 @@ namespace AdvancedTaskManager.Infrastructure.Helpers
 
         public bool CanUserPublish<T>(T content) where T : IContent
         {
-            try
+            if (content is ISecurable securedContent)
             {
-                var list = new ContentAccessControlList(content.ContentLink);
-                var accessLevel = list.QueryDistinctAccess(PrincipalAccessor.Current, AccessLevel.Publish);
-                return accessLevel;
-            }
-            catch
-            {
-                if (content is ISecurable securedContent)
-                {
-                    var descriptor = securedContent.GetSecurityDescriptor();
+                var descriptor = securedContent.GetSecurityDescriptor();
 
-                    return descriptor.HasAccess(PrincipalAccessor.Current, AccessLevel.Publish);
-                }
+                return descriptor.HasAccess(PrincipalAccessor.Current, AccessLevel.Publish);
             }
 
             return false;
