@@ -285,7 +285,7 @@ There are four types of Change approval tasks:
  ![Expiration date setting change](assets/docsimages/expire-change-approval.png)
 
 # Sandbox App
-Sandbox application is testing poligon for pacakge new features and bug fixes.
+The sandbox application serves as a testing polygon for evaluating new features and addressing bug fixes in the package.
 
 **ADMIN**
 
