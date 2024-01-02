@@ -141,11 +141,11 @@ The tool furnishes the Editor with the following information regarding the task:
 * Started by
 
 The list of current features are as follow:
-* [Approve entire approval sequence](#approve-entire-approval-sequence)
+* [Approve entire approval sequence](#approve-entire-approval-sequence-content-approval-only)
 * [Publish content after approval](#publish-content-after-approval)
-* [Deadline field for the content approval](#deadline-field-for-the-content-approval-optional)
-* [User notifications associated with the task](#user-notifications-associated-with-the-task)
-* [Change approval task information](#change-approval-task-information)
+* [Deadline field for content approval](#deadline-field-for-content-approval-sequence-optional)
+* [User Notifications Linked to the Task](#user-notifications-linked-to-the-task)
+* [Information for Change Approval Tasks](#information-for-change-approval-tasks)
 * [Task ordering](#task-ordering)
 
 Some features are disabled by default, but you can decide which ones are enabled by Configuring option in the `startup.cs` or in `appsettings.json`.
@@ -169,7 +169,7 @@ If the editor holds publishing rights for only some of the content after approvi
 
 ![Publish content after approval](assets/docsimages/content-approval-publish-model.png)
 
-### Deadline Field for Approval Sequence (Optional)
+### Deadline Field for Content Approval Sequence (Optional)
 
 ![Deadline field for the approval sequence](assets/docsimages/change-approval-deadline.png)
 
@@ -263,7 +263,6 @@ The tool gives editors an option to sort through all the tasks with status Await
 ![Sort](assets/docsimages/sort.png)
 
 ## Information for Change Approval Tasks
-
 
 The table row for change approval task information functions as an accordion. Clicking on the row will reveal (or hide) the details of the change approval task.
 
