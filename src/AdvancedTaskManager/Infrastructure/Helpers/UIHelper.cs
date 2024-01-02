@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using EPiServer.Authorization;
 using EPiServer.Core;
 using EPiServer.Notification;
 using EPiServer.Security;
@@ -13,6 +14,7 @@ namespace AdvancedTaskManager.Infrastructure.Helpers
         string GetDisplayNameForUser(string senderUsername);
         bool CanUserPublish<T>(T content) where T : IContent;
         Task<List<string>> GetUserRoles();
+        bool IsAdminUser();
     }
 
     public class UIHelper : IUIHelper
@@ -56,16 +58,27 @@ namespace AdvancedTaskManager.Infrastructure.Helpers
             return new List<string>();
         }
 
-
         public bool CanUserPublish<T>(T content) where T : IContent
         {
-            if (content is ISecurable securedContent)
+            try
             {
-                var descriptor = securedContent.GetSecurityDescriptor();
-
-                return descriptor.HasAccess(PrincipalAccessor.Current, AccessLevel.Publish);
+                var list = new ContentAccessControlList(content.ContentLink);
+                var accessLevel = list.QueryDistinctAccess(PrincipalAccessor.Current, AccessLevel.Publish);
+                return accessLevel;
             }
+            catch
+            {
+                if (content is ISecurable securedContent)
+                {
+                    var descriptor = securedContent.GetSecurityDescriptor();
+
+                    return descriptor.HasAccess(PrincipalAccessor.Current, AccessLevel.Publish);
+                }
+            }
+
             return false;
         }
+
+        public bool IsAdminUser() => PrincipalAccessor.Current.IsInRole(Roles.Administrators) || PrincipalAccessor.Current.IsInRole(Roles.WebAdmins) || PrincipalAccessor.Current.IsInRole(Roles.CmsAdmins);
     }
 }

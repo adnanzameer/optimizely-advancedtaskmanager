@@ -12,13 +12,4 @@ public class StartPage : SitePageData, IStartPageType
         Order = 320)]
     [CultureSpecific]
     public virtual ContentArea MainContentArea { get; set; }
-
-
-    //[CultureSpecific]
-    //[Display(GroupName = Globals.GroupNames.Forms, Order = 70)]
-    //[EditorDescriptor(EditorDescriptorType = typeof(CollectionEditorDescriptor<CustomFormEmailTemplateItem>))]
-    //[FriendlyPropertyListUrl(nameof(StoryTeaserItem.Hyperlink), nameof(StoryTeaserItem.Image))]
-    //[HtmlViewerExtender(nameof(CustomFormEmailTemplateItem.Body))]
-    //[ClientEditor(ClientEditingClass = "feller/editors/ExtendedCollectionEditor")]
-    //public virtual IList<CustomFormEmailTemplateItem> FormMessageTemplate { get; set; }
 }

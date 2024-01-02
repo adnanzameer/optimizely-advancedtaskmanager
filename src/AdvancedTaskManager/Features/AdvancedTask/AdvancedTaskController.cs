@@ -10,7 +10,6 @@ using AdvancedTaskManager.Infrastructure.Helpers;
 using EPiServer;
 using EPiServer.Approvals;
 using EPiServer.Approvals.ContentApprovals;
-using EPiServer.Authorization;
 using EPiServer.Cms.Shell;
 using EPiServer.Core;
 using EPiServer.DataAbstraction;
@@ -37,11 +36,10 @@ namespace AdvancedTaskManager.Features.AdvancedTask
         private readonly IApprovalEngine _approvalEngine;
         private readonly LocalizationService _localizationService;
         private readonly IChangeTaskHelper _changeTaskHelper;
-
         private readonly ILanguageBranchRepository _languageBranchRepository;
         private readonly AdvancedTaskManagerOptions _configuration;
-
         private readonly ILogger _logger;
+
         private const string ContentApprovalDeadlinePropertyName = "ATM_ContentApprovalDeadline";
 
         public AdvancedTaskController(IApprovalRepository approvalRepository, IContentRepository contentRepository, IContentTypeRepository contentTypeRepository, IApprovalEngine approvalEngine, LocalizationService localizationService, IChangeTaskHelper changeTaskHelper, IUIHelper helper, ILanguageBranchRepository languageBranchRepository, IOptions<AdvancedTaskManagerOptions> options, INotificationHandler notificationHandler)
@@ -159,10 +157,8 @@ namespace AdvancedTaskManager.Features.AdvancedTask
                     Reference = new Uri("content:"),
                 };
 
-
-                var roles = await _helper.GetUserRoles();
-                if (!roles.Contains(Roles.Administrators) && !roles.Contains(Roles.WebAdmins) &&
-                    !roles.Contains(Roles.CmsAdmins))
+                var isAdminUser = _helper.IsAdminUser();
+                if (!isAdminUser)
                 {
                     query.Username = PrincipalAccessor.Current.Identity?.Name;
                 }
@@ -292,12 +288,11 @@ namespace AdvancedTaskManager.Features.AdvancedTask
                             if (approval is ContentApproval contentApproval)
                             {
                                 _contentRepository.TryGet(contentApproval.ContentLink, out IContent content);
-                                var canUserPublish = publishContent && _helper.CanUserPublish(content);
-                                if (content != null && canUserPublish)
+                                var canUserPublish = _helper.CanUserPublish(content);
+                                if (content != null && publishContent && canUserPublish)
                                 {
                                     try
                                     {
-
                                         switch (content)
                                         {
                                             case PageData page:
@@ -350,9 +345,8 @@ namespace AdvancedTaskManager.Features.AdvancedTask
                 Reference = new Uri("changeapproval:")
             };
 
-            var roles = await _helper.GetUserRoles();
-            if (!roles.Contains(Roles.Administrators) && !roles.Contains(Roles.WebAdmins) &&
-                !roles.Contains(Roles.CmsAdmins))
+            var isAdminUser = _helper.IsAdminUser();
+            if (!isAdminUser)
             {
                 query.Username = PrincipalAccessor.Current.Identity?.Name;
             }
