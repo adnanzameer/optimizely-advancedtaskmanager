@@ -36,9 +36,9 @@ public class Startup
         services.AddAdvancedTaskManager(o =>
         {
             o.DeleteChangeApprovalTasks = true;
-            //o.AddContentApprovalDeadlineProperty = true;
-            o.PageSize = 8;
-            o.DeleteContentApprovalDeadlineProperty = true;
+            o.AddContentApprovalDeadlineProperty = true;
+            o.PageSize = 10;
+            //o.DeleteContentApprovalDeadlineProperty = true;
         });
         // Required by Wangkanai.Detection
         services.AddDetection();
