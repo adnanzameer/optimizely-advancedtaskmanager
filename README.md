@@ -304,7 +304,7 @@ Password: Sandbox#123
 Username: author
 
 Password: Sandbox#123
-W
+
 ## Contributing
 
 If you can help please do so by contributing to the package! Reach out package maintainer for additional details if needed.
