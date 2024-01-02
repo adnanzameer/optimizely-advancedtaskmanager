@@ -1,184 +1,313 @@
-# Advanced Task Manager for EPiServer CMS
+# Advanced Task Manager for Optimizely
 
-While Advanced Task Manager for EpiServeris a freely available module, if you'd like to express your support, consider treating me to a coffee on Ko-fi:
+The **Advanced Task Manager for Optimizely** is a freely available module. If you find it beneficial, you can show your support by treating me to a coffee on [Ko-fi](https://ko-fi.com/U7U2STV29):
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/U7U2STV29)
 
 ## Description
-[![Platform](https://img.shields.io/badge/Platform-.NET%204.7.1-blue.svg?style=flat)](https://msdn.microsoft.com/en-us/library/w0x726c2%28v=vs.110%29.aspx)
-[![Platform](https://img.shields.io/badge/Episerver%20-%2011-orange.svg?style=flat)](https://world.episerver.com/cms/)
+[![Platform](https://img.shields.io/badge/Platform-.NET%206-blue.svg?style=flat)](https://docs.microsoft.com/en-us/dotnet/)
+[![Platform](https://img.shields.io/badge/Optimizely-%2012-blue.svg?style=flat)](http://world.episerver.com/cms/)
+[![Platform](https://img.shields.io/badge/EPiServer-%2012-orange.svg?style=flat)](http://world.episerver.com/cms/)
 
-## Optimizely CMS 12?
-**For ASP.NET 5+ and Episerver/Optimizely 12+ see: https://github.com/adnanzameer/optimizely-advancedtaskmanager**
+The **Advanced Task Manager for Optimizely** provides CMS editors with enhanced oversight of administration tasks related to Awaiting Review in Content Approval and Change Approval processes.
 
-Advanced Task Management for EpiServer, providing enhanced oversight of the administration for Awaiting Review tasks in Content Approval and Change Approval processes.
+## Features
+
+- **Deadline Field:** Includes a deadline field for content approval.
+- **User Notifications:** Sync user notifications associated with the task.
+- **Approve entire approval sequence:** Allows approving the entire approval sequence in bulk or against individual tasks.
+- **Publish content after approval:** Permits publishing content after approval in bulk or against individual tasks.
+- **Change approval task information:** Facilitates changes to approval task information.
+
+## Installation 
+
+To install the Advanced Task Manager, begin by adding the NuGet package using [Optimizely NuGet](https://nuget.optimizely.com/):
+
+`
+dotnet add package AdvancedTaskManager
+`
+
+## Configuration
+
+Add the AdvancedTaskManager handler in the `Startup.cs` within the `ConfigureServices` method. Here's an example with all available configurations:
+
+```C#
+public void ConfigureServices(IServiceCollection services)
+{
+    
+    services.AddAdvancedTaskManager(o =>
+    {
+        o.DeleteChangeApprovalTasks = true; //Default true
+        o.PageSize = 10; //Default 30
+        o.AddContentApprovalDeadlineProperty = true; //Default false
+        o.DeleteContentApprovalDeadlineProperty = true; //Default false
+        o.WarningDays = 4; //Default 4;
+        o.DateTimeFormat = "yyyy-MM-dd HH:mm"; //Default "yyyy-MM-dd HH:mm";
+        o.DateTimeFormatUserFriendly = "MMM dd, yyyy, h:mm:ss tt"; //Default "MMM dd, yyyy, h:mm:ss tt";
+    });
+
+    OR
+
+    services.AddAdvancedTaskManager();
+    
+...
+}
+```
+
+In addition, the configuration can be read from the `appsettings.json`:
+
+```Json
+"AdvancedTaskManager": {
+    "PageSize":  40, 
+    "WarningDays": 6
+}
+```
+
+The settings specified in the `appsettings.json` file will take precedence over any configurations defined in the Startup.
+
+
+### Integrating Advanced Task Manager into the CMS
+
+This solution incorporates an implementation of the `IMenuProvider`, guaranteeing the inclusion of the Advanced Task Manager administration pages in the CMS Admin menu titled `Adv. Task Manager.` No additional action is required, as Optimizely CMS will automatically scan and activate all instances of the `IMenuProvider`.
+
+### Restricting Access to the Admin UI
+
+By default, access to the Admin UI is limited to users with the `Administrators` role. The solution enhances this by granting access to the `Adv. Task Manager menu` for specific roles, including `CmsAdmins`, `Administrator`, `WebAdmins`, `WebEditors`, and `CMSEditors`. You have the flexibility to configure your authorization policy when registering the AdvancedTaskManager handler.
+
+Example:
+
+```C#
+services.AddAdvancedTaskManager(o => { },
+    policy =>
+    {
+        policy.RequireRole("MyRole");
+    });
+```
+
+### Enabling Optimizely Opti ID Authentication
+
+To integrate Optimizely Opti ID for authentication within your Optimizely CMS and other Optimizely One applications, it's necessary to define the `configurePolicy` for this module during your application startup. This involves a straightforward step of incorporating `policy.AddAuthenticationSchemes(OptimizelyIdentityDefaults.SchemeName);` into the `configurePolicy`, as illustrated in the example below.
+
+```C#
+services.AddAdvancedTaskManager(o => { },
+    policy =>
+    {
+        policy.RequireRole("MyRole");
+        policy.AddAuthenticationSchemes(OptimizelyIdentityDefaults.SchemeName);
+    });
+```
 
  ## Overview
-Currently, the User notification and Tasks (Awaiting Review) are disconnected and provide very basic information to the editors.
+Presently, the User notifications and Tasks (Awaiting Review) are disjointed, offering only fundamental information and limited control to the editors.
 
-![Tasks pane](assets/docsimages/image001.png)
+![Tasks pane](assets/docsimages/1-task-pane.png)
 
-![User notification](assets/docsimages/image003.png)
+![Dashboard](assets/docsimages/2-dashboard.png)
 
-The idea behind this project is two-fold. The first purpose is to build a more versatile Approval Sequence task management gadget (for Content & Change Awaiting Review tasks) to extend the information available to the editors. The second purpose is to combine user notifications with tasks and empower Approvers to act on their tasks within a single interface.  
+![User Notification](assets/docsimages/3-notifications.png)
 
-![Advanced Task Manager - Content Approval](assets/docsimages/image0052.png)
+This project has two goals:
+
+* **Empower editors:** Build a more versatile Approval Sequence tool for Content and Change Awaiting Review tasks, offering editors deeper insights.
+
+* **Streamline approver workflow:** Combine user notifications with tasks within a single interface, allowing approvers to efficiently handle tasks individually or in bulk.
+
+By default, Change Approval is integrated into the Approval Sequence in Optimizely CMS. Therefore, Advanced Task Manager seamlessly incorporates content approval tasks. If the [Change Approval](https://nuget.optimizely.com/package/?id=EPiServer.ChangeApproval) NuGet package is installed, the tool will automatically display two tabs in the left-side menu:
+
+* Content Approval
+* Change Approval
+
+![Advanced Task Manager - Content Approval](assets/docsimages/content-approval.png)
 
 ![Advanced Task Manager - Change Approval](assets/docsimages/change-approval.png)
 
-The gadget provides the following information about the task to the Editor:
+The tool furnishes the Editor with the following information regarding the task:
 
 ### Change Approval
 
-* Content Name
-* Content Type
+* Name
+* Content type
 * Type
-* Submitted Date/Time
-* Started By
+* Submitted (UTC)
+* Started by
 * Deadline (optional)
 
 ### Content Approval
 
-* Content Name
-* Content Type
+* Name
+* Content type
 * Type
-* Submitted Date/Time
-* Started By
+* Submitted (UTC)
+* Started by
 
 The list of current features are as follow:
-* [Task ordering](#task-ordering)
-* [Deadline field for the content approval](#deadline-field-for-the-content-approval-optional)
-* [User notifications associated with the task](#user-notifications-associated-with-the-task)
 * [Approve entire approval sequence](#approve-entire-approval-sequence)
 * [Publish content after approval](#publish-content-after-approval)
+* [Deadline field for the content approval](#deadline-field-for-the-content-approval-optional)
+* [User notifications associated with the task](#user-notifications-associated-with-the-task)
 * [Change approval task information](#change-approval-task-information)
+* [Task ordering](#task-ordering)
 
-Some features are disabled by default, but you can decide which ones are enabled by Configuring features in the **Web.config**.
+Some features are disabled by default, but you can decide which ones are enabled by Configuring option in the `startup.cs` or in `appsettings.json`.
 
-## Task ordering
+### Approve Entire Approval Sequence (Content Approval Only)
+The gadget prompts the editor to approve the entire Content Approval Sequence for single or multiple contents. A comment in the comment field is mandatory..
+ 
+![Approve entire approval sequence](assets/docsimages/content-approval-approve.png)
+
+![Approve entire model](assets/docsimages/content-approval-model.png)
+ 
+### Publish Content After Approval
+
+If the editor possesses publishing rights for content approval, the option to `Publish selected content after approval` will be enabled, allowing the editor to publish the content post-approval.
+
+If the editor holds publishing rights for only some of the content after approving all, only the content the editor can publish will be processed. Warning messages will be displayed for content that the editor cannot publish.
+
+![Publish content after approval](assets/docsimages/content-approval-no-rights-publish.png)
+
+![Publish content after approval](assets/docsimages/content-approval-approve-publish.png)
+
+![Publish content after approval](assets/docsimages/content-approval-publish-model.png)
+
+### Deadline Field for Approval Sequence (Optional)
+
+![Deadline field for the approval sequence](assets/docsimages/change-approval-deadline.png)
+
+The deadline property is a date/time attribute enabling editors to assign priority to content (Page or Block). This prioritization ensures that Approvers are informed about the urgency before approval.
+
+By default, the functionality of the deadline property is deactivated and can be activated (if needed) by incorporating the following option in `startup.cs` or in `appsettings.json`.
+
+```C#
+services.AddAdvancedTaskManager(o =>
+{
+    o.AddContentApprovalDeadlineProperty = true;
+});
+```
+
+```Json
+"AdvancedTaskManager": {
+    "AddContentApprovalDeadlineProperty":  true
+}
+```
+
+By enabling the `Content approval deadline` The property `Content approval deadline` will be added in all PageTyes and BlockTypes under `Settings` Tab.
+
+![Enable approval sequence deadline](assets/docsimages/deadline-property.png)
+
+The deadline property within the tool operates in three states:
+
+* **Warning**
+
+The `Warning `state, highlighted in green, alerts approvers to tasks requiring prompt attention for approval. By default, the Warning state spans a duration of 4 days. This implies that if the content deadline is within 4 days, the `deadline row`` will be highlighted in green.
+
+To customize the duration of the `Warning` state, you can adjust the settings by Configuring option in the `startup.cs` or in `appsettings.json`.
+
+```C#
+services.AddAdvancedTaskManager(o =>
+{
+    o.WarningDays = 8;
+});
+```
+
+```Json
+"AdvancedTaskManager": {
+    "WarningDays":  8
+}
+```
+
+* **Danger**
+
+The `Danger` state, highlighted in red, indicates that the deadline date/time has already passed.
+
+* **Normal**
+
+The `Normal` state is not associated with any specific color, signifying that there is still ample time for Approvers to prioritize the task.
+
+If you set the `AddContentApprovalDeadlineProperty` option in the `startup.cs` or `appsettings.json` to false, it will hide the property and tab from the CMS editor UI.
+ 
+If you wish to remove the property from the CMS, include the following option in the `startup.cs` or `appsettings.json:
+
+```C#
+services.AddAdvancedTaskManager(o =>
+{
+    o.DeleteContentApprovalDeadlineProperty = true;
+});
+```
+
+```Json
+"AdvancedTaskManager": {
+    "DeleteContentApprovalDeadlineProperty":  true
+}
+```
+
+Please note that the **AddContentApprovalDeadlineProperty** will only trigger if **DeleteContentApprovalDeadlineProperty** element is set to **false**.
+
+### User Notifications Linked to the Task
+ 
+![User notification with task](assets/docsimages/notification.png)
+ 
+The tool facilitates the reading of user notifications linked to the task, enhancing the usefulness of the notification icon, rather than accumulating notifications.
+
+Upon the editors opening or refreshing the gadget, tasks with unread notifications are highlighted, and the notifications are subsequently marked as read automatically. This ensures that in the editor notification section, the notifications will be acknowledged as read.
+
+### Task ordering
 
 The gadget gives editors an option to sort through all the tasks with status Awaiting Review by the following columns:
-* Order tasks by Content name
+* Order tasks by name
 * Order tasks by content type
 * Order tasks by type
 * Order tasks by time/date
 * Order tasks by a user who submitted the request
 * Order task by the deadline
 
-![Advanced Task Manager](assets/docsimages/image007.gif)
+## Information for Change Approval Tasks
 
-## Deadline field for the approval sequence (Optional)
 
-![Deadline field for the approval sequence](assets/docsimages/image008.png)
+The table row for change approval task information functions as an accordion. Clicking on the row will reveal (or hide) the details of the change approval task.
 
-The deadline property is a date/time property that allows editors to set priority against the content (Page or Block) so that the Approvers are aware of the priority ahead of approval.
+There are four types of Change approval tasks:
 
-The deadline property functionality is disabled by default and can be enabled (if required) by adding the following **<appSettings>** element of the **Web.config**.
+### Security Setting Change
 
-![Enable deadline](assets/docsimages/image012.png)
+![Securty setting change](assets/docsimages/security-change-approval.png)
 
-By enabling the ```Content approval deadline``` The property ```Content approval deadline``` will be added in all  PageTyes and BlockTypes under ```Content Approval``` Tab.
-
-![Enable approval sequence deadline](assets/docsimages/image014.png)
-
-The deadline property has three states in the gadget:
-
-* **Warning**
-
-The ```Warning``` state, highlighted in green informs approvers of the task that needs attention to be approved. The duration of the ```Warning``` state is 4 days by default. It means if the content deadline is within 4 days ```deadline row``` will be highlighted in green.
-
-You can set the duration of the ```Warning``` state by adding the **<appSettings>** element of the **Web.config**.
-
-![Warning notification duration](assets/docsimages/image010.png)
-
-* **Danger**
-
-The ```Danger``` state highlighted in red indicates the deadline date/time has passed.
-
-* **Normal**
-
-The ```Normal``` state is not represented by any color as it shows there is still time for Approvers to prioritize the task.
-
-Setting the **<appSettings> ATM:EnableContentApprovalDeadline** element of the **Web.config** to **false** will hide the property and Tab from CMS editor UI.
+### Moving Content Change
  
-If you want to delete the property from the CMS, add the following **<appSettings>** element of the **Web.config**
+ ![Moving content change](assets/docsimages/moving-change-approval.png)
 
-![Disable deadline](assets/docsimages/image016.png)
-
-Please note that the **ATM:DeleteContentApprovalDeadlineProperty** will only trigger if **ATM:EnableContentApprovalDeadline** element is set to **false**.
-
-## User notifications associated with the task
+### Language Setting Change
  
-![User notification with task](assets/docsimages/image018.png)
+ ![Language setting change](assets/docsimages/language-change-approval.png)
+
+### Expiration Date Setting Change
  
-The gadget allows user notifications associated with the task to be ‘read’ and enable the notification icon to be more useful as opposed to accumulating notifications.
+ ![Expiration date setting change](assets/docsimages/expire-change-approval.png)
 
-When the editors open or refresh the gadget, all user tasks with unread notifications are highlighted and the notifications then are marked as read automatically.  It means in the editor notification section the notifications will be marked as read. 
- 
-![User notification](assets/docsimages/image020.png)
- 
-## Approve entire approval sequence (only for Content Approval)
- 
-The gadget informs the editor to approve the entire Content Approval Sequence of single or multiple contents. Comment field is required.
- 
-![Approve entire approval sequence](assets/docsimages/image022.png)
- 
-## Publish content after approval
- 
-If the editor has published rights for the content approval, the option for ```Publish selected content after approval``` will be enabled that allows the editor to publish the content after approval.
+# Sandbox App
+Sandbox application is testing poligon for pacakge new features and bug fixes.
 
-If the editor has published rights for some of the content after approving all content then only content the editor can publish will be published. The warning messages will appear against the content which the editor cannot publish.
+**ADMIN**
 
-![Publish content after approval](assets/docsimages/image024.png)
+Username: sysadmin
 
-## Change approval task information
+Password: Sandbox#123
 
- The table row of the change approval task information acts like an accordion. On clicking on the row the change approval task details will show (and hide). 
+**EDITOR**
 
- There are four types of Change approval tasks.
+Username: editor
 
- * Securty setting change
+Password: Sandbox#123
 
- ![Securty setting change](assets/docsimages/ca-security.png)
+**AUTHOR**
 
- * Moving content change
+Username: author
 
- ![Moving content change](assets/docsimages/ca-moving.png)
-
- * Language setting change 
-
- ![Language setting change](assets/docsimages/ca-language.png)
-
- * Expiration date setting change
-
- ![Expiration date setting change](assets/docsimages/ca-expire.png)
-
-## Configuring features
-
-To turn on or off one or more features, use the following **<appSettings>** elements of **Web.config**. By way of an example set false on the feature that should not be available.
-
-![Configuring features](assets/docsimages/image026.png)
-
-## Install 
-
-```Install-Package AdvancedTaskManager```
-
-https://nuget.episerver.com/package/?id=AdvancedTaskManager
-
-Add the ```Advanced Task Manager``` gadget in the dashboard
-
-![Advanced task manager gadet](assets/docsimages/image028.png)
-
+Password: Sandbox#123
+W
 ## Contributing
 
 If you can help please do so by contributing to the package! Reach out package maintainer for additional details if needed.
 
-# Update 2.2.0
+## Changelog
 
-* New tab and better UI for Change Approval tasks.
-
-# Update 2.0.0
-
-* Change Approval tasks will show along with the Content Approval tasks.
-* Support for all content type tasks in CMS. Now editors can view, approve and publish, Episerver Forms, ImageData & MediaData. 
-* Bug fixes for pagination and performance improvements.
+[Changelog](CHANGELOG.md)

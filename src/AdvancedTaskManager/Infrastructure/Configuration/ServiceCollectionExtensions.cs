@@ -26,11 +26,6 @@ namespace AdvancedTaskManager.Infrastructure.Configuration
             return AddAdvancedTaskManager(services, setupAction, DefaultPolicy);
         }
 
-        public static IServiceCollection AddAdvancedTaskManager(this IServiceCollection services, Action<AuthorizationPolicyBuilder> configurePolicy)
-        {
-            return AddAdvancedTaskManager(services, _ => { }, configurePolicy);
-        }
-
         public static IServiceCollection AddAdvancedTaskManager(this IServiceCollection services, Action<AdvancedTaskManagerOptions> setupAction, Action<AuthorizationPolicyBuilder> configurePolicy)
         {
             services.AddTransient<IUIHelper, UIHelper>();
