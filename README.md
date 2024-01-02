@@ -151,7 +151,7 @@ The list of current features are as follow:
 Some features are disabled by default, but you can decide which ones are enabled by Configuring option in the `startup.cs` or in `appsettings.json`.
 
 ### Approve Entire Approval Sequence (Content Approval Only)
-The gadget prompts the editor to approve the entire Content Approval Sequence for single or multiple contents. A comment in the comment field is mandatory..
+The tool prompts the editor to approve the entire Content Approval Sequence for single or multiple contents. A comment in the comment field is mandatory..
  
 ![Approve entire approval sequence](assets/docsimages/content-approval-approve.png)
 
@@ -248,17 +248,19 @@ Please note that the **AddContentApprovalDeadlineProperty** will only trigger if
  
 The tool facilitates the reading of user notifications linked to the task, enhancing the usefulness of the notification icon, rather than accumulating notifications.
 
-Upon the editors opening or refreshing the gadget, tasks with unread notifications are highlighted, and the notifications are subsequently marked as read automatically. This ensures that in the editor notification section, the notifications will be acknowledged as read.
+Upon the editors opening or refreshing the tool, tasks with unread notifications are highlighted, and the notifications are subsequently marked as read automatically. This ensures that in the editor notification section, the notifications will be acknowledged as read.
 
 ### Task ordering
 
-The gadget gives editors an option to sort through all the tasks with status Awaiting Review by the following columns:
+The tool gives editors an option to sort through all the tasks with status Awaiting Review by the following columns:
 * Order tasks by name
 * Order tasks by content type
 * Order tasks by type
 * Order tasks by time/date
 * Order tasks by a user who submitted the request
 * Order task by the deadline
+
+![Sort](assets/docsimages/sort.png)
 
 ## Information for Change Approval Tasks
 
