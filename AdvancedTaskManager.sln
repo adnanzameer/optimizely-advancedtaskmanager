@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdvancedTaskManager", "src\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sandbox", "sandbox", "{96C5DB0F-EECB-4B00-A50C-CE88A8F6FDCF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoundationCore.Web", "sandbox\FoundationCore.Web\FoundationCore.Web.csproj", "{3BCE2A05-0930-450B-9597-A2BFFC70E3E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alloy", "sandbox\Alloy\Alloy.csproj", "{49371B9A-972A-4013-9D26-F9860BF83B83}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,16 +19,16 @@ Global
 		{DFBF0553-7E44-44BF-A59F-F94F9493FC17}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DFBF0553-7E44-44BF-A59F-F94F9493FC17}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DFBF0553-7E44-44BF-A59F-F94F9493FC17}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3BCE2A05-0930-450B-9597-A2BFFC70E3E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3BCE2A05-0930-450B-9597-A2BFFC70E3E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3BCE2A05-0930-450B-9597-A2BFFC70E3E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3BCE2A05-0930-450B-9597-A2BFFC70E3E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49371B9A-972A-4013-9D26-F9860BF83B83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49371B9A-972A-4013-9D26-F9860BF83B83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49371B9A-972A-4013-9D26-F9860BF83B83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49371B9A-972A-4013-9D26-F9860BF83B83}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{3BCE2A05-0930-450B-9597-A2BFFC70E3E1} = {96C5DB0F-EECB-4B00-A50C-CE88A8F6FDCF}
+		{49371B9A-972A-4013-9D26-F9860BF83B83} = {96C5DB0F-EECB-4B00-A50C-CE88A8F6FDCF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8AF472CE-0DC2-460F-9407-B4E16BCBCD0D}
