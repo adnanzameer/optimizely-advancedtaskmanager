@@ -309,6 +309,16 @@ Password: Sandbox#123
 
 If you can help please do so by contributing to the package! Reach out package maintainer for additional details if needed.
 
+## Feature requests
+
+If you have new ideas or feature requests that can make this tool even more useful for you or the community, please feel free to open a new issue at the following link.
+
+https://github.com/adnanzameer/optimizely-advancedtaskmanager/issues
+
+
+## Optimizely (Episerver) CMS 11 Support
+Visit the repository: [AdvancedTaskManager on GitHub](https://github.com/adnanzameer/AdvancedTaskManager)
+
 ## Changelog
 
 [Changelog](CHANGELOG.md)
