@@ -60,6 +60,13 @@ In addition, the configuration can be read from the `appsettings.json`:
 "AdvancedTaskManager": {
     "PageSize":  40, 
     "WarningDays": 6
+    "DeleteChangeApprovalTasks": true,
+    "PageSize": 10,
+    "AddContentApprovalDeadlineProperty": true,
+    "DeleteContentApprovalDeadlineProperty": true,
+    "WarningDays": 4,
+    "DateTimeFormat": "yyyy-MM-dd HH:mm",
+    "DateTimeFormatUserFriendly": "MMM dd, yyyy, h:mm:ss tt""
 }
 ```
 
