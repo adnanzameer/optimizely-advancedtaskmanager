@@ -1,9 +1,5 @@
 # Advanced Task Manager for Optimizely
 
-The **Advanced Task Manager for Optimizely** is a freely available module. If you find it beneficial, you can show your support by treating me to a coffee on [Ko-fi](https://ko-fi.com/U7U2STV29):
-
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/U7U2STV29)
-
 ## Description
 [![Platform](https://img.shields.io/badge/Platform-.NET%206-blue.svg?style=flat)](https://docs.microsoft.com/en-us/dotnet/)
 [![Platform](https://img.shields.io/badge/Optimizely-%2012-blue.svg?style=flat)](http://world.episerver.com/cms/)
