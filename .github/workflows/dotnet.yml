@@ -1,0 +1,25 @@
+name: .NET
+
+on:
+  push:
+    branches: [ "develop", "feature/**" ]
+  pull_request:
+    branches: [ "main", "develop" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: 6.0.x
+    - name: Restore dependencies
+      run: dotnet restore AdvancedTaskManager.sln
+    - name: Build
+      run: dotnet build AdvancedTaskManager.sln --no-restore
+    - name: Test
+      run: dotnet test z --no-build --verbosity normal
