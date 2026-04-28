@@ -5,9 +5,9 @@ The **Advanced Task Manager for Optimizely** is a freely available module. If yo
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/U7U2STV29)
 
 ## Description
-[![Platform](https://img.shields.io/badge/Platform-.NET%206-blue.svg?style=flat)](https://docs.microsoft.com/en-us/dotnet/)
-[![Platform](https://img.shields.io/badge/Optimizely-%2012-blue.svg?style=flat)](http://world.episerver.com/cms/)
-[![Platform](https://img.shields.io/badge/EPiServer-%2012-orange.svg?style=flat)](http://world.episerver.com/cms/)
+[![Platform](https://img.shields.io/badge/Platform-.NET%2010-blue.svg?style=flat)](https://docs.microsoft.com/en-us/dotnet/)
+[![Platform](https://img.shields.io/badge/Optimizely-%2013-blue.svg?style=flat)](http://world.optimizely.com/cms/)
+
 
 The **Advanced Task Manager for Optimizely** provides CMS editors with enhanced oversight of administration tasks related to Awaiting Review in Content Approval and Change Approval processes.
 
@@ -19,13 +19,20 @@ The **Advanced Task Manager for Optimizely** provides CMS editors with enhanced 
 - **Publish content after approval:** Permits publishing content after approval in bulk or against individual tasks.
 - **Change approval task information:** Facilitates changes to approval task information.
 
-## Installation 
+## Requirements
+
+- Optimizely CMS 13
+- .NET 10
+
+> **Note on Change Approval:** The `EPiServer.ChangeApproval` package is not compatible with CMS 13 as of this release. The Change Approval tab will not be available until Optimizely publishes a CMS 13-compatible version of that package. Content Approval functionality is fully supported.
+
+## Installation
 
 To install the Advanced Task Manager, begin by adding the NuGet package using [Optimizely NuGet](https://nuget.optimizely.com/):
 
-`
+```
 dotnet add package AdvancedTaskManager
-`
+```
 
 ## Configuration
 
@@ -119,10 +126,12 @@ This project has two goals:
 
 * **Streamline approver workflow:** Combine user notifications with tasks within a single interface, allowing approvers to efficiently handle tasks individually or in bulk.
 
-By default, Change Approval is integrated into the Approval Sequence in Optimizely CMS. Therefore, Advanced Task Manager seamlessly incorporates content approval tasks. If the [Change Approval](https://nuget.optimizely.com/package/?id=EPiServer.ChangeApproval) NuGet package is installed, the tool will automatically display two tabs in the left-side menu:
+By default, Change Approval is integrated into the Approval Sequence in Optimizely CMS. Therefore, Advanced Task Manager seamlessly incorporates content approval tasks. If the [Change Approval](https://nuget.optimizely.com/package/?id=EPiServer.ChangeApproval) NuGet package is installed (CMS 12 only), the tool will automatically display two tabs in the left-side menu:
 
 * Content Approval
-* Change Approval
+* Change Approval (CMS 12 only — see [Requirements](#requirements))
+
+
 
 ![Advanced Task Manager - Content Approval](assets/docsimages/content-approval.png)
 
@@ -323,7 +332,12 @@ If you have new ideas or feature requests that can make this tool even more usef
 https://github.com/adnanzameer/optimizely-advancedtaskmanager/issues
 
 
+## CMS 12 Support
+
+For Optimizely CMS 12 / .NET 6, use version 3.x of this package https://github.com/adnanzameer/optimizely-advancedtaskmanager/tree/CMS12.
+
 ## Optimizely (Episerver) CMS 11 Support
+
 Visit the repository: [AdvancedTaskManager on GitHub](https://github.com/adnanzameer/AdvancedTaskManager)
 
 ## Changelog

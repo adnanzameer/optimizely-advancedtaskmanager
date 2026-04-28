@@ -11,11 +11,11 @@
 	<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
 	<PackageProjectUrl>https://github.com/adnanzameer/optimizely-advancedtaskmanager</PackageProjectUrl>
 	<PackageIcon>icon.png</PackageIcon>
-	<iconUrl>https://github.com/adnanzameer/optimizely-advancedtaskmanager/master/atm.png</iconUrl>
+	<iconUrl>https://github.com/adnanzameer/optimizely-advancedtaskmanager/tree/master/src/AdvancedTaskManager/icon.png</iconUrl>
 	<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
 	<Description>Administration of Awaiting Review Tasks of Content Approval and Change Approval</Description>
 	<PackageReleaseNotes>https://github.com/adnanzameer/optimizely-advancedtaskmanager/blob/master/CHANGELOG.md</PackageReleaseNotes>
-	<PackageTags></PackageTags>
+	<PackageTags>optimizely;episerver;cms;cms13;content-approval;change-approval;task-manager;workflow;approval;administration;A2Z</PackageTags>
 	<StaticWebAssetBasePath>/_content/</StaticWebAssetBasePath>
 	<Nullable>enable</Nullable>
   </PropertyGroup>
@@ -33,7 +33,7 @@
   </ItemGroup>
 
   <ItemGroup>
-	<None Include="..\..\images\icon.png" Pack="true" PackagePath="\" />
+	<None Include="icon.png" Pack="true" PackagePath="" />
   </ItemGroup>
 
   <ItemGroup>
@@ -47,12 +47,12 @@
 	</None>
   </ItemGroup>
 
-	<ItemGroup>
-		<Content Include=".\msbuild\CopyModule.targets">
-			<Pack>true</Pack>
-			<PackageCopyToOutput>true</PackageCopyToOutput>
-			<BuildAction>None</BuildAction>
-			<PackagePath>build\net10.0\$(MSBuildProjectName).targets</PackagePath>
-		</Content>
-	</ItemGroup>
+  <ItemGroup>
+	<Content Include=".\msbuild\CopyModule.targets">
+	  <Pack>true</Pack>
+	  <PackageCopyToOutput>true</PackageCopyToOutput>
+	  <BuildAction>None</BuildAction>
+	  <PackagePath>build\net10.0\$(MSBuildProjectName).targets</PackagePath>
+	</Content>
+  </ItemGroup>
 </Project>
