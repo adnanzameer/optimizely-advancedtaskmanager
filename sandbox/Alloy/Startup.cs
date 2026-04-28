@@ -2,6 +2,9 @@ using AdvancedTaskManager.Infrastructure.Configuration;
 using Alloy.Extensions;
 using EPiServer.Cms.Shell;
 using EPiServer.Cms.UI.AspNetIdentity;
+using EPiServer.Data;
+using EPiServer.Cms.UI.VisitorGroups;
+using EPiServer.DependencyInjection;
 using EPiServer.Scheduler;
 using EPiServer.Web.Routing;
 
@@ -25,10 +28,16 @@ public class Startup
             services.Configure<SchedulerOptions>(options => options.Enabled = false);
         }
 
+        services.Configure<DataAccessOptions>(options =>
+        {
+            options.UpdateDatabaseCompatibilityLevel = true;
+        });
+
         services
             .AddCmsAspNetIdentity<ApplicationUser>()
             .AddCms()
             .AddAlloy()
+            .AddVisitorGroupsUI()
             .AddAdminUserRegistration()
             .AddEmbeddedLocalization<Startup>();
 
@@ -40,8 +49,6 @@ public class Startup
             o.PageSize = 10;
             //o.DeleteContentApprovalDeadlineProperty = true;
         });
-        // Required by Wangkanai.Detection
-        services.AddDetection();
 
         services.AddSession(options =>
         {

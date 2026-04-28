@@ -1,11 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
   <PropertyGroup>
-	<TargetFramework>net6.0</TargetFramework>
+	<TargetFramework>net10.0</TargetFramework>
 	<AddRazorSupportForMvc>true</AddRazorSupportForMvc>
 	<PackageId>AdvancedTaskManager</PackageId>
 	<Title>Advanced Task Manager</Title>
 	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-	<version>3.0.1</version>
+	<version>4.0.0</version>
 	<Authors>Adnan Zameer</Authors>
 	<Company>Adnan Zameer</Company>
 	<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
@@ -17,6 +17,7 @@
 	<PackageReleaseNotes>https://github.com/adnanzameer/optimizely-advancedtaskmanager/blob/master/CHANGELOG.md</PackageReleaseNotes>
 	<PackageTags></PackageTags>
 	<StaticWebAssetBasePath>/_content/</StaticWebAssetBasePath>
+	<Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
@@ -24,10 +25,11 @@
   </ItemGroup>
 
   <ItemGroup>
-	<PackageReference Include="EPiServer.CMS.Core" Version="12.0.3" />
-	<PackageReference Include="EPiServer.CMS.UI.Core" Version="12.0.2" />
-	<PackageReference Include="EPiServer.Framework" Version="12.0.3" />
-	<PackageReference Include="X.PagedList" Version="8.1.0" />
+	<PackageReference Include="EPiServer.CMS.Core" Version="13.0.0" />
+	<PackageReference Include="EPiServer.CMS.UI.Core" Version="13.0.0" />
+	<PackageReference Include="EPiServer.Framework" Version="13.0.0" />
+	<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+	<PackageReference Include="X.PagedList" Version="10.5.9" />
   </ItemGroup>
 
   <ItemGroup>
@@ -50,7 +52,7 @@
 			<Pack>true</Pack>
 			<PackageCopyToOutput>true</PackageCopyToOutput>
 			<BuildAction>None</BuildAction>
-			<PackagePath>build\net6.0\$(MSBuildProjectName).targets</PackagePath>
+			<PackagePath>build\net10.0\$(MSBuildProjectName).targets</PackagePath>
 		</Content>
 	</ItemGroup>
 </Project>

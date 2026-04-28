@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 using AdvancedTaskManager.Infrastructure.Configuration;
 using EPiServer.Core;
@@ -17,20 +17,12 @@ namespace AdvancedTaskManager.Infrastructure.Initialization
         private const string ContentApprovalDeadlinePropertyName = "ATM_ContentApprovalDeadline";
 
         private static readonly object Lock = new();
-        private IContentTypeRepository _contentTypeRepository;
-        private ITabDefinitionRepository _tabDefinitionRepository;
-        private IPropertyDefinitionRepository _propertyDefinitionRepository;
-        private IPropertyDefinitionTypeRepository _propertyDefinitionTypeRepository;
 
         public void Initialize(InitializationEngine context)
         {
-            _contentTypeRepository = context.Locate.Advanced.GetInstance<IContentTypeRepository>();
-            _tabDefinitionRepository = context.Locate.Advanced.GetInstance<ITabDefinitionRepository>();
-            _propertyDefinitionRepository = context.Locate.Advanced.GetInstance<IPropertyDefinitionRepository>();
-            _propertyDefinitionTypeRepository = context.Locate.Advanced.GetInstance<IPropertyDefinitionTypeRepository>();
-            var configuration = context.Locate.Advanced.GetInstance<IOptions<AdvancedTaskManagerOptions>>();
-
+            var configuration = ServiceLocator.Current.GetInstance<IOptions<AdvancedTaskManagerOptions>>();
             var deleteContentApprovalDeadlineProperty = configuration.Value.DeleteContentApprovalDeadlineProperty;
+
             if (deleteContentApprovalDeadlineProperty)
             {
                 DeleteMappingProperties();
@@ -38,14 +30,14 @@ namespace AdvancedTaskManager.Infrastructure.Initialization
             else
             {
                 var addContentApprovalDeadlineProperty = configuration.Value.AddContentApprovalDeadlineProperty;
-
                 SetupMappingProperties(addContentApprovalDeadlineProperty);
             }
         }
 
         private void SetupMappingProperties(bool addContentApprovalDeadlineProperty)
         {
-            foreach (var contentType in _contentTypeRepository.List().Where(x => x.IsAvailable))
+            var contentTypeRepository = ServiceLocator.Current.GetInstance<IContentTypeRepository>();
+            foreach (var contentType in contentTypeRepository.List().Where(x => x.IsAvailable))
                 CreateUpdatePropertyDefinition(
                     contentType,
                     ContentApprovalDeadlinePropertyName,
@@ -58,82 +50,100 @@ namespace AdvancedTaskManager.Infrastructure.Initialization
 
         private void DeleteMappingProperties()
         {
-            foreach (var contentType in _contentTypeRepository.List().Where(x => x.IsAvailable))
-                DeletePropertyDefinition(
-                    contentType,
-                    ContentApprovalDeadlinePropertyName);
+            var contentTypeRepository = ServiceLocator.Current.GetInstance<IContentTypeRepository>();
+            foreach (var contentType in contentTypeRepository.List().Where(x => x.IsAvailable))
+                DeletePropertyDefinition(contentType, ContentApprovalDeadlinePropertyName);
         }
-        private void CreateUpdatePropertyDefinition(ContentType contentType, string propertyDefinitionName, string helperText, string editCaption, Type propertyDefinitionType, string tabName, int? propertyOrder, bool addContentApprovalDeadlineProperty)
+
+        private void CreateUpdatePropertyDefinition(
+            ContentType contentType,
+            string propertyDefinitionName,
+            string helperText,
+            string editCaption,
+            Type propertyDefinitionType,
+            string tabName,
+            int? propertyOrder,
+            bool addContentApprovalDeadlineProperty)
         {
-            var propertyDefinition = GetPropertyDefinition(contentType, propertyDefinitionName);
+            var contentTypeRepository = ServiceLocator.Current.GetInstance<IContentTypeRepository>();
+            var tabDefinitionRepository = ServiceLocator.Current.GetInstance<ITabDefinitionRepository>();
+            var propertyDefinitionTypeRepository = ServiceLocator.Current.GetInstance<IPropertyDefinitionTypeRepository>();
 
-            if (propertyDefinition == null)
+            var writableContentType = contentType.CreateWritableClone() as ContentType;
+            if (writableContentType == null) return;
+
+            var existingPropDef = writableContentType.PropertyDefinitions
+                .FirstOrDefault(x => x.Name.Equals(propertyDefinitionName, StringComparison.OrdinalIgnoreCase));
+
+            if (existingPropDef == null)
             {
-                if (propertyDefinitionType == null)
-                    return;
+                if (!addContentApprovalDeadlineProperty) return;
 
-                if (!addContentApprovalDeadlineProperty)
-                    return;
+                var newPropDef = new PropertyDefinition
+                {
+                    ContentTypeID = writableContentType.ID,
+                    DisplayEditUI = true,
+                    DefaultValueType = DefaultValueType.None,
+                    Name = propertyDefinitionName,
+                    EditCaption = editCaption,
+                    HelpText = helperText,
+                    Type = propertyDefinitionTypeRepository.Load(propertyDefinitionType)
+                };
 
-                propertyDefinition = new PropertyDefinition();
+                if (!string.IsNullOrEmpty(tabName))
+                {
+                    lock (Lock)
+                    {
+                        newPropDef.Tab = tabDefinitionRepository.Load(tabName);
+                    }
+                }
+
+                if (propertyOrder.HasValue)
+                    newPropDef.FieldOrder = propertyOrder.Value;
+
+                writableContentType.PropertyDefinitions.Add(newPropDef);
             }
             else
             {
-                propertyDefinition = propertyDefinition.CreateWritableClone();
-            }
+                existingPropDef.DisplayEditUI = addContentApprovalDeadlineProperty;
 
-            propertyDefinition.ContentTypeID = contentType.ID;
-            propertyDefinition.DisplayEditUI = true;
-            propertyDefinition.DefaultValueType = DefaultValueType.None;
+                if (!string.IsNullOrEmpty(editCaption))
+                    existingPropDef.EditCaption = editCaption;
 
-            propertyDefinition.DisplayEditUI = addContentApprovalDeadlineProperty;
+                if (!string.IsNullOrEmpty(helperText))
+                    existingPropDef.HelpText = helperText;
 
-            if (!string.IsNullOrEmpty(propertyDefinitionName))
-                propertyDefinition.Name = propertyDefinitionName;
+                if (propertyOrder.HasValue)
+                    existingPropDef.FieldOrder = propertyOrder.Value;
 
-            if (!string.IsNullOrEmpty(editCaption))
-                propertyDefinition.EditCaption = editCaption;
-
-            if (!string.IsNullOrEmpty(helperText))
-                propertyDefinition.HelpText = helperText;
-
-            if (propertyDefinitionType != null)
-                propertyDefinition.Type = _propertyDefinitionTypeRepository.Load(propertyDefinitionType);
-
-            if (!string.IsNullOrEmpty(tabName))
-            {
-                var obj2 = Lock;
-                lock (obj2)
+                if (!string.IsNullOrEmpty(tabName))
                 {
-                    propertyDefinition.Tab = _tabDefinitionRepository.Load(tabName);
+                    lock (Lock)
+                    {
+                        existingPropDef.Tab = tabDefinitionRepository.Load(tabName);
+                    }
                 }
             }
 
-            if (propertyOrder.HasValue)
-                propertyDefinition.FieldOrder = propertyOrder.Value;
-
-            _propertyDefinitionRepository.Save(propertyDefinition);
+            contentTypeRepository.Save(writableContentType);
         }
 
         private void DeletePropertyDefinition(ContentType contentType, string propertyDefinitionName)
         {
-            var propertyDefinition = GetPropertyDefinition(contentType, propertyDefinitionName);
+            var contentTypeRepository = ServiceLocator.Current.GetInstance<IContentTypeRepository>();
 
-            if (propertyDefinition != null) _propertyDefinitionRepository.Delete(propertyDefinition);
+            var writableContentType = contentType.CreateWritableClone() as ContentType;
+            if (writableContentType == null) return;
+
+            var propDef = writableContentType.PropertyDefinitions
+                .FirstOrDefault(x => x.Name.Equals(propertyDefinitionName, StringComparison.OrdinalIgnoreCase));
+
+            if (propDef != null)
+            {
+                writableContentType.PropertyDefinitions.Remove(propDef);
+                contentTypeRepository.Save(writableContentType);
+            }
         }
-
-        private static PropertyDefinition GetPropertyDefinition(ContentType contentType, string propertyName, Type propertyDefinitionType = null)
-        {
-            var source = from pd in contentType.PropertyDefinitions
-                         where pd.Name.Equals(propertyName, StringComparison.OrdinalIgnoreCase)
-                         select pd;
-            if (propertyDefinitionType != null)
-                source = from pd in source
-                         where pd.Type.DefinitionType == propertyDefinitionType
-                         select pd;
-            return source.FirstOrDefault();
-        }
-
 
         public void Uninitialize(InitializationEngine context)
         {

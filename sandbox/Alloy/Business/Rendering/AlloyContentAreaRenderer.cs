@@ -1,3 +1,4 @@
+using EPiServer.Core;
 using EPiServer.Core.Html.StringParsing;
 using EPiServer.Web.Mvc.Html;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -10,6 +11,13 @@ namespace Alloy.Business.Rendering;
 /// </summary>
 public class AlloyContentAreaRenderer : ContentAreaRenderer
 {
+    private readonly IContentLoader _contentLoader;
+
+    public AlloyContentAreaRenderer(IContentLoader contentLoader)
+    {
+        _contentLoader = contentLoader;
+    }
+
     protected override string GetContentAreaItemCssClass(IHtmlHelper htmlHelper, ContentAreaItem contentAreaItem)
     {
         var baseItemClass = base.GetContentAreaItemCssClass(htmlHelper, contentAreaItem);
@@ -39,9 +47,9 @@ public class AlloyContentAreaRenderer : ContentAreaRenderer
         };
     }
 
-    private static string GetTypeSpecificCssClasses(ContentAreaItem contentAreaItem)
+    private string GetTypeSpecificCssClasses(ContentAreaItem contentAreaItem)
     {
-        var content = contentAreaItem.GetContent();
+        _contentLoader.TryGet(contentAreaItem.ContentLink, out IContent? content);
         var cssClass = content == null ? string.Empty : content.GetOriginalType().Name.ToLowerInvariant();
 
         if (content is ICustomCssInContentArea customClassContent &&

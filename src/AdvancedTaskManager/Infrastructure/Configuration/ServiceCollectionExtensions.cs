@@ -28,6 +28,7 @@ namespace AdvancedTaskManager.Infrastructure.Configuration
 
         public static IServiceCollection AddAdvancedTaskManager(this IServiceCollection services, Action<AdvancedTaskManagerOptions> setupAction, Action<AuthorizationPolicyBuilder> configurePolicy)
         {
+            services.AddSingleton<ChangeApprovalDynamicDataStoreFactory>();
             services.AddTransient<IUIHelper, UIHelper>();
             services.AddTransient<IChangeTaskHelper, ChangeTaskHelper>();
             services.AddTransient<IExpirationChangeDetails, ExpirationChangeDetails>();

@@ -1,10 +1,11 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Reflection;
 using EPiServer.Core;
-using EPiServer.Framework.Modules.Internal;
+using EPiServer.Framework.Modules;
+using EPiServer.ServiceLocation;
 using EPiServer.Shell;
 using Newtonsoft.Json;
 
@@ -22,15 +23,13 @@ namespace AdvancedTaskManager.Infrastructure.Helpers
                 .ToArray();
         }
 
-
         public static int CountDaysInRange(this DateTime startDate, DateTime endDate)
         {
             var dates = startDate.GetDaysInRange(endDate);
-
             return dates.Count();
         }
 
-        public static T ToObject<T>(this string value) where T : class
+        public static T? ToObject<T>(this string value) where T : class
         {
             if (string.IsNullOrEmpty(value))
                 return default;
@@ -42,15 +41,17 @@ namespace AdvancedTaskManager.Infrastructure.Helpers
 
         public static string GetEditUrl(this ContentReference contentLink)
         {
-            return $"{ModuleResourceResolver.Instance.ResolvePath("CMS", null)}#context=epi.cms.contentdata:///{contentLink}";
+            var resolver = ServiceLocator.Current.GetInstance<IModuleResourceResolver>();
+            return $"{resolver.ResolvePath("CMS", null)}#context=epi.cms.contentdata:///{contentLink}";
         }
 
         public static string GetEditUrl(this ContentReference contentLink, string language)
         {
-            return $"{ModuleResourceResolver.Instance.ResolvePath("CMS", null).TrimEnd('/')}/?language={language}#context=epi.cms.contentdata:///{contentLink}";
+            var resolver = ServiceLocator.Current.GetInstance<IModuleResourceResolver>();
+            return $"{resolver.ResolvePath("CMS", null).TrimEnd('/')}/?language={language}#context=epi.cms.contentdata:///{contentLink}";
         }
 
-        public static string TryGetValidDateFormat(string customFormat)
+        public static string? TryGetValidDateFormat(string customFormat)
         {
             if (string.IsNullOrEmpty(customFormat))
                 return null;
