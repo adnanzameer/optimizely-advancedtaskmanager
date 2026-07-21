@@ -19,6 +19,7 @@ namespace AdvancedTaskManager.Features.AdvancedTask
             WarningColor = "";
             Details = new List<IContentChangeDetails>();
             URL = "";
+            SiteName = "";
         }
 
         public int ApprovalId { get; set; }
@@ -35,6 +36,8 @@ namespace AdvancedTaskManager.Features.AdvancedTask
         public bool CanUserPublish { get; set; }
         public string URL { get; set; }
         public IEnumerable<IContentChangeDetails> Details { get; set; }
+        public string SiteName { get; set; }
+        public Guid? SiteId { get; set; }
     }
 }
 

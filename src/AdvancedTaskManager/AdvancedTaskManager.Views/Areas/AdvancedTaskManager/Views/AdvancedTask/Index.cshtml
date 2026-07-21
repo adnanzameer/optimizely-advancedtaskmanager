@@ -11,27 +11,156 @@
 
         <div class="card">
             <div class="card-body">
-                <nav class="navbar">
-                    <div class="col-sm-8 me-0 px-3">
+                <nav class="navbar flex-wrap gap-2">
+                    <div class="col-sm-12 col-md-4 me-0 px-3">
                         @Html.Raw($"Currently, there are <strong>{Model.TotalItemsCount}</strong> content approval tasks awaiting review")
                     </div>
 
-                    <div class="d-grid gap-2 d-md-flex">
+                    <div class="d-flex flex-wrap gap-2 align-items-center">
+
+                        
                         <div class="dropdown">
-                            <button class="btn btn-sm dropdown-toggle" type="button" id="languageDropdownMenuButton" data-toggle="dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                @Html.Raw("<span style=\"font-size: 11px;\">Language</span> <br>" + Model.SelectedLanguageText)
+                            <button class="btn btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span style="font-size: 11px;">Language</span><br>@Model.SelectedLanguageText
                             </button>
-                            <div class="dropdown-menu" aria-labelledby="languageDropdownMenuButton">
+                            <div class="dropdown-menu">
                                 @foreach (var language in Model.LanguageBranchList)
                                 {
-                                    <a class="dropdown-item @(language.Selected ? "active" : "")" href="@Model.LanguageUrl(language.Language.LanguageID)">@language.Language.Name</a>
+                                    <a class="dropdown-item @(language.Selected ? "active" : "")" href="@Model.LanguageUrl(language.Language.LanguageID)">@Html.Encode(language.Language.Name)</a>
                                 }
                             </div>
                         </div>
-                    </div>
 
+                        
+                        <div class="dropdown">
+                            <button class="btn btn-sm dropdown-toggle @(Model.SelectedStatus != "inreview" ? "btn-primary" : "")" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span style="font-size: 11px;">Status</span><br>@Model.StatusDisplayText
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item @(Model.SelectedStatus == "inreview" ? "active" : "")" href="@Model.FilterUrl("status", "inreview")">In Review</a>
+                                <a class="dropdown-item @(Model.SelectedStatus == "approved" ? "active" : "")" href="@Model.FilterUrl("status", "approved")">Ready to Publish</a>
+                            </div>
+                        </div>
+
+                        
+                        <div class="dropdown">
+                            <button class="btn btn-sm dropdown-toggle @(!string.IsNullOrEmpty(Model.SelectedContentType) ? "btn-primary" : "")" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span style="font-size: 11px;">Type</span><br>@Model.ContentTypeDisplayText
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item @(string.IsNullOrEmpty(Model.SelectedContentType) ? "active" : "")" href="@Model.FilterUrl("contentType", "")">All Types</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item @(Model.SelectedContentType == "page" ? "active" : "")" href="@Model.FilterUrl("contentType", "page")">
+                                    <span data-feather="file-text" style="width:14px;height:14px;"></span> Page
+                                </a>
+                                <a class="dropdown-item @(Model.SelectedContentType == "block" ? "active" : "")" href="@Model.FilterUrl("contentType", "block")">
+                                    <span data-feather="square" style="width:14px;height:14px;"></span> Block
+                                </a>
+                                <a class="dropdown-item @(Model.SelectedContentType == "asset" ? "active" : "")" href="@Model.FilterUrl("contentType", "asset")">
+                                    <span data-feather="image" style="width:14px;height:14px;"></span> Asset / Media
+                                </a>
+                            </div>
+                        </div>
+
+                        
+                        @if (Model.SiteList.Count > 1)
+                        {
+                            <div class="dropdown">
+                                <button class="btn btn-sm dropdown-toggle @(!string.IsNullOrEmpty(Model.SelectedSiteId) ? "btn-primary" : "")" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span style="font-size: 11px;">Site</span><br>@Html.Encode(Model.SiteDisplayText)
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item @(string.IsNullOrEmpty(Model.SelectedSiteId) ? "active" : "")" href="@Model.FilterUrl("siteId", "")">All Sites</a>
+                                    <div class="dropdown-divider"></div>
+                                    @foreach (var site in Model.SiteList)
+                                    {
+                                        <a class="dropdown-item @(site.Selected ? "active" : "")" href="@Model.FilterUrl("siteId", site.SiteId)">@Html.Encode(site.SiteName)</a>
+                                    }
+                                </div>
+                            </div>
+                        }
+
+                        
+                        <form class="d-flex" method="get" action="">
+                            @foreach (var key in new[] { "language", "status", "contentType", "siteId" })
+                            {
+                                var val = Context.Request.Query[key].ToString();
+                                if (!string.IsNullOrEmpty(val))
+                                {
+                                    <input type="hidden" name="@key" value="@Html.Encode(val)" />
+                                }
+                            }
+                            <input class="form-control form-control-sm me-1" type="text" name="contentFilter"
+                                   placeholder="Content ID or name"
+                                   value="@Html.Encode(Model.ContentFilterText)"
+                                   style="width: 170px;"
+                                   maxlength="200" />
+                            <button class="btn btn-sm @(!string.IsNullOrEmpty(Model.ContentFilterText) ? "btn-primary" : "btn-outline-secondary")" type="submit">
+                                <span data-feather="search" style="width:14px;height:14px;"></span>
+                            </button>
+                            @if (!string.IsNullOrEmpty(Model.ContentFilterText))
+                            {
+                                <a class="btn btn-sm btn-outline-secondary ms-1" href="@Model.FilterUrl("contentFilter", "")" title="Clear search">
+                                    <span data-feather="x" style="width:14px;height:14px;"></span>
+                                </a>
+                            }
+                        </form>
+
+                        <div class="vr"></div>
+                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                data-bs-toggle="modal" data-bs-target="#dep-modal">
+                            <span data-feather="layers" style="width:14px;height:14px;"></span>
+                            Approve Page Dependencies
+                        </button>
+
+                    </div>
                 </nav>
+
+                
+                @if (Model.HasActiveFilters)
+                {
+                    <div class="px-3 pb-2 d-flex flex-wrap gap-2">
+                        <small class="text-muted align-self-center">Active filters:</small>
+                        @if (Model.SelectedStatus != "inreview")
+                        {
+                            <a href="@Model.FilterUrl("status", "inreview")" class="badge bg-primary text-decoration-none">
+                                Status: @Model.StatusDisplayText &times;
+                            </a>
+                        }
+                        @if (!string.IsNullOrEmpty(Model.SelectedContentType))
+                        {
+                            <a href="@Model.FilterUrl("contentType", "")" class="badge bg-primary text-decoration-none">
+                                Type: @Model.ContentTypeDisplayText &times;
+                            </a>
+                        }
+                        @if (!string.IsNullOrEmpty(Model.SelectedSiteId))
+                        {
+                            <a href="@Model.FilterUrl("siteId", "")" class="badge bg-primary text-decoration-none">
+                                Site: @Html.Encode(Model.SiteDisplayText) &times;
+                            </a>
+                        }
+                        @if (!string.IsNullOrEmpty(Model.ContentFilterText))
+                        {
+                            <a href="@Model.FilterUrl("contentFilter", "")" class="badge bg-primary text-decoration-none">
+                                Search: @Html.Encode(Model.ContentFilterText) &times;
+                            </a>
+                        }
+                        <a href="@Model.FilterUrl("status", "inreview")" class="text-muted small align-self-center text-decoration-none ms-1" onclick="clearAllFilters(event)">Clear all</a>
+                    </div>
+                }
             </div>
+        </div>
+
+        
+        <div id="selectAllBanner" class="atm-select-all-banner" style="display:none;">
+            All <strong id="pageSelectedCount">0</strong> items on this page are selected.
+            <a href="#" id="selectAllLink" onclick="selectAllAcrossPages(event)">
+                Select all <strong>@Model.TotalItemsCount</strong> items matching current filters.
+            </a>
+            <span id="allSelectedNote" style="display:none;">
+                All <strong>@Model.TotalItemsCount</strong> items are selected.
+                <a href="#" onclick="clearAllSelection(event)">Clear selection</a>
+            </span>
         </div>
 
         <div class="table-responsive mt-3">
@@ -40,15 +169,19 @@
                     <tr>
                         <th scope="col"><input type="checkbox" onchange="checkAll(this)" name="chk[]" id="chk" /></th>
                         <th scope="col" class="sortable">Name</th>
-                        <th scope="col" class="sortable">Content type </th>
+                        <th scope="col" class="sortable">Content type</th>
                         <th scope="col" class="sortable">Type</th>
+                        @if (Model.SiteList.Count > 1)
+                        {
+                            <th scope="col" class="sortable">Site</th>
+                        }
                         <th scope="col" class="sortable">Submitted (UTC)</th>
                         <th scope="col" class="sortable">Started by</th>
                         @if (Model.AddContentApprovalDeadlineProperty)
                         {
                             <th scope="col" class="sortable">Deadline</th>
                         }
-                        <th scopre="col">&nbsp;</th>
+                        <th scope="col">&nbsp;</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -59,7 +192,6 @@
                             <tr class="@(contentTask.NotificationUnread ? "notification-unread" : "")">
                                 <td>@Html.CheckBox(contentTask.ApprovalId.ToString(), false, new { onchange = "selectionChanged(this)", @class = "checkbox" })</td>
                                 <td>
-
                                     @if (!ContentReference.IsNullOrEmpty(contentTask.ContentReference))
                                     {
                                         if (!contentTask.CanUserPublish)
@@ -68,7 +200,7 @@
                                             {
                                                 <span data-feather="@contentTask.ContentIcon"></span>
                                             }
-                                            <a href="@contentTask.URL" id="id-@contentTask.ApprovalId" data-value="ID: @contentTask.ContentReference.ID - @contentTask.ContentName" target="_blank">
+                                            <a href="@contentTask.URL" id="id-@contentTask.ApprovalId" data-value="ID: @contentTask.ContentReference.ID - @Html.Encode(contentTask.ContentName)" target="_blank">
                                                 @Html.Encode(contentTask.ContentName)
                                                 <span class="error-span" id="span-@contentTask.ApprovalId"></span>
                                             </a>
@@ -88,23 +220,29 @@
                                         {
                                             <span data-feather="@contentTask.ContentIcon"></span>
                                         }
-                                        @contentTask.ContentName
+                                        @Html.Encode(contentTask.ContentName)
                                     }
                                 </td>
-                                <td>
-                                    @contentTask.ContentType
+                                <td>@Html.Encode(contentTask.ContentType)</td>
+                                <td>@Html.Encode(contentTask.Type)</td>
+                                @if (Model.SiteList.Count > 1)
+                                {
+                                    <td>@Html.Encode(contentTask.SiteName)</td>
+                                }
+                                <td data-original-title="@contentTask.DateTime?.ToString(Model.DateTimeFormatUserFriendly)"
+                                    data-container="body" data-toggle="tooltip" data-placement="bottom"
+                                    title="@contentTask.DateTime?.ToString(Model.DateTimeFormatUserFriendly)">
+                                    @contentTask.DateTime?.ToString(Model.DateTimeFormat)
                                 </td>
-                                <td>
-                                    @contentTask.Type
-                                </td>
-                                <td data-original-title="@contentTask.DateTime?.ToString(Model.DateTimeFormatUserFriendly)" data-container="body" data-toggle="tooltip" data-placement="bottom" title="@contentTask.DateTime?.ToString(Model.DateTimeFormatUserFriendly)">@contentTask.DateTime?.ToString(Model.DateTimeFormat)</td>
-                                <td>
-                                    @contentTask.StartedBy
-                                </td>
-
+                                <td>@Html.Encode(contentTask.StartedBy)</td>
                                 @if (Model.AddContentApprovalDeadlineProperty)
                                 {
-                                    <td class="@contentTask.WarningColor" data-original-title="@contentTask.Deadline?.ToString(Model.DateTimeFormatUserFriendly)" data-container="body" data-toggle="tooltip" data-placement="bottom" title="@contentTask.Deadline?.ToString(Model.DateTimeFormatUserFriendly)">@(contentTask.Deadline != null ? contentTask.Deadline.Value.ToString(Model.DateTimeFormat) : " - ")</td>
+                                    <td class="@contentTask.WarningColor"
+                                        data-original-title="@contentTask.Deadline?.ToString(Model.DateTimeFormatUserFriendly)"
+                                        data-container="body" data-toggle="tooltip" data-placement="bottom"
+                                        title="@contentTask.Deadline?.ToString(Model.DateTimeFormatUserFriendly)">
+                                        @(contentTask.Deadline != null ? contentTask.Deadline.Value.ToString(Model.DateTimeFormat) : " - ")
+                                    </td>
                                 }
                                 <td>
                                     @if (!ContentReference.IsNullOrEmpty(contentTask.ContentReference))
@@ -127,10 +265,12 @@
     <br>
 
     <div id="approve" style="display: none;">
-        <div class="col-sm-12 col-lg-10 col-xl-5">
+        <div class="col-sm-12 col-lg-10 col-xl-6">
             <fieldset class="border rounded-3 p-3">
                 <legend class="float-none w-auto px-3">Approve Entire Approval Sequence</legend>
-                <textarea autocomplete="off" rows="3" id="approvalComment" name="approvalComment" class="form-control" placeholder="Please specify why you are forcing approval of the content" spellcheck="false">Approved Through Advanced Task Manager</textarea>
+                <textarea autocomplete="off" rows="3" id="approvalComment" name="approvalComment" class="form-control"
+                          placeholder="Please specify why you are forcing approval of the content"
+                          spellcheck="false">Approved Through Advanced Task Manager</textarea>
                 <input id="taskValues" type="hidden" name="taskValues" value="@Model.TaskValues" />
 
                 @if (Model.HasPublishAccess)
@@ -138,8 +278,17 @@
                     <br />
                     <input id="publishContent" type="checkbox" name="publishContent" value="false" onchange="checkboxChecked(this)">
                     <text>Publish selected content after approval</text>
-                    <br />
-                    <br />
+
+                    <div id="schedulePublishSection" style="display:none;" class="mt-2 ms-4">
+                        <input id="enableSchedule" type="checkbox" onchange="toggleScheduleDate(this)">
+                        <label for="enableSchedule">Schedule publishing for a specific date and time</label>
+                        <div id="scheduleDateContainer" style="display:none;" class="mt-2">
+                            <input type="datetime-local" id="scheduledPublishDate" class="form-control d-inline-block" style="width:auto;">
+                            <small class="text-muted ms-2">Content will be published at this time</small>
+                        </div>
+                    </div>
+
+                    <br /><br />
 
                     <div id="errorMessage" class="errorMessage" style="display: none">
                         <button type="button" class="collapsible">* You don't have permission to publish following content.</button>
@@ -150,11 +299,79 @@
                 }
                 else
                 {
-                        <br />
+                    <br />
                 }
-             
-                <button type="submit" class="btn btn-primary" id="button">Submit</button>
+
+                <button type="submit" class="btn btn-primary mt-2" id="button">Submit</button>
             </fieldset>
+        </div>
+    </div>
+
+</div>
+
+<div id="dep-modal" class="modal fade" tabindex="-1" aria-labelledby="depModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="depModalLabel">
+                    <span data-feather="layers" style="width:16px;height:16px;margin-right:6px;"></span>
+                    Approve Blocks &amp; Media on a Page
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="text-muted small mb-3">
+                    Select a page to approve all pending blocks and media files it references, for the chosen languages.
+                </p>
+                <div class="mb-3">
+                    <label class="form-label mb-1 small">Select page</label>
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                        <input type="number" id="depContentIdInput" class="form-control form-control-sm"
+                               placeholder="Content ID" min="1" style="max-width:140px;">
+                        <small class="text-muted">or navigate the tree below</small>
+                    </div>
+                    <div id="depSelectedPageLabel" class="text-muted small mb-1" style="min-height:1.2em;"></div>
+                    <div id="depTreeWrapper" class="atm-page-tree">
+                        <div class="atm-tree-loading">Loading pages&hellip;</div>
+                    </div>
+                    <input type="hidden" id="depContentSelect" value="">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label mb-1 small">Languages</label>
+                    <div class="d-flex flex-wrap gap-3">
+                        @foreach (var lang in Model.LanguageBranchList)
+                        {
+                            <div class="form-check">
+                                <input class="form-check-input dep-lang" type="checkbox" id="depLang_@lang.Language.LanguageID"
+                                       value="@Html.Encode(lang.Language.LanguageID)" @(lang.Selected ? "checked" : "")>
+                                <label class="form-check-label" for="depLang_@Html.Encode(lang.Language.LanguageID)">@Html.Encode(lang.Language.Name)</label>
+                            </div>
+                        }
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="depApprovalComment" class="form-label mb-1 small">Approval comment</label>
+                    <textarea id="depApprovalComment" class="form-control form-control-sm" rows="2"
+                              placeholder="Approval comment">Approved Through Advanced Task Manager</textarea>
+                </div>
+                @if (Model.HasPublishAccess)
+                {
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="depPublishContent">
+                        <label class="form-check-label small" for="depPublishContent">
+                            Publish approved content after approval
+                        </label>
+                    </div>
+                }
+            </div>
+            <div class="modal-footer justify-content-start">
+                <button type="button" id="depApproveBtn" class="btn btn-primary btn-sm" onclick="approvePageDependencies()">
+                    <span data-feather="check-circle" style="width:14px;height:14px;"></span>
+                    Approve Dependencies
+                </button>
+                <button type="button" class="btn btn-light btn-sm" data-bs-dismiss="modal">Cancel</button>
+                <span id="depResult" class="ms-3 small"></span>
+            </div>
         </div>
     </div>
 </div>
@@ -169,7 +386,7 @@
             <div id="alert-modal-body" class="modal-body"></div>
             <div class="modal-footer">
                 <button id="confirm" type="button" class="btn btn-secondary" data-dismiss="modal">Proceed</button>
-                <button id="close" class="close-modal btn btn-light" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button id="close" class="close-modal btn btn-light" type="button" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
@@ -177,6 +394,11 @@
 
 <script type="text/javascript">
     var selectedContent = [];
+    var isAllPagesSelected = false;
+    var totalItemCount = @Model.TotalItemsCount;
+    var pageSize = @Model.PageSize;
+
+    // ---- Selection ----
 
     function selectionChanged(element) {
         if (element.checked && element.id !== 'chk') {
@@ -189,29 +411,28 @@
                 removeA(selectedContent, element.name);
 
                 var checkbox = document.getElementById('chk');
-                if (selectedContent.length === 0 && checkbox.checked) {
+                if (selectedContent.length === 0 && checkbox && checkbox.checked) {
                     checkbox.checked = false;
                 }
             }
 
-            var name = element.name;
-            var element1 = document.getElementById('span-' + name);
-            if (element1) {
-                element1.textContent = "";
+            var spanEl = document.getElementById('span-' + element.name);
+            if (spanEl) spanEl.textContent = "";
+
+            // When deselecting a single item, clear the "all pages" state
+            if (isAllPagesSelected) {
+                isAllPagesSelected = false;
+                updateSelectAllBanner();
             }
         }
         setButtonText();
         setCheckboxSelectedValues();
         ShowPublishErrorMessage();
+        updateSelectAllBanner();
     }
 
     function setCheckboxSelectedValues() {
-        var value = '';
-        selectedContent.forEach(function (content) {
-            value = value + ',' + content;
-        });
-
-        document.getElementById('taskValues').value = value;
+        document.getElementById('taskValues').value = selectedContent.join(',');
     }
 
     function checkAll(ele) {
@@ -224,18 +445,88 @@
                 }
             }
         } else {
-            for (var j = 0; j < checkboxes.length; j++)
+            isAllPagesSelected = false;
+            for (var j = 0; j < checkboxes.length; j++) {
                 if (checkboxes[j].type === 'checkbox') {
                     checkboxes[j].checked = false;
                     selectionChanged(checkboxes[j]);
                 }
+            }
+        }
+        updateSelectAllBanner();
+    }
+
+    function updateSelectAllBanner() {
+        var banner = document.getElementById('selectAllBanner');
+        if (!banner) return;
+
+        var checkboxes = document.getElementsByClassName('checkbox');
+        var checkedCount = 0;
+        for (var i = 0; i < checkboxes.length; i++) {
+            if (checkboxes[i].checked) checkedCount++;
+        }
+
+        document.getElementById('pageSelectedCount').textContent = checkedCount;
+
+        // Only show the banner when all page items are checked AND there are more items across pages
+        var allOnPageChecked = checkedCount > 0 && checkedCount === checkboxes.length;
+        if (allOnPageChecked && totalItemCount > pageSize) {
+            banner.style.display = 'block';
+            var allNote = document.getElementById('allSelectedNote');
+            var allLink = document.getElementById('selectAllLink');
+            if (isAllPagesSelected) {
+                allNote.style.display = 'inline';
+                allLink.style.display = 'none';
+            } else {
+                allNote.style.display = 'none';
+                allLink.style.display = 'inline';
+            }
+        } else {
+            banner.style.display = 'none';
         }
     }
 
+    function selectAllAcrossPages(e) {
+        e.preventDefault();
+        var allLink = document.getElementById('selectAllLink');
+        allLink.textContent = 'Loading...';
+
+        fetch('@url/getalltaskids' + window.location.search)
+            .then(function (r) {
+                if (!r.ok) throw new Error('Request failed');
+                return r.json();
+            })
+            .then(function (ids) {
+                selectedContent = ids.map(function (id) { return id.toString(); });
+                setCheckboxSelectedValues();
+                setButtonText();
+                ShowPublishErrorMessage();
+                isAllPagesSelected = true;
+                updateSelectAllBanner();
+            })
+            .catch(function () {
+                allLink.textContent = 'Select all ' + totalItemCount + ' items matching current filters.';
+            });
+    }
+
+    function clearAllSelection(e) {
+        e.preventDefault();
+        selectedContent = [];
+        isAllPagesSelected = false;
+        var checkboxes = document.getElementsByClassName('checkbox');
+        for (var i = 0; i < checkboxes.length; i++) {
+            checkboxes[i].checked = false;
+        }
+        var hdr = document.getElementById('chk');
+        if (hdr) hdr.checked = false;
+        setCheckboxSelectedValues();
+        setButtonText();
+        updateSelectAllBanner();
+        HideApproveSection();
+    }
+
     function removeA(arr) {
-        var what, a = arguments,
-            L = a.length,
-            ax;
+        var what, a = arguments, L = a.length, ax;
         while (L > 1 && arr.length) {
             what = a[--L];
             while ((ax = arr.indexOf(what)) !== -1) {
@@ -245,27 +536,28 @@
         return arr;
     }
 
+    // ---- Submit / Approval ----
+
     $('#button').click(function (e) {
-        var approvalComment = false;
         if ($.trim($('#approvalComment').val()) == '') {
-            if ($('#approvalComment').next(".validation").length == 0) // only add if not added
-            {
+            if ($('#approvalComment').next(".validation").length == 0) {
                 $('#approvalComment').after("<div class='validation'>*Provide additional details in the comments.</div>");
-                $('#approvalComment').css({
-                    'border': '1px solid red'
-                });
+                $('#approvalComment').css({ 'border': '1px solid red' });
             }
-            e.preventDefault(); // prevent form from POST to server
+            e.preventDefault();
             $('#approvalComment').focus();
-            focusSet = true;
         } else {
-            $('#approvalComment').next(".validation").remove(); // remove it
-            $('#approvalComment').css({
-                'border': ''
-            });
+            $('#approvalComment').next(".validation").remove();
+            $('#approvalComment').css({ 'border': '' });
 
             var message = "Are you certain you wish to endorse the entire approval sequence? Doing so will confirm all remaining steps, and this action is irreversible";
-            if (document.getElementById("publishContent") && document.getElementById("publishContent").checked) {
+            var pubChecked = document.getElementById("publishContent") && document.getElementById("publishContent").checked;
+            var schedChecked = document.getElementById("enableSchedule") && document.getElementById("enableSchedule").checked;
+            var schedDate = schedChecked && document.getElementById("scheduledPublishDate") ? document.getElementById("scheduledPublishDate").value : null;
+
+            if (pubChecked && schedDate) {
+                message = "Are you certain you wish to approve and schedule publishing for " + new Date(schedDate).toLocaleString() + "? This action is irreversible";
+            } else if (pubChecked) {
                 message = "Are you certain you wish to endorse the entire approval sequence and publish content? This will confirm all remaining steps and publish the selected content. Please note that this action is irreversible";
             }
 
@@ -274,7 +566,6 @@
     });
 
     function alertModal(title, body) {
-        // Display error message to the user in a modal
         $('#alert-modal-title').html(title);
         $('#alert-modal-body').html(body);
         $('#alert-modal').modal('show');
@@ -287,58 +578,61 @@
 
     $('#confirm').click(function (e) {
         e.preventDefault();
-        // Get values
+
         var taskValues = document.getElementById("taskValues").value;
-        var publishContent = document.getElementById("publishContent").checked;
+        var publishContent = document.getElementById("publishContent") ? document.getElementById("publishContent").checked : false;
         var comment = document.getElementById("approvalComment").value;
 
-        // Make AJAX call
+        var scheduledPublishDate = null;
+        var enableSched = document.getElementById("enableSchedule");
+        if (enableSched && enableSched.checked) {
+            var dateInput = document.getElementById("scheduledPublishDate");
+            if (dateInput && dateInput.value) {
+                scheduledPublishDate = dateInput.value;
+            }
+        }
+
         fetch('@url/approvecontenttasks', {
             method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                // Add any additional headers if needed
-            },
+            headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
                 taskValues: taskValues,
                 approvalComment: comment,
-                publishContent: publishContent
+                publishContent: publishContent,
+                scheduledPublishDate: scheduledPublishDate
             })
         })
-            .then(response => {
-                // Handle the response as needed
-                if (response.ok) {
-                    // Successful response
-                    return response.json();
-                } else {
-                    // Handle error response
-                    throw new Error('Failed to submit');
-                }
-            })
-            .then(data => {
-                // Handle the data from the response
-                console.log(data);
-                // Refresh the page
-                location.reload();
-            })
-            .catch(error => {
-                // Handle errors during the fetch
-                console.error('Error:', error);
-            });
+        .then(function (response) {
+            if (response.ok) return response.json();
+            throw new Error('Failed to submit');
+        })
+        .then(function (data) {
+            console.log(data);
+            location.reload();
+        })
+        .catch(function (error) {
+            console.error('Error:', error);
+        });
 
-        return true; // Return true to allow form submission
+        return true;
     });
+
+    // ---- Button text & section visibility ----
 
     function setButtonText() {
         if (selectedContent && selectedContent.length > 0) {
             ShowApproveSection();
-            if (document.getElementById("publishContent") && document.getElementById("publishContent").value === "true") {
-                document.getElementById('button').textContent =
-                    'Approve & Publish ' + selectedContent.length + ' Selected Content';
+            var pubChecked = document.getElementById("publishContent") && document.getElementById("publishContent").value === "true";
+            var schedChecked = document.getElementById("enableSchedule") && document.getElementById("enableSchedule").checked;
+            var label;
+            if (pubChecked && schedChecked) {
+                label = 'Approve & Schedule ' + selectedContent.length + ' Selected Content';
+            } else if (pubChecked) {
+                label = 'Approve & Publish ' + selectedContent.length + ' Selected Content';
             } else {
-                document.getElementById('button').textContent =
-                    'Approve ' + selectedContent.length + ' Selected Content';
+                label = 'Approve ' + selectedContent.length + ' Selected Content';
             }
+            document.getElementById('button').textContent = label;
         } else {
             HideApproveSection();
             document.getElementById('button').textContent = 'Submit';
@@ -346,16 +640,32 @@
     }
 
     function checkboxChecked(checkboxElem) {
-        if (checkboxElem.checked) {
-            checkboxElem.value = "true";
-            ShowPublishErrorMessage();
-        } else {
-            checkboxElem.value = "false";
+        var schedSection = document.getElementById('schedulePublishSection');
+        if (schedSection) schedSection.style.display = checkboxElem.checked ? 'block' : 'none';
+
+        if (!checkboxElem.checked) {
+            var enableSched = document.getElementById('enableSchedule');
+            if (enableSched) enableSched.checked = false;
+            var container = document.getElementById('scheduleDateContainer');
+            if (container) container.style.display = 'none';
             HideErrorMessage();
             var elements = document.getElementsByClassName('error-span');
             for (var i = 0; i < elements.length; i++) {
                 elements[i].innerHTML = "";
             }
+        } else {
+            ShowPublishErrorMessage();
+        }
+
+        checkboxElem.value = checkboxElem.checked ? "true" : "false";
+        setButtonText();
+    }
+
+    function toggleScheduleDate(el) {
+        var container = document.getElementById('scheduleDateContainer');
+        if (container) container.style.display = el.checked ? 'block' : 'none';
+        if (!el.checked && document.getElementById('scheduledPublishDate')) {
+            document.getElementById('scheduledPublishDate').value = '';
         }
         setButtonText();
     }
@@ -381,7 +691,6 @@
                     }
                 }
             }
-
             if (document.getElementById("lblMessage")) {
                 if (show) {
                     document.getElementById("lblMessage").innerHTML = txt + "<br/>";
@@ -394,102 +703,276 @@
         }
     }
 
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
-
-    if (coll) {
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click",
-                function () {
-                    this.classList.toggle("active");
-                    var content = this.nextElementSibling;
-                    if (content.style.display === "block") {
-                        content.style.display = "none";
-                    } else {
-                        content.style.display = "block";
-                    }
-                });
-        }
-    }
-
     function ShowApproveSection() {
         var x = document.getElementById("approve");
-        if (x) {
-            x.style.display = "block";
-        }
+        if (x) x.style.display = "block";
     }
 
     function HideApproveSection() {
         var x = document.getElementById("approve");
-        if (x) {
-            x.style.display = "none";
-        }
-        if (document.getElementById("lblMessage")) {
-            document.getElementById("lblMessage").innerHTML = "";
-        }
+        if (x) x.style.display = "none";
+        if (document.getElementById("lblMessage")) document.getElementById("lblMessage").innerHTML = "";
     }
 
     function ShowErrorMessage() {
         var x = document.getElementById("errorMessage");
-        if (x) {
-            x.style.display = "block";
-        }
+        if (x) x.style.display = "block";
     }
 
     function HideErrorMessage() {
         var x = document.getElementById("errorMessage");
-        if (x) {
-            x.style.display = "none";
-        }
+        if (x) x.style.display = "none";
     }
+
+    // ---- Page Dependencies ----
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var depModal = document.getElementById('dep-modal');
+        if (depModal) {
+            depModal.addEventListener('shown.bs.modal', function () {
+                loadDepPageTree();
+                feather.replace();
+            });
+        }
+
+        var depContentIdInput = document.getElementById('depContentIdInput');
+        if (depContentIdInput) {
+            depContentIdInput.addEventListener('input', function () {
+                var val = parseInt(this.value, 10);
+                var prev = document.querySelector('#depTreeWrapper .atm-tree-item.atm-selected');
+                if (prev) prev.classList.remove('atm-selected');
+                var select = document.getElementById('depContentSelect');
+                var selLabel = document.getElementById('depSelectedPageLabel');
+                if (val > 0) {
+                    select.value = val;
+                    if (selLabel) selLabel.innerHTML = 'Selected: <strong>Content ID ' + val + '</strong>';
+                } else {
+                    select.value = '';
+                    if (selLabel) selLabel.textContent = '';
+                }
+            });
+        }
+    });
+
+    // ---- Page hierarchy tree ----
+
+    var depTreeLoaded = false;
+
+    function loadDepPageTree() {
+        if (depTreeLoaded) return;
+        depTreeLoaded = true;
+        var wrapper = document.getElementById('depTreeWrapper');
+        if (!wrapper) return;
+        fetch('@url/getrootpages')
+            .then(function (r) { if (!r.ok) throw new Error(); return r.json(); })
+            .then(function (roots) {
+                wrapper.innerHTML = '';
+                if (!roots || !roots.length) {
+                    wrapper.innerHTML = '<div class="atm-tree-loading">No sites found</div>';
+                    return;
+                }
+                roots.forEach(function (root) { wrapper.appendChild(buildTreeNode(root)); });
+            })
+            .catch(function () {
+                wrapper.innerHTML = '<div class="atm-tree-loading">Failed to load pages</div>';
+            });
+    }
+
+    function fetchTreeChildren(parentId, container) {
+        if (!container) return;
+        var lang = new URLSearchParams(window.location.search).get('language') || '';
+        var qs = 'parentId=' + parentId + (lang ? '&language=' + encodeURIComponent(lang) : '');
+        fetch('@url/getpagechildren?' + qs)
+            .then(function (r) { if (!r.ok) throw new Error(); return r.json(); })
+            .then(function (items) {
+                container.innerHTML = '';
+                if (!items.length) {
+                    container.innerHTML = '<div class="atm-tree-loading">No pages found</div>';
+                    return;
+                }
+                items.forEach(function (item) { container.appendChild(buildTreeNode(item)); });
+            })
+            .catch(function () {
+                container.innerHTML = '<div class="atm-tree-loading">Failed to load pages</div>';
+            });
+    }
+
+    function buildTreeNode(item) {
+        var wrapper = document.createElement('div');
+
+        var row = document.createElement('div');
+        row.className = 'atm-tree-item';
+
+        var toggle = document.createElement('span');
+        toggle.className = 'atm-tree-toggle' + (item.hasChildren ? '' : ' leaf');
+        toggle.textContent = '❯';
+
+        var nameSpan = document.createElement('span');
+        nameSpan.className = 'atm-tree-label';
+        nameSpan.textContent = item.name;
+
+        row.appendChild(toggle);
+        row.appendChild(nameSpan);
+        wrapper.appendChild(row);
+
+        if (item.hasChildren) {
+            var childrenDiv = document.createElement('div');
+            childrenDiv.className = 'atm-tree-children';
+            wrapper.appendChild(childrenDiv);
+
+            toggle.addEventListener('click', function (e) {
+                e.stopPropagation();
+                if (childrenDiv.style.display !== 'block') {
+                    toggle.classList.add('expanded');
+                    childrenDiv.style.display = 'block';
+                    if (!childrenDiv.dataset.loaded) {
+                        childrenDiv.dataset.loaded = '1';
+                        childrenDiv.innerHTML = '<div class="atm-tree-loading">Loading…</div>';
+                        fetchTreeChildren(item.contentId, childrenDiv);
+                    }
+                } else {
+                    toggle.classList.remove('expanded');
+                    childrenDiv.style.display = 'none';
+                }
+            });
+        }
+
+        row.addEventListener('click', function (e) {
+            if (e.target === toggle) return;
+            var prev = document.querySelector('#depTreeWrapper .atm-tree-item.atm-selected');
+            if (prev) prev.classList.remove('atm-selected');
+            row.classList.add('atm-selected');
+            document.getElementById('depContentSelect').value = item.contentId;
+            var idInput = document.getElementById('depContentIdInput');
+            if (idInput) idInput.value = '';
+            var selLabel = document.getElementById('depSelectedPageLabel');
+            if (selLabel) selLabel.innerHTML = 'Selected: <strong>' + safeText(item.name) + '</strong>';
+        });
+
+        return wrapper;
+    }
+
+    function safeText(str) {
+        var d = document.createElement('div');
+        d.textContent = str;
+        return d.innerHTML;
+    }
+
+    function approvePageDependencies() {
+        var select = document.getElementById('depContentSelect');
+        var contentId = select ? parseInt(select.value, 10) : 0;
+        if (!contentId || contentId <= 0) {
+            alert('Please select a page from the tree.');
+            return;
+        }
+
+        var languages = [];
+        document.querySelectorAll('.dep-lang:checked').forEach(function (cb) {
+            languages.push(cb.value);
+        });
+
+        if (languages.length === 0) {
+            alert('Please select at least one language.');
+            return;
+        }
+
+        var comment = (document.getElementById('depApprovalComment') || {}).value || 'Approved Through Advanced Task Manager';
+        var publishContent = document.getElementById('depPublishContent') ? document.getElementById('depPublishContent').checked : false;
+
+        var resultEl = document.getElementById('depResult');
+        resultEl.textContent = '';
+        resultEl.className = 'ms-3 small';
+
+        var btn = document.getElementById('depApproveBtn');
+        var btnOrigHTML = btn ? btn.innerHTML : '';
+        if (btn) {
+            btn.disabled = true;
+            btn.innerHTML = '<span class="spinner-border spinner-border-sm me-1" role="status" aria-hidden="true"></span>Processing…';
+        }
+
+        fetch('@url/approvepagedependencies', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                contentId: contentId,
+                languages: languages,
+                approvalComment: comment,
+                publishContent: publishContent
+            })
+        })
+        .then(function (r) {
+            if (!r.ok) throw new Error('Request failed');
+            return r.json();
+        })
+        .then(function (data) {
+            if (data.success) {
+                resultEl.textContent = data.approved + ' item(s) approved.';
+                resultEl.className = 'ms-3 small text-success';
+                if (data.approved > 0) {
+                    setTimeout(function () { location.reload(); }, 1500);
+                }
+            } else {
+                resultEl.textContent = data.message || 'No dependencies found.';
+                resultEl.className = 'ms-3 small text-warning';
+            }
+        })
+        .catch(function () {
+            resultEl.textContent = 'An error occurred. Please try again.';
+            resultEl.className = 'ms-3 small text-danger';
+        })
+        .finally(function () {
+            if (btn) {
+                btn.disabled = false;
+                btn.innerHTML = btnOrigHTML;
+            }
+        });
+    }
+
+    // ---- Clear all filters ----
+
+    function clearAllFilters(e) {
+        e.preventDefault();
+        window.location.href = window.location.pathname;
+    }
+
+    // ---- Collapsible error panel ----
+
+    var coll = document.getElementsByClassName("collapsible");
+    for (var ci = 0; ci < coll.length; ci++) {
+        coll[ci].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            content.style.display = content.style.display === "block" ? "none" : "block";
+        });
+    }
+
+    // ---- Table sort ----
 
     document.addEventListener("DOMContentLoaded", function () {
         const table = document.getElementById("sortable-table");
         const headers = table.querySelectorAll("thead th");
-
         const sortState = Array.from(headers).fill(0);
 
         headers.forEach((header, index) => {
             if (header.classList.contains("sortable")) {
-                header.addEventListener("click", () => {
-                    sortTable(index);
-                });
+                header.addEventListener("click", () => sortTable(index));
             }
         });
 
         function sortTable(columnIndex) {
             const rows = Array.from(table.querySelectorAll("tbody tr"));
-
             rows.sort((a, b) => {
                 const valueA = getCellValue(a, columnIndex);
                 const valueB = getCellValue(b, columnIndex);
-
-                if (sortState[columnIndex] % 2 === 0) {
-                    // Ascending order
-                    return valueA.localeCompare(valueB);
-                } else {
-                    // Descending order
-                    return valueB.localeCompare(valueA);
-                }
+                return sortState[columnIndex] % 2 === 0
+                    ? valueA.localeCompare(valueB)
+                    : valueB.localeCompare(valueA);
             });
-
-            // Toggle sort state for the clicked column
             sortState[columnIndex]++;
-
-            // Remove existing rows from the table
             rows.forEach(row => table.querySelector("tbody").removeChild(row));
-
-            // Append sorted rows to the table
             rows.forEach(row => table.querySelector("tbody").appendChild(row));
-
-            // Remove arrow classes from all headers
-            headers.forEach(header => {
-                header.classList.remove("asc", "desc");
-            });
-
-            // Add arrow class to the clicked header
-            const clickedHeader = headers[columnIndex];
-            clickedHeader.classList.add(sortState[columnIndex] % 2 === 0 ? "asc" : "desc");
+            headers.forEach(h => h.classList.remove("asc", "desc"));
+            headers[columnIndex].classList.add(sortState[columnIndex] % 2 === 0 ? "asc" : "desc");
         }
 
         function getCellValue(row, index) {

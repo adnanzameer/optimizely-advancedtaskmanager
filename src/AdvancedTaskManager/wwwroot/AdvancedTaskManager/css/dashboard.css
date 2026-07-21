@@ -193,3 +193,175 @@
     font-size: 0.6em;
     padding-left: 20px;
 }
+
+/* Select-all banner */
+.atm-select-all-banner {
+    background-color: #e8f0fe;
+    border: 1px solid #c5d3f5;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 0.875rem;
+    margin-top: 8px;
+}
+
+.atm-select-all-banner a {
+    color: #1a73e8;
+    font-weight: 500;
+}
+
+/* Active filter badges */
+.badge {
+    font-size: 0.75rem;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+
+.badge:hover {
+    opacity: 0.85;
+}
+
+/* Filter bar button highlight when active */
+.btn.btn-primary.dropdown-toggle {
+    font-weight: 600;
+}
+
+/* Page dependencies toggle */
+.atm-section-toggle {
+    cursor: pointer;
+    user-select: none;
+}
+
+.atm-section-toggle a {
+    color: #6c757d;
+}
+
+.atm-section-toggle a:hover {
+    color: #343a40;
+}
+
+/* Schedule date picker */
+#scheduleDateContainer input[type="datetime-local"] {
+    max-width: 280px;
+}
+
+/* Searchable dependency dropdown */
+.atm-searchable-select {
+    position: relative;
+    max-width: 480px;
+}
+
+.atm-select-dropdown {
+    position: absolute;
+    top: calc(100% + 2px);
+    left: 0;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    max-height: 260px;
+    overflow-y: auto;
+    z-index: 1050;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.atm-select-optgroup {
+    padding: 6px 12px 4px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #6c757d;
+    background: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+    pointer-events: none;
+    user-select: none;
+}
+
+.atm-select-optgroup:first-child {
+    border-top: none;
+}
+
+.atm-select-option {
+    padding: 7px 14px;
+    font-size: 0.875rem;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.atm-select-option:hover {
+    background-color: #e8f0fe;
+    color: #1a56db;
+}
+
+.atm-select-option mark {
+    background: #fff3cd;
+    padding: 0;
+    border-radius: 2px;
+}
+
+.atm-select-no-result {
+    padding: 10px 14px;
+    font-size: 0.875rem;
+    color: #6c757d;
+    font-style: italic;
+}
+
+/* Page hierarchy tree */
+.atm-page-tree {
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    max-height: 300px;
+    overflow-y: auto;
+    background: #fff;
+    font-size: 0.875rem;
+}
+
+.atm-tree-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.atm-tree-item:hover { background: #f0f4ff; }
+
+.atm-tree-item.atm-selected {
+    background: #dbeafe;
+    color: #1d4ed8;
+    font-weight: 500;
+}
+
+.atm-tree-toggle {
+    flex-shrink: 0;
+    width: 14px;
+    font-size: 0.6rem;
+    color: #6c757d;
+    transition: transform 0.15s;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.atm-tree-toggle.expanded { transform: rotate(90deg); }
+.atm-tree-toggle.leaf { cursor: default; color: transparent; }
+
+.atm-tree-label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.atm-tree-children {
+    padding-left: 20px;
+    display: none;
+}
+
+.atm-tree-loading {
+    padding: 8px 12px;
+    color: #6c757d;
+    font-style: italic;
+    font-size: 0.8rem;
+}
