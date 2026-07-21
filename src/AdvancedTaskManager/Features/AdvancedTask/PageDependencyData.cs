@@ -1,12 +1,10 @@
-﻿using System;
-
 namespace AdvancedTaskManager.Features.AdvancedTask
 {
-    public class ApprovalData
+    public class PageDependencyData
     {
-        public string TaskValues { get; set; }
+        public int ContentId { get; set; }
+        public string[] Languages { get; set; }
         public string ApprovalComment { get; set; }
         public bool PublishContent { get; set; }
-        public DateTime? ScheduledPublishDate { get; set; }
     }
 }

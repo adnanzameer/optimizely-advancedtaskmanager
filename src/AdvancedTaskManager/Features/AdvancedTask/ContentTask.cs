@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using AdvancedTaskManager.Infrastructure.Cms.ChangeApproval;
 using EPiServer.Core;
+using EPiServer.Web;
 
 namespace AdvancedTaskManager.Features.AdvancedTask
 {
@@ -35,6 +36,8 @@ namespace AdvancedTaskManager.Features.AdvancedTask
         public bool CanUserPublish { get; set; }
         public string URL { get; set; }
         public IEnumerable<IContentChangeDetails> Details { get; set; }
+        public string SiteName { get; set; }
+        public Guid SiteId { get; set; }
     }
 }
 
