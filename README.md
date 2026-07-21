@@ -4,7 +4,7 @@
 [![Platform](https://img.shields.io/badge/Platform-.NET%2010-blue.svg?style=flat)](https://docs.microsoft.com/en-us/dotnet/)
 [![Platform](https://img.shields.io/badge/Optimizely-%2013-blue.svg?style=flat)](http://world.optimizely.com/cms/)
 
-The **Advanced Task Manager for Optimizely** provides CMS editors with enhanced oversight of administration tasks related to Awaiting Review in Content Approval and Change Approval processes.
+The **Advanced Task Manager for Optimizely** provides CMS editors with enhanced oversight of administration tasks related to Awaiting Review in Content Approval processes. Change Approval support is available on CMS 12 only (see [CMS 12 Support](#cms-12-support)).
 
 ## Features
 
@@ -17,7 +17,7 @@ The **Advanced Task Manager for Optimizely** provides CMS editors with enhanced 
 - **Task ordering:** Sort the task list by name, content type, type, submission date, started-by user, or deadline.
 - **Deadline field:** Optional date/time property on pages and blocks that highlights time-sensitive tasks in the list with warning and danger states.
 - **User notifications:** Tasks with unread notifications are highlighted automatically and marked as read on open.
-- **Change approval task information:** View detailed change approval task data (security, move, language, and expiry changes) inline in the task list.
+
 
 ## Installation 
 
@@ -130,14 +130,6 @@ By default, Change Approval is integrated into the Approval Sequence in Optimize
 
 The tool furnishes the Editor with the following information regarding the task:
 
-### Change Approval
-
-* Name
-* Content type
-* Type
-* Submitted (UTC)
-* Started by
-* Deadline (optional)
 
 ### Content Approval
 
@@ -156,7 +148,6 @@ The list of current features are as follows:
 * [Approve blocks & media on a page](#approve-blocks--media-on-a-page)
 * [Deadline field for content approval](#deadline-field-for-content-approval-sequence-optional)
 * [User Notifications Linked to the Task](#user-notifications-linked-to-the-task)
-* [Information for Change Approval Tasks](#information-for-change-approval-tasks)
 * [Task ordering](#task-ordering)
 
 Some features are disabled by default, but you can decide which ones are enabled by configuring options in `startup.cs` or `appsettings.json`.
@@ -322,7 +313,9 @@ The tool gives editors an option to sort through all the tasks with status Await
 
 ![Sort](assets/docsimages/sort.png)
 
-## Information for Change Approval Tasks
+## Information for Change Approval Tasks *(CMS 12 only)*
+
+> **Note:** The `EPiServer.ChangeApproval` package is not compatible with CMS 13. The Change Approval tab is unavailable until Optimizely publishes a CMS 13-compatible version. For full Change Approval support use the [CMS 12 branch](https://github.com/adnanzameer/optimizely-advancedtaskmanager/tree/CMS12).
 
 The table row for change approval task information functions as an accordion. Clicking on the row will reveal (or hide) the details of the change approval task.
 
