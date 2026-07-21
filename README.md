@@ -4,25 +4,22 @@
 [![Platform](https://img.shields.io/badge/Platform-.NET%2010-blue.svg?style=flat)](https://docs.microsoft.com/en-us/dotnet/)
 [![Platform](https://img.shields.io/badge/Optimizely-%2013-blue.svg?style=flat)](http://world.optimizely.com/cms/)
 
-
 The **Advanced Task Manager for Optimizely** provides CMS editors with enhanced oversight of administration tasks related to Awaiting Review in Content Approval and Change Approval processes.
 
 ## Features
 
-- **Deadline Field:** Includes a deadline field for content approval.
-- **User Notifications:** Sync user notifications associated with the task.
-- **Approve entire approval sequence:** Allows approving the entire approval sequence in bulk or against individual tasks.
-- **Publish content after approval:** Permits publishing content after approval in bulk or against individual tasks.
-- **Change approval task information:** Facilitates changes to approval task information.
+- **Advanced filtering:** Filter tasks by status, content type, site, and by content ID or name.
+- **Select all across pages:** Select every item matching the current filters, not just those visible on the current page.
+- **Approve entire approval sequence:** Approve the entire approval sequence in bulk or against individual tasks.
+- **Publish content after approval:** Publish selected content immediately after approval, with rights-aware handling when only some items can be published.
+- **Scheduled publishing:** Optionally schedule a future date and time for approved content to go live instead of publishing immediately.
+- **Approve blocks & media on a page:** Open a modal from the filter bar, navigate the page hierarchy tree to pick a page, and approve all pending blocks and media it references in one action — with an optional publish step.
+- **Task ordering:** Sort the task list by name, content type, type, submission date, started-by user, or deadline.
+- **Deadline field:** Optional date/time property on pages and blocks that highlights time-sensitive tasks in the list with warning and danger states.
+- **User notifications:** Tasks with unread notifications are highlighted automatically and marked as read on open.
+- **Change approval task information:** View detailed change approval task data (security, move, language, and expiry changes) inline in the task list.
 
-## Requirements
-
-- Optimizely CMS 13
-- .NET 10
-
-> **Note on Change Approval:** The `EPiServer.ChangeApproval` package is not compatible with CMS 13 as of this release. The Change Approval tab will not be available until Optimizely publishes a CMS 13-compatible version of that package. Content Approval functionality is fully supported.
-
-## Installation
+## Installation 
 
 To install the Advanced Task Manager, begin by adding the NuGet package using [Optimizely NuGet](https://nuget.optimizely.com/):
 
@@ -122,12 +119,10 @@ This project has two goals:
 
 * **Streamline approver workflow:** Combine user notifications with tasks within a single interface, allowing approvers to efficiently handle tasks individually or in bulk.
 
-By default, Change Approval is integrated into the Approval Sequence in Optimizely CMS. Therefore, Advanced Task Manager seamlessly incorporates content approval tasks. If the [Change Approval](https://nuget.optimizely.com/package/?id=EPiServer.ChangeApproval) NuGet package is installed (CMS 12 only), the tool will automatically display two tabs in the left-side menu:
+By default, Change Approval is integrated into the Approval Sequence in Optimizely CMS. Therefore, Advanced Task Manager seamlessly incorporates content approval tasks. If the [Change Approval](https://nuget.optimizely.com/package/?id=EPiServer.ChangeApproval) NuGet package is installed, the tool will automatically display two tabs in the left-side menu:
 
 * Content Approval
 * Change Approval (CMS 12 only — see [Requirements](#requirements))
-
-
 
 ![Advanced Task Manager - Content Approval](assets/docsimages/content-approval.png)
 
@@ -152,18 +147,48 @@ The tool furnishes the Editor with the following information regarding the task:
 * Submitted (UTC)
 * Started by
 
-The list of current features are as follow:
+The list of current features are as follows:
+* [Advanced filtering](#advanced-filtering)
+* [Select all across pages](#select-all-across-pages)
 * [Approve entire approval sequence](#approve-entire-approval-sequence-content-approval-only)
 * [Publish content after approval](#publish-content-after-approval)
+* [Scheduled publishing](#scheduled-publishing)
+* [Approve blocks & media on a page](#approve-blocks--media-on-a-page)
 * [Deadline field for content approval](#deadline-field-for-content-approval-sequence-optional)
 * [User Notifications Linked to the Task](#user-notifications-linked-to-the-task)
 * [Information for Change Approval Tasks](#information-for-change-approval-tasks)
 * [Task ordering](#task-ordering)
 
-Some features are disabled by default, but you can decide which ones are enabled by Configuring option in the `startup.cs` or in `appsettings.json`.
+Some features are disabled by default, but you can decide which ones are enabled by configuring options in `startup.cs` or `appsettings.json`.
+
+### Advanced Filtering
+
+The filter bar above the task list lets editors narrow down content approval tasks using any combination of:
+
+- **Language** — filter by a specific language branch (existing behaviour).
+- **Status** — show tasks that are *In Review* (default) or *Ready to Publish* (approved but not yet published).
+- **Type** — show only *Pages*, *Blocks*, or *Assets / Media*.
+- **Site** — in multi-site solutions, filter tasks to a specific site. The site dropdown is hidden on single-site installations.
+- **Content search** — enter a content ID (integer) or part of the content name to find a specific item.
+
+When one or more filters are active, badge pills appear below the filter bar. Each badge links directly to clearing that individual filter, and a **Clear all** link removes every filter at once. Navigating to a different page or language always resets pagination to page 1.
+
+![Advanced Filtering](assets/docsimages/filtering.png)
+
+### Select All Across Pages
+
+Checking the header checkbox selects all items visible on the current page. When there are more results than the configured page size, a banner appears:
+
+> All 30 items on this page are selected. **Select all N items matching current filters.**
+
+![Select all pages](assets/docsimages/select-all-pages.png)
+
+Clicking that link calls the server and loads every matching approval ID into the selection, across all pages. The approval action then covers the complete set. To start over, a **Clear selection** link is shown in the same banner.
+
+![All pages selected](assets/docsimages/all-pages-selected.png)
 
 ### Approve Entire Approval Sequence (Content Approval Only)
-The tool prompts the editor to approve the entire Content Approval Sequence for single or multiple contents. A comment in the comment field is mandatory..
+The tool prompts the editor to approve the entire Content Approval Sequence for single or multiple contents. A comment in the comment field is mandatory.
  
 ![Approve entire approval sequence](assets/docsimages/content-approval-approve.png)
 
@@ -180,6 +205,29 @@ If the editor holds publishing rights for only some of the content after approvi
 ![Publish content after approval](assets/docsimages/content-approval-approve-publish.png)
 
 ![Publish content after approval](assets/docsimages/content-approval-publish-model.png)
+
+### Scheduled Publishing
+
+When the **Publish selected content after approval** option is checked, an additional **Schedule publishing for a specific date and time** checkbox becomes available. Enabling it reveals a date/time picker. The selected datetime is sent alongside the approval request; Optimizely schedules the publish by setting `IVersionable.StartPublish` to the chosen time, so the content goes live automatically at that moment rather than immediately.
+
+![Schedule](assets/docsimages/schedule.png)
+
+### Approve Blocks & Media on a Page
+
+An **Approve Page Dependencies** button sits in the filter bar above the task list. Clicking it opens a modal that lets editors approve all pending blocks and media files referenced by a specific page in a single action.
+
+**How to use:**
+
+1. Click the **Approve Page Dependencies** button in the filter bar.
+2. Navigate the **page hierarchy tree** to find and select the target page. The tree lazy-loads child pages as you expand nodes.
+3. Select one or more **languages** to process.
+4. Optionally edit the approval comment.
+5. Optionally check **Publish approved content after approval** to publish the blocks and media immediately after approving them (only shown when the current user has publish rights).
+6. Click **Approve Dependencies**. A spinner is shown while the request is in progress.
+
+![Approve Blocks & Media on a Page](assets/docsimages/approve-block-media-page.png)
+
+The system inspects all `ContentArea` and `ContentReference` property values on the selected page, identifies any blocks and media currently awaiting approval for the chosen languages, and approves (and optionally publishes) them all. The number of items approved is shown inline. If any items were approved the page refreshes automatically after 1.5 seconds.
 
 ### Deadline Field for Content Approval Sequence (Optional)
 
